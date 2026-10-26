@@ -6,12 +6,11 @@ Fonte di verità per la routine settimanale che scrive e pubblica gli articoli. 
 
 Più visite organiche in target e più richieste di prenotazione diretta (modulo sulle schede appartamento) da: professionisti in trasferta, remote worker, studenti ed Erasmus, docenti e ricercatori in visita, visitatori delle fiere.
 
-## Cosa dicono i dati (Search Console, 24/06/2025–23/10/2026)
+## Priorità
 
-- 97 clic, 10.300 impressioni, CTR 0,9%, posizione media 11,5. Il 62% delle impressioni arriva dal Regno Unito.
-- Cluster principale: "no deposit" (cheap apartments milan no deposit, room for rent milan no deposit, monthly rent milan no deposit…): circa 800 impressioni in posizione 5–8 con CTR quasi zero.
-- Ricerche tedesche per studenti ("studenten apartment mailand", "apartment mailand student") in posizione ~90: spazio per contenuti DE dedicati.
-- "turro flats" in posizione 10: query locali su Turro/Precotto da presidiare.
+- Cluster "no deposit" (in inglese, pubblico UK): oggi in posizione 5–8 con pochi clic, va presidiato con articoli dedicati.
+- Studenti in tedesco: ricerche presenti ma posizioni basse.
+- Query locali su Turro e Precotto.
 
 ## Regole per ogni articolo
 

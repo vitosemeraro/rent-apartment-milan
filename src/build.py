@@ -102,7 +102,7 @@ def layout(lang, key, title, desc, body, ld=None, og_img=None, crumbs=None, robo
 <button class="menu-btn" aria-expanded="false" aria-controls="nav">☰ {esc(T.ui["menu"])}</button><nav class="main" id="nav">{nav}</nav></div></header>
 {crumb_html}<main id="main">{body}</main>
 <footer class="site"><div class="wrap"><div class="cols">
-<div><a class="logo" href="{path_of(lang, "home")}" style="color:#fff"><b>RAM</b><span>Rent Apartment Milan</span></a><p style="margin-top:14px">{esc(T.ui["foot_about"])}</p><p><a href="mailto:{CONFIG["email"]}">{CONFIG["email"]}</a></p></div>
+<div><a class="logo" href="{path_of(lang, "home")}" style="color:#fff"><b>RAM</b><span>Rent Apartment Milan</span></a><p style="margin-top:14px">{esc(T.ui["foot_about"])}</p><p><a href="mailto:{CONFIG["email"]}">{CONFIG["email"]}</a><br><a href="tel:{CONFIG["phone"].replace(" ", "")}">{CONFIG["phone"]}</a><br>{CONFIG["street"]}, {CONFIG["zip"]} Milano<br><a href="{CONFIG["same_as"][0]}" rel="noopener" target="_blank">Google Maps</a></p></div>
 <div><p class="fh">{esc(T.ui["nav_apartments"])}</p><ul>{foot_apts}</ul></div>
 <div><p class="fh">{esc(T.ui["nav_guides"])}</p><ul>{foot_guides}</ul></div>
 <div><p class="fh">RAM</p><ul><li><a href="{path_of(lang, "about")}">{esc(T.ui["nav_about"])}</a></li><li><a href="{path_of(lang, "reviews")}">{esc(T.ui["nav_reviews"])}</a></li><li><a href="{path_of(lang, "faq")}">FAQ</a></li><li><a href="{path_of(lang, "contact")}">{esc(T.ui["nav_contact"])}</a></li><li><a href="{path_of(lang, "privacy")}">Privacy &amp; cookie</a></li></ul></div>
@@ -179,9 +179,10 @@ def page_home(lang):
 <section><div class="wrap"><div class="sec-head"><div><span class="kicker">{esc(T.ui["nav_reviews"])}</span><h2>{esc(P["rev_title"])}</h2></div><a href="{path_of(lang, "reviews")}">{esc(T.ui["all_reviews"])} →</a></div><div class="grid g3">{reviews_grid(lang, 6)}</div></div></section>
 <section><div class="wrap"><span class="kicker">{esc(T.ui["nav_guides"])}</span><h2 class="mt0">{esc(P["guides_title"])}</h2><div class="grid g3" style="margin-top:20px">{guides}</div></div></section>
 {cta_band(lang)}"""
-    ld = {"@context": "https://schema.org", "@type": "LodgingBusiness", "name": "RAM – Rent Apartment Milan", "url": url_of(lang, "home"),
+    ld = {"@context": "https://schema.org", "@type": "LodgingBusiness", "name": "Rent Apartment Milan", "alternateName": "RAM", "url": url_of(lang, "home"),
           "image": img_src("valdinon", 0), "email": CONFIG["email"], "description": P["desc"],
-          "address": {"@type": "PostalAddress", "addressLocality": "Milano", "postalCode": "20128", "addressRegion": "MI", "addressCountry": "IT"},
+          "address": {"@type": "PostalAddress", "streetAddress": CONFIG["street"], "addressLocality": "Milano", "postalCode": CONFIG["zip"], "addressRegion": "MI", "addressCountry": "IT"},
+          "telephone": CONFIG["phone"], "sameAs": CONFIG["same_as"], "hasMap": CONFIG["same_as"][0],
           "areaServed": "Milano", "founder": {"@type": "Person", "name": "Vito Semeraro"},
           "knowsLanguage": ["it", "en"], "inLanguage": lang}
     return layout(lang, "home", P["title"], P["desc"], body, ld=ld)

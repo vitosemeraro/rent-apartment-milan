@@ -1,5 +1,6 @@
-# Build del sito statico e pubblicazione su Netsons via FTPS.
-# Parte a ogni push su main e ogni giorno alle 05:00 UTC (pubblica gli articoli programmati con data futura).
+# Build del sito statico e pubblicazione sul branch "deploy".
+# Il server Netsons scarica il branch "deploy" ogni 30 minuti (cron in cPanel) e lo copia in public_html: nessuna password FTP.
+# Parte a ogni push su main e ogni giorno alle 05:00 UTC, così gli articoli programmati con data futura escono da soli.
 name: Build e deploy
 on:
   push:
@@ -8,8 +9,10 @@ on:
     - cron: "0 5 * * *"
   workflow_dispatch:
 concurrency: deploy
+permissions:
+  contents: write
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,18 +22,12 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Build
         run: cd src && python build.py && python check_links.py
-      - name: Deploy FTPS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          local-dir: ./dist/
-          server-dir: ./
-          exclude: |
-            **/.git*
-            **/.git*/**
-            trullo/**
-            .well-known/**
-            cgi-bin/**
+      - name: Pubblica sul branch deploy
+        run: |
+          cd dist
+          git init -q -b deploy
+          git config user.name "RAM deploy bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -qm "Build $(date -u +%Y-%m-%dT%H:%MZ) da ${GITHUB_SHA::7}"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" deploy
