@@ -1,0 +1,6 @@
+deploy/
+src/__pycache__/
+__pycache__/
+dist/*
+!dist/img/
+proposte/*.jpg

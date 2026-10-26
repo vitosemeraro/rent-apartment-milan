@@ -1,0 +1,36 @@
+# Build del sito statico e pubblicazione su Netsons via FTPS.
+# Parte a ogni push su main e ogni giorno alle 05:00 UTC (pubblica gli articoli programmati con data futura).
+name: Build e deploy
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+concurrency: deploy
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Build
+        run: cd src && python build.py && python check_links.py
+      - name: Deploy FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./dist/
+          server-dir: ./
+          exclude: |
+            **/.git*
+            **/.git*/**
+            trullo/**
+            .well-known/**
+            cgi-bin/**

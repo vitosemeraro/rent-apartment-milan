@@ -1,0 +1,114 @@
+[
+ {
+  "name": "Finn",
+  "source": "Airbnb",
+  "date": "07/2026",
+  "listing": "mm",
+  "stars": 5,
+  "text": "L'appartamento era adatto per ospitare fino a quattro persone, con un letto singolo aggiuntivo e un divano letto. Era pulito e accogliente e la zona offriva un ottimo accesso ai negozi e alla metropolitana per il centro. Non potrei raccomandarlo abbastanza!"
+ },
+ {
+  "name": "Gurjot",
+  "source": "Airbnb",
+  "date": "10/2026",
+  "listing": "mm",
+  "stars": 5,
+  "text": "La metropolitana era a 5 minuti e la fermata del tram proprio dietro l'angolo, quindi era facile raggiungere vari luoghi. Ottima posizione, alloggio fantastico e accessibile!"
+ },
+ {
+  "name": "Małgorzata",
+  "source": "Airbnb",
+  "date": "09/2025",
+  "listing": "turro",
+  "stars": 5,
+  "text": "Vito è molto comunicativo e risponde sempre ai messaggi. L'appartamento ha un ottimo prezzo, è vicinissimo alla metropolitana e accanto c'è un Carrefour aperto 24 ore su 24. Ben attrezzato: cucina, bagno e camera avevano tutto il necessario."
+ },
+ {
+  "name": "Mariagiovanna",
+  "source": "Airbnb",
+  "date": "12/2025",
+  "listing": "turro",
+  "stars": 5,
+  "text": "Appartamento molto accogliente, zona tranquilla vicinissima alla metro rossa Turro. Vito, il proprietario, molto gentile e disponibile!"
+ },
+ {
+  "name": "Alizé",
+  "source": "Airbnb",
+  "date": "06/2026",
+  "listing": "mm",
+  "stars": 5,
+  "text": "Abbiamo apprezzato molto il soggiorno: l'appartamento è vicinissimo alla metropolitana, quindi è facile spostarsi. Bellissimo e molto ben ordinato!"
+ },
+ {
+  "name": "Antonio",
+  "source": "Airbnb",
+  "date": "09/2025",
+  "listing": "turro",
+  "stars": 5,
+  "text": "Appartamento luminoso, pulito, ordinato e comodo per gli spostamenti perché molto vicino alla metro. Il proprietario sempre molto gentile e disponibile."
+ },
+ {
+  "name": "大天",
+  "source": "Airbnb",
+  "date": "09/2026",
+  "listing": "mm",
+  "stars": 5,
+  "text": "L'alloggio è molto vicino alla metropolitana! Quando abbiamo avuto un problema il padrone di casa è venuto subito ad aiutarci. Un'ottima esperienza."
+ },
+ {
+  "name": "Trinity",
+  "source": "Airbnb",
+  "date": "10/2026",
+  "listing": "mm",
+  "stars": 5,
+  "text": "Grazie per l'ospitalità. Soggiorno molto accogliente, vicino alla città."
+ },
+ {
+  "name": "Myriam K.",
+  "source": "Airbnb",
+  "date": "",
+  "listing": "vdn",
+  "stars": 5,
+  "text": "Vito's apartment is simply wonderful. Furnished with love, clean, and practically located right by the metro. I truly felt at home and will definitely book again if I return to Milan!"
+ },
+ {
+  "name": "Anna S.",
+  "source": "Booking.com",
+  "date": "",
+  "listing": "turro",
+  "stars": 5,
+  "text": "It took me a while to find the right words to express how good my stay was. To start with, the communication with the owner Vito was fantastic."
+ },
+ {
+  "name": "Siena P.",
+  "source": "Airbnb",
+  "date": "",
+  "listing": "vdn",
+  "stars": 5,
+  "text": "Vito was very responsive and always ready to offer advice. The apartment was clean and many of the amenities were brand new. The metro line is just a five-minute walk away."
+ },
+ {
+  "name": "Olha H.",
+  "source": "Booking.com",
+  "date": "",
+  "listing": "turro",
+  "stars": 5,
+  "text": "The apartment was super clean and fully furnished with all the needed amenities, only 2 minutes from the metro station (Turro)."
+ },
+ {
+  "name": "Paolo M.",
+  "source": "Booking.com",
+  "date": "",
+  "listing": "turro",
+  "stars": 5,
+  "text": "Great location, 100 metres from the M1 and from all essential services: supermarket open 24h, bar, pharmacy."
+ },
+ {
+  "name": "Ihab E.",
+  "source": "Airbnb",
+  "date": "",
+  "listing": "vdn",
+  "stars": 5,
+  "text": "Very nice and accommodating person! Everything went well and the apartment was beautiful."
+ }
+]
