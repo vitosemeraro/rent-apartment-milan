@@ -76,10 +76,10 @@ function eur(v){return '€ '+Math.round(v).toLocaleString('it-IT')}
 function calc(){er.textContent='';sel.textContent=a?(T.in+': '+a.toLocaleDateString()+(b?' · '+T.out+': '+b.toLocaleDateString():'')):T.pick;
 var ad=+f.adults.value,ch=+f.children.value,g=ad+ch;if(g>P.max_guests){f.children.value=Math.max(0,P.max_guests-ad);ch=+f.children.value;g=ad+ch}
 if(!a||!b){q.innerHTML='';btn.disabled=true;return}var n=Math.round((b-a)/864e5);if(n<P.min_nights){er.textContent=T.min.replace('{n}',P.min_nights);q.innerHTML='';btn.disabled=true;return}
-var nightsSum=0,extra=0,taxv=0;for(var i=0,d=new Date(a);i<n;i++,d=add(d,1)){nightsSum+=price(d);extra+=Math.max(0,g-P.extra_after)*P.extra_fee;if(i<TX.max)taxv+=(TX.r[d.getFullYear()]||TX.r.def)*ad}
+var nightsSum=0,extra=0,taxv=0;for(var i=0,d=new Date(a);i<n;i++,d=add(d,1)){nightsSum+=price(d);extra+=Math.max(0,g-P.extra_after)*P.extra_fee;if(i<TX.max&&n<30)taxv+=(TX.r[d.getFullYear()]||TX.r.def)*ad}
 var disc=0;if(n>=28)disc=P.monthly;else if(n>=7)disc=P.weekly;else if(P.length[n])disc=P.length[n];var lead=Math.round((a-today)/864e5);if(P.lastminute&&lead<=P.lastminute_days)disc=Math.max(disc,P.lastminute);
 var base=nightsSum+extra,dv=base*disc/100,tot=base-dv+P.cleaning+taxv;
-var rows=[[n+' '+(n==1?T.night:T.nights),eur(nightsSum)]];if(extra)rows.push([T.extra,eur(extra)]);if(dv)rows.push([T.disc+' '+disc+'%','− '+eur(dv)]);rows.push([T.clean,eur(P.cleaning)]);rows.push([T.tax+' ('+ad+' × '+Math.min(n,TX.max)+')',eur(taxv)]);
+var rows=[[n+' '+(n==1?T.night:T.nights),eur(nightsSum)]];if(extra)rows.push([T.extra,eur(extra)]);if(dv)rows.push([T.disc+' '+disc+'%','− '+eur(dv)]);rows.push([T.clean,eur(P.cleaning)]);if(n<30)rows.push([T.tax+' ('+ad+' × '+Math.min(n,TX.max)+')',eur(taxv)]);
 q.innerHTML='<table>'+rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'}).join('')+'<tr class="tot"><td>'+T.total+'</td><td>'+eur(tot)+'</td></tr></table>';
 f.checkin.value=k(a);f.checkout.value=k(b);f.quote.value=rows.map(function(r){return r[0]+': '+r[1]}).join(' | ')+' | TOTALE: '+eur(tot);btn.disabled=false}
 f.adults.addEventListener('change',calc);f.children.addEventListener('change',calc);

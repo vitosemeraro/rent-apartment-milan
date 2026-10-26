@@ -44,3 +44,23 @@ Più visite organiche in target e più richieste di prenotazione diretta (modulo
 | 16 | 2027-02-15 | Milan Design Week on a budget: share an apartment for 8 | en, it, de, fr | fiere, gruppi | todo |
 
 Dopo la riga 16 la routine propone nuovi temi partendo dalle query di Search Console in posizione 5–20 e dalle domande ricorrenti degli ospiti, e li aggiunge in coda.
+
+## AEO (risposte di AI Overviews, ChatGPT, Perplexity, Copilot)
+
+Già fatto sul sito:
+- Risposta diretta di 40–60 parole in cima alle guide principali (EN e IT), marcata FAQPage.
+- `llms.txt` alla radice con descrizione, appartamenti, prezzi indicativi, guide e contatti.
+- `robots.txt` che consente esplicitamente GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Google-Extended, Bingbot, Applebot-Extended.
+- Dati strutturati: LodgingBusiness con NAP e sameAs verso Google Maps, Person per l'autore, Apartment, BlogPosting, FAQPage, BreadcrumbList.
+- IndexNow (Bing, Yandex, Seznam): file chiave sul sito e ping automatico a ogni deploy.
+
+Regole AEO per ogni nuovo articolo:
+- Il primo paragrafo risponde alla domanda del titolo in 40–60 parole, con un numero concreto (prezzo, minuti, notti).
+- H2 formulati come domande che le persone fanno davvero; risposte brevi sotto ogni H2.
+- Dati verificabili e coerenti con le schede (prezzi da `src/data/pricing.json`).
+- Data "Updated" sempre presente; aggiornare gli articoli con dati cambiati.
+
+Da fare fuori dal sito (mensile):
+- Controllare 15 domande target in ChatGPT, Perplexity, Copilot e Google AI Overviews (es. "apartment Milan no deposit", "where to stay near Bicocca", "monthly rent Milan M1") e annotare se RAM compare.
+- Coerenza delle schede: Google Business Profile (verifica da completare, doppione "Rent a flat in Milan" da unificare), Bing Places, Airbnb.
+- Citazioni esterne: guide per studenti delle università, gruppi Erasmus, directory di affitti mensili, partner (coworking, scuole di lingua).

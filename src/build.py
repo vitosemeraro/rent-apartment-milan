@@ -16,6 +16,8 @@ C = {l: importlib.import_module("lang_" + l) for l in LANGS}
 from nodeposit import D as _ND
 from mm_texts import M as _MM
 import blog as BLOG
+import aeo as AEO
+INDEXNOW_KEY = "7058b7a634092b9c7269dcca6835e7f9"
 for _l in LANGS:
     C[_l].SLUG["nodeposit"] = _ND[_l][0]; C[_l].P["nodeposit"] = _ND[_l][1]; C[_l].L["mm"].update(_MM[_l]); C[_l].SLUG["blog"] = "blog"; C[_l].P["blog"] = BLOG.INDEX[_l]
 TODAY = datetime.date.today().isoformat()
@@ -282,13 +284,16 @@ def page_article(lang, key):
     if key == "guides":
         extra = "".join(f'<a class="feat" style="display:block;text-decoration:none;color:inherit;margin-bottom:12px" href="{path_of(lang, k)}"><h3>{esc(T.P[k]["h1"])} →</h3><p>{esc(T.P[k]["desc"])}</p></a>' for k in CONFIG["guides"])
     kick = f'<span class="kicker">{esc(P["kicker"])}</span>' if P.get("kicker") else ""
+    qa_html, qa_ld = AEO.answer_box(lang, key, esc)
     body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(P["lead"])}</p>' if P.get("lead") else ""}{hero}
-<div class="prose">{P.get("html", "")}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
+<div class="prose">{qa_html}{P.get("html", "")}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):
         art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": P["desc"], "inLanguage": lang,
                "author": {"@type": "Person", "name": "Vito Semeraro", "url": url_of(lang, "about")}, "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"},
                "dateModified": TODAY, "mainEntityOfPage": url_of(lang, key)}
         ld = [art] + ([ld] if ld else [])
+    if qa_ld:
+        ld = (ld if isinstance(ld, list) else ([ld] if ld else [])) + [qa_ld]
     if key == "about":
         ld = {"@context": "https://schema.org", "@type": "Person", "name": "Vito Semeraro", "jobTitle": "Host", "image": img_src("vito", 0), "worksFor": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"}}
     crumbs = []
@@ -331,7 +336,13 @@ def main():
         sm.append(f"<url><loc>{SITE}{a['url']}</loc><lastmod>{a['updated']}</lastmod></url>")
     sm.append("</urlset>")
     open(os.path.join(DIST, "sitemap.xml"), "w", encoding="utf8").write("\n".join(sm))
-    open(os.path.join(DIST, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nDisallow: /contact.php\nDisallow: /availability.php\n\nSitemap: {SITE}/sitemap.xml\n")
+    bots = "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Bingbot", "Applebot-Extended"))
+    open(os.path.join(DIST, "robots.txt"), "w").write(f"{bots}User-agent: *\nAllow: /\nDisallow: /contact.php\nDisallow: /availability.php\n\nSitemap: {SITE}/sitemap.xml\n")
+    me = sys.modules[__name__]
+    open(os.path.join(DIST, "llms.txt"), "w", encoding="utf8").write(AEO.llms_txt(me))
+    open(os.path.join(DIST, INDEXNOW_KEY + ".txt"), "w").write(INDEXNOW_KEY)
+    all_urls = [url_of(l, k) for k, l in urls] + [SITE + a["url"] for a in BLOG.ARTICLES]
+    open(os.path.join(DIST, "indexnow.json"), "w").write(AEO.indexnow_payload(me, all_urls, INDEXNOW_KEY))
     for f in os.listdir(os.path.join(HERE, "static")):
         shutil.copy(os.path.join(HERE, "static", f), os.path.join(DIST, f))
     # 404 multilingua semplice
