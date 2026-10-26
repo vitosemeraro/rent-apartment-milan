@@ -26,7 +26,7 @@ Più visite organiche in target e più richieste di prenotazione diretta (modulo
 
 | # | Settimana | Tema e keyword principale | Lingue | Target | Stato |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2026-11-02 | How to rent in Milan without a deposit (rent apartment milan no deposit) | en, it | expat, studenti | todo |
+| 1 | 2026-11-02 | How to rent in Milan without a deposit (rent apartment milan no deposit) | en, it | expat, studenti | done 2026-10-26 |
 | 2 | 2026-11-09 | Salone del Mobile 2027: where to stay and how to get to Rho Fiera | en, it, de | fiere | todo |
 | 3 | 2026-11-16 | Studentenwohnung in Mailand: Kosten, Viertel, Verträge 2027 | de, en | studenti DE | todo |
 | 4 | 2026-11-23 | Cheap monthly rent in Milan: realistic prices by area (monthly rent milan) | en, it | professionisti, studenti | todo |
