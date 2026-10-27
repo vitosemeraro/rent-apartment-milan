@@ -181,7 +181,7 @@ def page_home(lang):
 <section><div class="wrap"><div class="sec-head"><div><span class="kicker">{esc(T.ui["nav_reviews"])}</span><h2>{esc(P["rev_title"])}</h2></div><a href="{path_of(lang, "reviews")}">{esc(T.ui["all_reviews"])} →</a></div><div class="grid g3">{reviews_grid(lang, 6)}</div></div></section>
 <section><div class="wrap"><span class="kicker">{esc(T.ui["nav_guides"])}</span><h2 class="mt0">{esc(P["guides_title"])}</h2><div class="grid g3" style="margin-top:20px">{guides}</div></div></section>
 {cta_band(lang)}"""
-    ld = {"@context": "https://schema.org", "@type": "LodgingBusiness", "name": "Rent Apartment Milan", "alternateName": "RAM", "url": url_of(lang, "home"),
+    ld = {"@context": "https://schema.org", "@type": "LodgingBusiness", "name": "Rent Apartment Milan", "alternateName": ["RAM", "Rent a flat in Milan"], "url": url_of(lang, "home"),
           "image": img_src("valdinon", 0), "email": CONFIG["email"], "description": P["desc"],
           "address": {"@type": "PostalAddress", "streetAddress": CONFIG["street"], "addressLocality": "Milano", "postalCode": CONFIG["zip"], "addressRegion": "MI", "addressCountry": "IT"},
           "telephone": CONFIG["phone"], "sameAs": CONFIG["same_as"], "hasMap": CONFIG["same_as"][0],

@@ -10,7 +10,7 @@ CONFIG = {
     "ga4": "G-83KEV6QRN8",
     # NAP allineato alla scheda Google Business "Rent Apartment Milan"
     "phone": "+39 328 061 4612", "street": "Via Jean Jaurès 7/B", "zip": "20125",
-    "same_as": ["https://www.google.com/maps?cid=101812229021643298"],
+    "same_as": ["https://www.google.com/maps?cid=13234886842758471390"],
     "superhost": True,        # True solo dopo verifica sul profilo Airbnb
     "rating": "5.0",
     "reviews_total": 25,
