@@ -95,7 +95,7 @@ def render(lang, lid, pricing, privacy_path, esc=html.escape):
     ad = "".join(f'<option{" selected" if i == min(2, mg) else ""}>{i}</option>' for i in range(1, mg + 1))
     ch = "".join(f"<option>{i}</option>" for i in range(0, mg))
     return f"""<form class="bk" method="post" action="/contact.php" data-cfg='{esc(json.dumps(cfg, ensure_ascii=False), quote=True)}'>
-<h3>{esc(t["title"])}</h3><input type="hidden" name="lang" value="{lang}"><input type="hidden" name="apt" value="{lid}"><input type="hidden" name="kind" value="booking">
+<h3>{esc(t["title"])}</h3><input type="hidden" name="lang" value="{lang}"><input type="hidden" name="apt" value="{lid}"><input type="hidden" name="kind" value="booking"><input type="hidden" name="js" value="1">
 <input type="hidden" name="checkin"><input type="hidden" name="checkout"><input type="hidden" name="quote"><label class="hp">Website<input name="website" tabindex="-1" autocomplete="off"></label>
 <div class="cal" aria-live="polite"></div><div class="sel">{esc(t["pick"])}</div>
 <noscript><div class="row2"><label>{t["in"]}<input type="date" name="checkin_ns"></label><label>{t["out"]}<input type="date" name="checkout_ns"></label></div></noscript>

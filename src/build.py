@@ -269,12 +269,12 @@ def page_article(lang, key):
         extra = f"""<form class="contact" method="post" action="/contact.php"><input type="hidden" name="lang" value="{lang}"><label class="hp">Website<input name="website" tabindex="-1" autocomplete="off"></label>
 <div class="row"><label>{F["name"]}<input name="name" required autocomplete="name"></label><label>{F["email"]}<input type="email" name="email" required autocomplete="email"></label></div>
 <div class="row"><label>{F["apt"]}<select name="apt" id="apt"><option value="">{F["any"]}</option>{opts}</select></label><label>{F["guests"]}<input type="number" name="guests" min="1" max="8" value="1"></label></div>
-<div class="row"><label>{F["in"]}<input type="date" name="checkin"></label><label>{F["out"]}<input type="date" name="checkout"></label></div>
+<div class="row"><label>{F["in"]}<input type="date" name="checkin" required></label><label>{F["out"]}<input type="date" name="checkout" required></label></div><input type="hidden" name="js" value="0">
 <label>{F["reason"]}<select name="reason">{"".join(f"<option>{esc(o)}</option>" for o in F["reasons"])}</select></label>
 <label>{F["msg"]}<textarea name="message" rows="5" required></textarea></label>
 <label style="display:flex;gap:10px;align-items:flex-start;font-weight:400"><input type="checkbox" required style="margin-top:5px"> <span>{F["privacy"].replace("{privacy}", path_of(lang, "privacy"))}</span></label>
 <button class="btn" type="submit" data-evt="form_submit">{F["send"]}</button></form>
-<script>(function(){{var p=new URLSearchParams(location.search).get('apt');if(p){{var s=document.getElementById('apt');s&&(s.value=p)}}}})()</script>"""
+<script>(function(){{document.querySelectorAll('input[name=js]').forEach(function(i){{i.value='1'}});var p=new URLSearchParams(location.search).get('apt');if(p){{var s=document.getElementById('apt');s&&(s.value=p)}}}})()</script>"""
     if key == "about":
         pics = "".join('<div class="round">' + img("vito", i, "(max-width:620px) 100vw, 50vw", alt=T.ui["alt_vito"]) + "</div>" for i in (4, 5))
         extra = f'<div class="grid g2" style="margin:26px 0">{pics}</div>'

@@ -18,7 +18,10 @@ $body = ($booking ? "RICHIESTA DI PRENOTAZIONE" : "Nuova richiesta") . " dal sit
   . "Nome: $name\nEmail: $email\nLingua: $lang\nAppartamento: $aptName\nArrivo: $in\nPartenza: $out\nOspiti: $guests"
   . ($booking ? "\n\nPreventivo mostrato all'ospite:\n" . str_replace(' | ', "\n", $f('quote', 1500)) : "\nMotivo: " . $f('reason', 80))
   . "\n\nMessaggio:\n" . ($f('message') ?: '-') . "\n\nRispondi direttamente a questa email per scrivere all'ospite.\nIP: " . ($_SERVER['REMOTE_ADDR'] ?? '');
-$subject = '[RAM richiesta] ' . ($booking ? "Prenotazione $aptName " : '') . "$name $in" . ($out ? " - $out" : '');
+// Filtro anti-spam: niente JavaScript, link commerciali o frasi tipiche dei venditori -> oggetto diverso, così il filtro Gmail non lo mette tra le richieste importanti
+$msg = strtolower($f('message'));
+$spam = $f('js', 1) !== '1' || preg_match('/unsubscribe|opt out|opt-out|seo services|lead gen|free trial|backlink|our agency|web design|marketing services/', $msg) || preg_match_all('#https?://#', $msg) >= 2 || (!$booking && ($in === '' || $out === ''));
+$subject = ($spam ? '[RAM possibile spam] ' : '[RAM richiesta] ') . ($booking ? "Prenotazione $aptName " : '') . "$name $in" . ($out ? " - $out" : '');
 $headers = "From: RAM sito <$to>\r\nReply-To: $name <$email>\r\nContent-Type: text/plain; charset=UTF-8";
 @mail($to, '=?UTF-8?B?' . base64_encode($subject) . '?=', $body, $headers, "-f$to");
 header('Location: ' . $thanks[$lang], true, 303);
