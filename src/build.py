@@ -96,7 +96,7 @@ def layout(lang, key, title, desc, body, ld=None, og_img=None, crumbs=None, robo
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="robots" content="{robots}">
 <link rel="canonical" href="{SITE + canon if canon else url_of(lang, key)}">{alts}
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{SITE + canon if canon else url_of(lang, key)}"><meta property="og:image" content="{og}"><meta property="og:locale" content="{T.LOCALE}"><meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/favicon.png" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#f7f3ee">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.png" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#f7f3ee">
 <style>{CSS}{xcss}</style>
 <script type="application/ld+json">{json.dumps(ld_all, ensure_ascii=False)}</script>
 </head><body><a class="skip" href="#main">{esc(T.ui["skip"])}</a>
