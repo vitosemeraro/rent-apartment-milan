@@ -8,6 +8,7 @@ CONFIG = {
     "default_lang": "en",
     "email": "hello@rent-apartment-milan.com",
     "ga4": "G-83KEV6QRN8",
+    "cf_beacon": "bdb20b4430954040b846f08a6de1b21c",  # Cloudflare Web Analytics: senza cookie, non serve consenso
     # NAP allineato alla scheda Google Business "Rent Apartment Milan"
     "phone": "+39 328 061 4612", "street": "Via Jean Jaurès 7/B", "zip": "20125",
     "same_as": ["https://www.google.com/maps?cid=13234886842758471390"],

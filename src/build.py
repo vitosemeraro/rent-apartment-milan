@@ -110,7 +110,7 @@ def layout(lang, key, title, desc, body, ld=None, og_img=None, crumbs=None, robo
 <div><p class="fh">RAM</p><ul><li><a href="{path_of(lang, "about")}">{esc(T.ui["nav_about"])}</a></li><li><a href="{path_of(lang, "reviews")}">{esc(T.ui["nav_reviews"])}</a></li><li><a href="{path_of(lang, "faq")}">FAQ</a></li><li><a href="{path_of(lang, "contact")}">{esc(T.ui["nav_contact"])}</a></li><li><a href="{path_of(lang, "privacy")}">Privacy &amp; cookie</a></li></ul></div>
 </div><div class="legal"><span>© {datetime.date.today().year} RAM · Rent Apartment Milan · Milano</span><span>{esc(T.ui["cin_note"])}</span></div></div></footer>
 <div id="consent" role="dialog" aria-label="Cookie" aria-live="polite"><p>{T.ui["cookie_text"].replace("{privacy}", path_of(lang, "privacy"))}</p><button class="btn small" data-c="1">{esc(T.ui["cookie_ok"])}</button> <button class="btn small ghost" data-c="0">{esc(T.ui["cookie_no"])}</button></div>
-<script>{JS}{xjs}</script></body></html>"""
+<script>{JS}{xjs}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "{CONFIG["cf_beacon"]}"}}'></script></body></html>"""
 
 
 JS = """(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
