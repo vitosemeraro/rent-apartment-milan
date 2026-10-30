@@ -167,7 +167,7 @@ P = {
     "html": """<p><b>Data controller:</b> Vito Semeraro, Milan, Italy – <a href="mailto:hello@rent-apartment-milan.com">hello@rent-apartment-milan.com</a>.</p>
 <h2>Data we collect</h2><p>When you use the contact form we receive your name, email, dates, number of guests and your message. We use them only to answer your request and, if you book, to manage your stay and fulfil legal obligations (guest registration with the police, tourist tax, lease registration). Legal basis: pre-contractual measures and legal obligations (art. 6.1.b and 6.1.c GDPR).</p>
 <h2>Retention</h2><p>Requests that do not lead to a booking are deleted within 12 months. Booking data are kept for the period required by tax law.</p>
-<h2>Cookies</h2><p>The site uses only a technical storage item to remember your cookie choice. With your consent we load Google Analytics 4 with anonymised IP to measure visits; you can withdraw consent by clearing your browser data. No advertising cookies are used.</p>
+<h2>Cookies</h2><p>The site uses only a technical storage item to remember your cookie choice. With your consent we load Google Analytics 4 with anonymised IP to measure visits; you can withdraw consent by clearing your browser data. No advertising cookies are used. Without cookies, we also count page views and clicks on the booking calendar in anonymous form (no IP address, no identifiers) to improve the site, and Cloudflare Web Analytics measures visits without cookies.</p>
 <h2>Your rights</h2><p>You can request access, correction or deletion of your data, or object to processing, by writing to the email above. You can also lodge a complaint with the Italian Data Protection Authority (Garante Privacy).</p>"""},
 }
 

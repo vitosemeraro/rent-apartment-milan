@@ -167,7 +167,7 @@ P = {
     "html": """<p><b>Verantwortlicher:</b> Vito Semeraro, Mailand, Italien – <a href="mailto:hello@rent-apartment-milan.com">hello@rent-apartment-milan.com</a>.</p>
 <h2>Erhobene Daten</h2><p>Über das Kontaktformular erhalten wir Name, E-Mail, Daten, Gästezahl und Nachricht. Wir nutzen sie nur, um Ihre Anfrage zu beantworten und, bei einer Buchung, den Aufenthalt abzuwickeln und gesetzliche Pflichten zu erfüllen (Gästemeldung, Kurtaxe, Registrierung des Vertrags). Rechtsgrundlage: vorvertragliche Maßnahmen und rechtliche Verpflichtungen (Art. 6.1.b und 6.1.c DSGVO).</p>
 <h2>Speicherdauer</h2><p>Anfragen ohne Buchung werden innerhalb von 12 Monaten gelöscht. Buchungsdaten werden so lange aufbewahrt, wie es das Steuerrecht verlangt.</p>
-<h2>Cookies</h2><p>Die Website speichert nur technisch Ihre Cookie-Entscheidung. Mit Ihrer Zustimmung laden wir Google Analytics 4 mit anonymisierter IP; Sie können die Zustimmung widerrufen, indem Sie die Browserdaten löschen. Keine Werbe-Cookies.</p>
+<h2>Cookies</h2><p>Die Website speichert nur technisch Ihre Cookie-Entscheidung. Mit Ihrer Zustimmung laden wir Google Analytics 4 mit anonymisierter IP; Sie können die Zustimmung widerrufen, indem Sie die Browserdaten löschen. Keine Werbe-Cookies. Ohne Cookies zählen wir außerdem anonym (ohne IP-Adresse und ohne Kennungen) Seitenaufrufe und Klicks im Buchungskalender, um die Website zu verbessern; Cloudflare Web Analytics misst Besuche ohne Cookies.</p>
 <h2>Ihre Rechte</h2><p>Sie können Auskunft, Berichtigung oder Löschung Ihrer Daten verlangen oder der Verarbeitung widersprechen, per E-Mail an die obige Adresse. Außerdem können Sie sich bei der italienischen Datenschutzbehörde (Garante Privacy) beschweren.</p>"""},
 }
 

@@ -118,9 +118,14 @@ function ga(){if(window.__ga)return;window.__ga=1;var s=document.createElement('
 var c=document.getElementById('consent'),v=null;try{v=localStorage.getItem('ram_consent')}catch(e){}
 if(v==='1'){ga()}else if(v===null){setTimeout(function(){c.style.display='block'},1200)}
 c.addEventListener('click',function(e){var x=e.target.getAttribute('data-c');if(x===null)return;try{localStorage.setItem('ram_consent',x)}catch(e){}c.style.display='none';if(x==='1')ga()});
-document.addEventListener('click',function(e){var a=e.target.closest('[data-evt]');if(a&&window.gtag)gtag('event',a.getAttribute('data-evt'),{label:a.getAttribute('data-label')||''})});
+function src(h){var m=[['chatgpt|openai','chatgpt'],['perplexity','perplexity'],['gemini|bard','gemini'],['copilot','copilot'],['claude','claude'],['google','google'],['bing','bing'],['duckduckgo','duckduckgo'],['yahoo','yahoo'],['facebook|fb.','facebook'],['instagram','instagram'],['airbnb','airbnb'],['booking.com','booking']];for(var i=0;i<m.length;i++)if(new RegExp(m[i][0]).test(h))return m[i][1];return h.slice(0,40)}
+var S='direct';try{var u=new URLSearchParams(location.search).get('utm_source'),r=document.referrer?new URL(document.referrer).hostname.replace(/^www[.]/,''):'';if(u)S=src(u.toLowerCase());else if(r)S=r==location.hostname?'internal':src(r)}catch(e){}
+window.ramEv=function(e,l,v){try{var d=JSON.stringify({e:e,p:location.pathname,l:l||'',s:S,v:Math.round(v||0)});if(!(navigator.sendBeacon&&navigator.sendBeacon('/ev.php',d)))fetch('/ev.php',{method:'POST',body:d,keepalive:true})}catch(x){}};
+ramEv('view');var rd=0;addEventListener('scroll',function(){if(rd)return;var h=document.documentElement;if(h.scrollTop+innerHeight>=h.scrollHeight*.75){rd=1;ramEv('read')}},{passive:true});
+document.addEventListener('click',function(e){var a=e.target.closest('[data-evt]');if(a){if(window.gtag)gtag('event',a.getAttribute('data-evt'),{label:a.getAttribute('data-label')||''});ramEv(a.getAttribute('data-evt'),a.getAttribute('data-label'));return}
+var l=e.target.closest('a[href]');if(!l||l.hasAttribute('data-lb'))return;try{var t=new URL(l.href,location.href)}catch(x){return}if(t.hostname==location.hostname){if(t.pathname!=location.pathname)ramEv('link',t.pathname)}else if(/^https?:/.test(t.protocol))ramEv('out',t.hostname.replace(/^www[.]/,''))});
 var g=[].slice.call(document.querySelectorAll('[data-lb]'));if(g.length){var lb=document.createElement('div');lb.className='lb';lb.innerHTML='<button class="x" aria-label="Close">✕</button><button class="pv" aria-label="Previous">‹</button><img alt=""><button class="nx" aria-label="Next">›</button><div class="ct"></div>';document.body.appendChild(lb);var im=lb.querySelector('img'),ct=lb.querySelector('.ct'),i=0;
-function show(k){i=(k+g.length)%g.length;im.src=g[i].getAttribute('href');im.alt=g[i].getAttribute('data-alt')||'';ct.textContent=(i+1)+' / '+g.length;lb.classList.add('on')}
+function show(k){if(!lb.classList.contains('on'))window.ramEv&&ramEv('gallery');i=(k+g.length)%g.length;im.src=g[i].getAttribute('href');im.alt=g[i].getAttribute('data-alt')||'';ct.textContent=(i+1)+' / '+g.length;lb.classList.add('on')}
 g.forEach(function(a,k){a.addEventListener('click',function(e){e.preventDefault();show(k)})});
 lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('x'))lb.classList.remove('on');else if(e.target.classList.contains('pv'))show(i-1);else if(e.target.classList.contains('nx'))show(i+1)});
 document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1)})}})();""".replace("GAID", CONFIG["ga4"])
@@ -337,7 +342,7 @@ def main():
     sm.append("</urlset>")
     open(os.path.join(DIST, "sitemap.xml"), "w", encoding="utf8").write("\n".join(sm))
     bots = "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Bingbot", "Applebot-Extended"))
-    open(os.path.join(DIST, "robots.txt"), "w").write(f"{bots}User-agent: *\nAllow: /\nDisallow: /contact.php\nDisallow: /availability.php\n\nSitemap: {SITE}/sitemap.xml\n")
+    open(os.path.join(DIST, "robots.txt"), "w").write(f"{bots}User-agent: *\nAllow: /\nDisallow: /contact.php\nDisallow: /availability.php\nDisallow: /ev.php\nDisallow: /ev-stats.php\n\nSitemap: {SITE}/sitemap.xml\n")
     me = sys.modules[__name__]
     open(os.path.join(DIST, "llms.txt"), "w", encoding="utf8").write(AEO.llms_txt(me))
     open(os.path.join(DIST, INDEXNOW_KEY + ".txt"), "w").write(INDEXNOW_KEY)
