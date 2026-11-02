@@ -45,3 +45,4 @@ La routine del lunedì (09:00) aggiunge una riga alla tabella "Storico" e manda 
 
 | Settimana | Clic Google | Impressioni | CTR | Pos. media | Clic Bing | Visite CF | Richieste vere | Spam | Articoli totali | AEO (su 15) | Note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-02 | 8 | 258 | 3,1% | 23,2 | 0 (6 impr.) | n.d. (Cloudflare: login richiesto) | 0 (1 mail "RAM richiesta" = sollecitazione commerciale, senza date) | 1 | 14 | 0/15 citati (AI Overview presente in 8/15; RAM in organico per 5/15) | Baseline AEO. Indicizzate Google 13, non indicizzate 74; sett. prec.: 0 clic, 11 impr., pos. 11,1 |
