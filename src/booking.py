@@ -81,7 +81,7 @@ var disc=0;if(n>=28)disc=P.monthly;else if(n>=7)disc=P.weekly;else if(P.length[n
 var base=nightsSum+extra,dv=base*disc/100,tot=base-dv+P.cleaning+taxv;
 var rows=[[n+' '+(n==1?T.night:T.nights),eur(nightsSum)]];if(extra)rows.push([T.extra,eur(extra)]);if(dv)rows.push([T.disc+' '+disc+'%','− '+eur(dv)]);rows.push([T.clean,eur(P.cleaning)]);if(n<30)rows.push([T.tax+' ('+ad+' × '+Math.min(n,TX.max)+')',eur(taxv)]);
 q.innerHTML='<table>'+rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'}).join('')+'<tr class="tot"><td>'+T.total+'</td><td>'+eur(tot)+'</td></tr></table>';
-var qk=k(a)+k(b)+g;if(qk!=lastQ){lastQ=qk;E('quote',C.apt,tot)}f.checkin.value=k(a);f.checkout.value=k(b);f.quote.value=rows.map(function(r){return r[0]+': '+r[1]}).join(' | ')+' | TOTALE: '+eur(tot);btn.disabled=false}
+f.setAttribute('data-tot',Math.round(tot));var qk=k(a)+k(b)+g;if(qk!=lastQ){lastQ=qk;E('quote',C.apt,tot)}f.checkin.value=k(a);f.checkout.value=k(b);f.quote.value=rows.map(function(r){return r[0]+': '+r[1]}).join(' | ')+' | TOTALE: '+eur(tot);btn.disabled=false}
 f.adults.addEventListener('change',function(){E('guests',C.apt,+f.adults.value+ +f.children.value);calc()});f.children.addEventListener('change',function(){E('guests',C.apt,+f.adults.value+ +f.children.value);calc()});
 fetch((location.hostname=='localhost'?'/test-avail.json?':'/availability.php?apt=')+C.apt).then(function(r){return r.json()}).then(function(j){(j.busy||[]).forEach(function(r){for(var d=new Date(r[0]+'T00:00:00'),e=new Date(r[1]+'T00:00:00');d<e;d=add(d,1))busy[k(d)]=1});draw()}).catch(draw);
 box.innerHTML='<p class="fine">'+T.loading+'</p>'})();"""
