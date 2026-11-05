@@ -139,20 +139,22 @@ document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))
 # ---------------------------------------------------------------- blocks
 def month_price(lid):
     p = PRICING[lid]
+    if p.get("month"):
+        return p["month"]  # canone mensile spese incluse fissato da Vito
     return int(round(p["base"] * 30 * (1 - p["monthly"] / 100), -1))
 
 
 PRICE_TABLE = {
     "it": ("I prezzi mensili di RAM per zona", ["Appartamento", "Zona", "Ospiti", "Canone mensile", "Pulizia finale", "Soggiorno minimo"], "da {p} €", "{p} € una volta", "{n} notti",
-           "Canone calcolato dalla tariffa attuale con lo sconto mensile, utenze e Wi-Fi inclusi. Il preventivo esatto dipende dalle date: <a href=\"{c}\">chiedilo qui</a>."),
+           "Canone mensile spese incluse: utenze, riscaldamento e Wi-Fi. Il preventivo esatto dipende dalle date: <a href=\"{c}\">chiedilo qui</a>."),
     "en": ("RAM monthly prices by area", ["Apartment", "Area", "Guests", "Monthly rent", "Final cleaning", "Minimum stay"], "from €{p}", "€{p} one-off", "{n} nights",
-           "Rent calculated from the current rate with the monthly discount, bills and Wi-Fi included. The exact quote depends on your dates: <a href=\"{c}\">ask here</a>."),
+           "Monthly rent with all bills included: utilities, heating and Wi-Fi. The exact quote depends on your dates: <a href=\"{c}\">ask here</a>."),
     "es": ("Precios mensuales de RAM por zona", ["Apartamento", "Zona", "Huéspedes", "Alquiler mensual", "Limpieza final", "Estancia mínima"], "desde {p} €", "{p} € una vez", "{n} noches",
-           "Alquiler calculado con la tarifa actual y el descuento mensual, suministros y wifi incluidos. El presupuesto exacto depende de tus fechas: <a href=\"{c}\">pídelo aquí</a>."),
+           "Alquiler mensual con todos los gastos incluidos: suministros, calefacción y wifi. El presupuesto exacto depende de tus fechas: <a href=\"{c}\">pídelo aquí</a>."),
     "fr": ("Les prix mensuels de RAM par quartier", ["Appartement", "Quartier", "Voyageurs", "Loyer mensuel", "Ménage final", "Séjour minimum"], "à partir de {p} €", "{p} € une fois", "{n} nuits",
-           "Loyer calculé à partir du tarif actuel avec la remise mensuelle, charges et Wi-Fi inclus. Le devis exact dépend de vos dates : <a href=\"{c}\">demandez-le ici</a>."),
+           "Loyer mensuel charges comprises : énergie, chauffage et Wi-Fi. Le devis exact dépend de vos dates : <a href=\"{c}\">demandez-le ici</a>."),
     "de": ("Monatspreise von RAM nach Stadtteil", ["Wohnung", "Stadtteil", "Gäste", "Monatsmiete", "Endreinigung", "Mindestaufenthalt"], "ab {p} €", "{p} € einmalig", "{n} Nächte",
-           "Miete berechnet aus dem aktuellen Tarif mit Monatsrabatt, Nebenkosten und WLAN inklusive. Das genaue Angebot hängt von Ihren Daten ab: <a href=\"{c}\">hier anfragen</a>."),
+           "Monatsmiete inklusive aller Nebenkosten: Strom, Gas, Heizung und WLAN. Das genaue Angebot hängt von Ihren Daten ab: <a href=\"{c}\">hier anfragen</a>."),
 }
 
 

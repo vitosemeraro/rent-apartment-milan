@@ -7,10 +7,10 @@ D = {
  "title": "Monthly rent prices in Milan by area: RAM data",
  "desc": "Current monthly rent of RAM's furnished flats in Turro and Precotto (Milan, M1): bills and Wi-Fi included, cleaning and minimum stay, updated.",
  "h1": "Monthly rent prices in Milan by area",
- "lead": "Prices of RAM's furnished apartments in north-east Milan, calculated from the current rates. Updated [[date]].",
+ "lead": "Prices of RAM's furnished apartments in north-east Milan, set per apartment. Updated [[date]].",
  "html": """<p><strong>A furnished studio in Turro (M1) costs from €[[turro]] a month with RAM, and a one-bedroom flat in Precotto near Bicocca from €[[vdn]] a month. Both prices include bills and gigabit Wi-Fi; the only extra is a one-off final cleaning. Stays start from 28–30 nights, with no three-month deposit.</strong></p>
 <!--PRICES-->
-<h2>How are these prices calculated?</h2><p>Each figure is the current nightly rate × 30 nights, minus the monthly discount of that apartment, rounded to the nearest €10. The rates are the same ones used by the booking calendar on each apartment page, so this table changes when the rates change.</p>
+<h2>How are these prices calculated?</h2><p>These are RAM's current monthly rents for direct bookings, with all bills included (electricity, gas, heating, water and Wi-Fi). They are set per apartment and updated on this page whenever they change.</p>
 <h2>What does a short stay cost in Precotto?</h2><p>The flat for up to 8 guests in Precotto is rented for short and medium stays, priced per night:</p>
 <!--SHORT-->
 <h2>What is included and what is not?</h2><ul><li>Included in the monthly rent: electricity, gas, heating, water and gigabit Wi-Fi.</li><li>Paid once: the final cleaning shown in the table.</li><li>Not required: the usual three months' deposit and the agency fee (<a href="[[path:nodeposit]]">how renting without a deposit works</a>).</li></ul>
@@ -26,10 +26,10 @@ D = {
  "title": "Prezzi affitto mensile a Milano per zona: dati RAM",
  "desc": "Canone mensile attuale dei monolocali e bilocali arredati RAM a Turro e Precotto (Milano, M1): utenze e Wi-Fi inclusi, pulizia e soggiorno minimo.",
  "h1": "Prezzi dell'affitto mensile a Milano per zona",
- "lead": "I prezzi degli appartamenti arredati di RAM a Milano nord-est, calcolati dalle tariffe attuali. Aggiornati il [[date]].",
+ "lead": "I prezzi degli appartamenti arredati di RAM a Milano nord-est, fissati per ogni appartamento. Aggiornati il [[date]].",
  "html": """<p><strong>Con RAM un monolocale arredato a Turro (M1) costa da [[turro]] € al mese e un bilocale a Precotto, vicino alla Bicocca, da [[vdn]] € al mese. In entrambi i prezzi sono incluse utenze e Wi-Fi in fibra; l'unico extra è la pulizia finale, una volta sola. Si parte da 28–30 notti, senza tre mesi di deposito.</strong></p>
 <!--PRICES-->
-<h2>Come sono calcolati questi prezzi?</h2><p>Ogni cifra è la tariffa attuale per notte × 30 notti, meno lo sconto mensile di quell'appartamento, arrotondata ai 10 €. Sono le stesse tariffe del calendario di prenotazione di ogni scheda: quando cambiano, cambia anche questa tabella.</p>
+<h2>Come sono calcolati questi prezzi?</h2><p>Sono i canoni mensili attuali di RAM per chi prenota direttamente, spese incluse (luce, gas, riscaldamento, acqua e Wi-Fi). Sono fissati per ogni appartamento e aggiornati su questa pagina quando cambiano.</p>
 <h2>Quanto costa un soggiorno breve a Precotto?</h2><p>L'appartamento da 8 ospiti di Precotto si affitta per soggiorni brevi e medi, con prezzo a notte:</p>
 <!--SHORT-->
 <h2>Cosa è incluso e cosa no?</h2><ul><li>Inclusi nel canone: luce, gas, riscaldamento, acqua e Wi-Fi in fibra.</li><li>Una volta sola: la pulizia finale indicata in tabella.</li><li>Non richiesti: i soliti tre mesi di deposito e l'agenzia (<a href="[[path:nodeposit]]">come funziona l'affitto senza deposito</a>).</li></ul>
@@ -48,7 +48,7 @@ D = {
  "lead": "Precios de los apartamentos amueblados de RAM en el noreste de Milán, calculados con las tarifas actuales. Actualizado el [[date]].",
  "html": """<p><strong>Con RAM un estudio amueblado en Turro (M1) cuesta desde [[turro]] € al mes y un piso de un dormitorio en Precotto, cerca de Bicocca, desde [[vdn]] € al mes. Ambos precios incluyen suministros y wifi; el único extra es la limpieza final, una sola vez. Estancias desde 28–30 noches, sin fianza de tres meses.</strong></p>
 <!--PRICES-->
-<h2>¿Cómo se calculan estos precios?</h2><p>Cada cifra es la tarifa actual por noche × 30 noches, menos el descuento mensual de ese apartamento, redondeada a 10 €. Son las mismas tarifas del calendario de reservas de cada ficha.</p>
+<h2>¿Cómo se calculan estos precios?</h2><p>Son los alquileres mensuales actuales de RAM para reservas directas, con todos los gastos incluidos (luz, gas, calefacción, agua y wifi). Se fijan para cada apartamento y se actualizan en esta página cuando cambian.</p>
 <h2>¿Cuánto cuesta una estancia corta en Precotto?</h2><p>El piso para 8 huéspedes de Precotto se alquila para estancias cortas y medias, con precio por noche:</p>
 <!--SHORT-->
 <h2>¿Qué está incluido?</h2><ul><li>Incluidos: luz, gas, calefacción, agua y wifi.</li><li>Una sola vez: la limpieza final de la tabla.</li><li>No se piden: los tres meses de fianza ni la agencia (<a href="[[path:nodeposit]]">pisos sin fianza</a>).</li></ul>
@@ -67,7 +67,7 @@ D = {
  "lead": "Les prix des appartements meublés de RAM au nord-est de Milan, calculés à partir des tarifs actuels. Mis à jour le [[date]].",
  "html": """<p><strong>Avec RAM, un studio meublé à Turro (M1) coûte à partir de [[turro]] € par mois et un deux-pièces à Precotto, près de Bicocca, à partir de [[vdn]] € par mois. Les deux prix incluent les charges et le Wi-Fi ; seul le ménage final est en plus, une seule fois. Séjours à partir de 28–30 nuits, sans caution de trois mois.</strong></p>
 <!--PRICES-->
-<h2>Comment ces prix sont-ils calculés ?</h2><p>Chaque chiffre correspond au tarif actuel par nuit × 30 nuits, moins la remise mensuelle de l'appartement, arrondi à 10 €. Ce sont les tarifs du calendrier de réservation de chaque fiche.</p>
+<h2>Comment ces prix sont-ils calculés ?</h2><p>Ce sont les loyers mensuels actuels de RAM pour une réservation directe, charges comprises (électricité, gaz, chauffage, eau et Wi-Fi). Ils sont fixés pour chaque appartement et mis à jour sur cette page dès qu'ils changent.</p>
 <h2>Combien coûte un court séjour à Precotto ?</h2><p>L'appartement pour 8 voyageurs à Precotto se loue pour des séjours courts et moyens, au prix par nuit :</p>
 <!--SHORT-->
 <h2>Qu'est-ce qui est inclus ?</h2><ul><li>Inclus : électricité, gaz, chauffage, eau et Wi-Fi.</li><li>Une seule fois : le ménage final indiqué.</li><li>Non demandés : trois mois de caution et frais d'agence (<a href="[[path:nodeposit]]">appartements sans caution</a>).</li></ul>
@@ -86,7 +86,7 @@ D = {
  "lead": "Preise der möblierten RAM-Wohnungen im Nordosten Mailands, berechnet aus den aktuellen Tarifen. Stand: [[date]].",
  "html": """<p><strong>Bei RAM kostet ein möbliertes Studio in Turro (M1) ab [[turro]] € im Monat und eine Zwei-Zimmer-Wohnung in Precotto nahe Bicocca ab [[vdn]] € im Monat. Beide Preise enthalten Nebenkosten und WLAN; extra ist nur die einmalige Endreinigung. Aufenthalte ab 28–30 Nächten, ohne drei Monatsmieten Kaution.</strong></p>
 <!--PRICES-->
-<h2>Wie werden die Preise berechnet?</h2><p>Jeder Wert ist der aktuelle Nachtpreis × 30 Nächte, abzüglich des Monatsrabatts der Wohnung, auf 10 € gerundet. Es sind dieselben Tarife wie im Buchungskalender jeder Wohnung.</p>
+<h2>Wie werden die Preise berechnet?</h2><p>Das sind die aktuellen Monatsmieten von RAM bei Direktbuchung, inklusive aller Nebenkosten (Strom, Gas, Heizung, Wasser und WLAN). Sie werden pro Wohnung festgelegt und auf dieser Seite aktualisiert, sobald sie sich ändern.</p>
 <h2>Was kostet ein kurzer Aufenthalt in Precotto?</h2><p>Die Wohnung für bis zu 8 Gäste in Precotto wird für kurze und mittlere Aufenthalte vermietet, mit Preis pro Nacht:</p>
 <!--SHORT-->
 <h2>Was ist inklusive?</h2><ul><li>Inklusive: Strom, Gas, Heizung, Wasser und WLAN.</li><li>Einmalig: die Endreinigung aus der Tabelle.</li><li>Nicht verlangt: drei Monatsmieten Kaution und Maklergebühr (<a href="[[path:nodeposit]]">Wohnungen ohne Kaution</a>).</li></ul>

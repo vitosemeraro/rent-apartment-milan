@@ -1,5 +1,5 @@
 {
-  "_note": "Regole di prezzo copiate dalle impostazioni Airbnb il 25/10/2026. Prezzo host (senza commissione ospite). Tassa di soggiorno Milano: euro per persona adulta a notte, prime 14 notti, under 18 esenti.",
+  "_note": "month = canone mensile spese incluse deciso da Vito il 05/11/2026 (vince sul calcolo da base). Regole di prezzo copiate dalle impostazioni Airbnb il 25/10/2026. Prezzo host (senza commissione ospite). Tassa di soggiorno Milano: euro per persona adulta a notte, prime 14 notti, under 18 esenti.",
   "tourist_tax": {"2026": 9.5, "2027": 9.5, "max_nights": 14},
   "mm": {
     "base": 85, "weekend": 100, "extra_after": 3, "extra_fee": 40, "cleaning": 70,
@@ -13,6 +13,6 @@
     ]
   },
   "pa": {"soon": true, "max_guests": 4},
-  "turro": {"base": 71, "weekend": 71, "extra_after": 1, "extra_fee": 12, "cleaning": 83, "weekly": 0, "monthly": 26, "lastminute": 0, "length": {}, "min_nights": 30, "max_guests": 2, "events": []},
-  "vdn": {"base": 98, "weekend": 98, "extra_after": 2, "extra_fee": 0, "cleaning": 59, "weekly": 0, "monthly": 20, "lastminute": 0, "length": {}, "min_nights": 28, "max_guests": 2, "events": []}
+  "turro": {"month": 1300, "base": 71, "weekend": 71, "extra_after": 1, "extra_fee": 12, "cleaning": 83, "weekly": 0, "monthly": 26, "lastminute": 0, "length": {}, "min_nights": 30, "max_guests": 2, "events": []},
+  "vdn": {"month": 1550, "base": 98, "weekend": 98, "extra_after": 2, "extra_fee": 0, "cleaning": 59, "weekly": 0, "monthly": 20, "lastminute": 0, "length": {}, "min_nights": 28, "max_guests": 2, "events": []}
 }

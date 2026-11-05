@@ -46,7 +46,7 @@ Our prices come from the monthly discounts on each apartment. The figures below 
 | Studio in Turro | 2 | 30 nights | €71 | 26% | €83 |
 | One-bedroom, Via Val di Non | 2 | 28 nights | €98 | 20% | €59 |
 
-With the discount applied, the studio in Turro comes to roughly €1,580 for 30 nights, plus cleaning. The one-bedroom comes to roughly €2,200 for 28 nights, plus cleaning. Bills and Wi-Fi are included. Platform fees and dates with special rates can change the total, so use the calendar for the exact figure.
+Booked directly, the studio in Turro costs €1,300 per month and the one-bedroom in Via Val di Non €1,550 per month, all bills and Wi-Fi included, plus the final cleaning. Platform fees and dates with special rates can change the total, so use the calendar for the exact figure.
 
 ## Is a monthly lease valid for visa and residence?
 
