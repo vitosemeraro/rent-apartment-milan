@@ -314,10 +314,18 @@ def page_listing(lang, lid):
     ld = {"@context": "https://schema.org", "@type": "Apartment", "name": t["name"], "description": t["desc"], "url": url_of(lang, key),
           "image": [img_src(setn, i) for i in order[:6]], "numberOfRooms": L["rooms_n"], "numberOfBedrooms": L["bedrooms"],
           "numberOfBathroomsTotal": L["baths"], "occupancy": {"@type": "QuantitativeValue", "maxValue": L["guests"]},
-          "petsAllowed": False, "address": {"@type": "PostalAddress", "streetAddress": L.get("street", ""), "addressLocality": "Milano", "postalCode": "20128", "addressCountry": "IT"},
+          "petsAllowed": False, "address": {"@type": "PostalAddress", "streetAddress": L.get("street", ""), "addressLocality": "Milano", "postalCode": L.get("zip", "20128"), "addressRegion": "MI", "addressCountry": "IT"},
           "containedInPlace": {"@type": "Place", "name": t["area"]}}
     if L.get("floor_m2"):
         ld["floorSize"] = {"@type": "QuantitativeValue", "value": L["floor_m2"], "unitCode": "MTK"}
+    if L["status"] != "soon" and P_:
+        # Stesso prezzo "da" mostrato nella scheda (data/pricing.json): mensile per i soggiorni da 28+ notti, altrimenti a notte
+        monthly = P_.get("min_nights", 1) >= 28
+        amount = month_price(lid) if monthly else P_["base"]
+        ld["@type"] = ["Apartment", "Product"]
+        ld["offers"] = {"@type": "Offer", "url": url_of(lang, key), "priceCurrency": "EUR", "price": amount, "availability": "https://schema.org/InStock",
+                        "priceSpecification": {"@type": "UnitPriceSpecification", "price": amount, "priceCurrency": "EUR", "unitCode": "MON" if monthly else "DAY",
+                                               "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON" if monthly else "DAY"}}}
     return layout(lang, key, t["title"], t["desc"], body, ld=ld, og_img=img_src(setn, order[0]), xcss=BK.CSS if L["status"] != "soon" else "", xjs=BK.JS if L["status"] != "soon" else "",
                   crumbs=[(T.ui["nav_apartments"], path_of(lang, "apartments")), (t["short"], path_of(lang, key))])
 
