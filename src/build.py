@@ -138,6 +138,36 @@ def month_price(lid):
     return int(round(p["base"] * 30 * (1 - p["monthly"] / 100), -1))
 
 
+PRICE_TABLE = {
+    "it": ("I prezzi mensili di RAM per zona", ["Appartamento", "Zona", "Ospiti", "Canone mensile", "Pulizia finale", "Soggiorno minimo"], "da {p} €", "{p} € una volta", "{n} notti",
+           "Canone calcolato dalla tariffa attuale con lo sconto mensile, utenze e Wi-Fi inclusi. Il preventivo esatto dipende dalle date: <a href=\"{c}\">chiedilo qui</a>."),
+    "en": ("RAM monthly prices by area", ["Apartment", "Area", "Guests", "Monthly rent", "Final cleaning", "Minimum stay"], "from €{p}", "€{p} one-off", "{n} nights",
+           "Rent calculated from the current rate with the monthly discount, bills and Wi-Fi included. The exact quote depends on your dates: <a href=\"{c}\">ask here</a>."),
+    "es": ("Precios mensuales de RAM por zona", ["Apartamento", "Zona", "Huéspedes", "Alquiler mensual", "Limpieza final", "Estancia mínima"], "desde {p} €", "{p} € una vez", "{n} noches",
+           "Alquiler calculado con la tarifa actual y el descuento mensual, suministros y wifi incluidos. El presupuesto exacto depende de tus fechas: <a href=\"{c}\">pídelo aquí</a>."),
+    "fr": ("Les prix mensuels de RAM par quartier", ["Appartement", "Quartier", "Voyageurs", "Loyer mensuel", "Ménage final", "Séjour minimum"], "à partir de {p} €", "{p} € une fois", "{n} nuits",
+           "Loyer calculé à partir du tarif actuel avec la remise mensuelle, charges et Wi-Fi inclus. Le devis exact dépend de vos dates : <a href=\"{c}\">demandez-le ici</a>."),
+    "de": ("Monatspreise von RAM nach Stadtteil", ["Wohnung", "Stadtteil", "Gäste", "Monatsmiete", "Endreinigung", "Mindestaufenthalt"], "ab {p} €", "{p} € einmalig", "{n} Nächte",
+           "Miete berechnet aus dem aktuellen Tarif mit Monatsrabatt, Nebenkosten und WLAN inklusive. Das genaue Angebot hängt von Ihren Daten ab: <a href=\"{c}\">hier anfragen</a>."),
+}
+
+
+def price_table(lang):
+    """Tabella prezzi mensili per zona, calcolata da data/pricing.json (solo appartamenti da 28+ notti)."""
+    T = C[lang]; h2, cols, f_rent, f_clean, f_min, note = PRICE_TABLE.get(lang, PRICE_TABLE["en"])
+    fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
+    rows = ""
+    for lid, L in LISTINGS.items():
+        p = PRICING.get(lid, {})
+        if L["status"] != "live" or p.get("soon") or p.get("min_nights", 1) < 28:
+            continue
+        t = T.L[lid]
+        rows += (f'<tr><td><a href="{path_of(lang, "l_" + lid)}">{esc(t["short"])}</a></td><td>{esc(t["area"])}</td><td>{L["guests"]}</td>'
+                 f'<td>{f_rent.format(p=fmt(month_price(lid)))}</td><td>{f_clean.format(p=p["cleaning"])}</td><td>{f_min.format(n=p["min_nights"])}</td></tr>')
+    head = "".join(f"<th>{c}</th>" for c in cols)
+    return f'<h2>{h2}</h2><table><tr>{head}</tr>{rows}</table><p class="muted">{note.format(c=path_of(lang, "contact"))}</p>\n'
+
+
 def listing_card(lang, lid, sizes="(max-width:620px) 100vw, (max-width:960px) 50vw, 33vw"):
     T = C[lang]; L = LISTINGS[lid]; t = T.L[lid]
     tag = f'<span class="tag soon">{esc(T.ui["soon"])}</span>' if L["status"] == "soon" else f'<span class="tag">{esc(t["stay_tag"])}</span>'
@@ -292,7 +322,7 @@ def page_article(lang, key):
     kick = f'<span class="kicker">{esc(P["kicker"])}</span>' if P.get("kicker") else ""
     qa_html, qa_ld = AEO.answer_box(lang, key, esc)
     body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(P["lead"])}</p>' if P.get("lead") else ""}{hero}
-<div class="prose">{qa_html}{P.get("html", "")}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
+<div class="prose">{qa_html}{P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key == "monthly" else "")}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):
         art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": P["desc"], "inLanguage": lang,
                "author": {"@type": "Person", "name": "Vito Semeraro", "url": url_of(lang, "about")}, "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"},
