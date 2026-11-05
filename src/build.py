@@ -18,6 +18,7 @@ from prices import D as _PD, SHORT as _PS
 from mm_texts import M as _MM
 import blog as BLOG
 import aeo as AEO
+from faq_pages import FAQ as _GFAQ
 INDEXNOW_KEY = "7058b7a634092b9c7269dcca6835e7f9"
 for _l in LANGS:
     C[_l].SLUG["nodeposit"] = _ND[_l][0]; C[_l].P["nodeposit"] = _ND[_l][1]; C[_l].SLUG["prices"] = _PD[_l][0]; C[_l].P["prices"] = _PD[_l][1]; C[_l].L["mm"].update(_MM[_l]); C[_l].SLUG["blog"] = "blog"; C[_l].P["blog"] = BLOG.INDEX[_l]
@@ -338,8 +339,13 @@ def page_article(lang, key):
         s, i = P["img"]
         pic = img(s, i, "(max-width:1160px) 100vw, 1160px", eager=True, alt=P["h1"]).replace("<img ", '<img style="width:100%;height:100%;object-fit:cover" ')
         hero = f'<div class="round" style="margin:10px 0 26px;aspect-ratio:21/9">{pic}</div>'
-    if P.get("faq"):
-        extra = "".join(f'<details class="faq"><summary>{esc(fill_data(lang, q))}</summary><p>{fill_data(lang, a)}</p></details>' for q, a in P["faq"])
+    faq_list, faq_h = P.get("faq"), ""
+    if not faq_list and _GFAQ.get(lang, {}).get(key):
+        faq_list = _GFAQ[lang][key]
+        faq_h = f'<h2>{esc(C[lang].P["faq"]["nav"])}</h2>'
+    if faq_list:
+        P = dict(P, faq=faq_list)
+        extra = faq_h + "".join(f'<details class="faq"><summary>{esc(fill_data(lang, q))}</summary><p>{fill_data(lang, a)}</p></details>' for q, a in P["faq"])
         ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": fill_data(lang, q), "acceptedAnswer": {"@type": "Answer", "text": re.sub("<[^>]+>", "", fill_data(lang, a))}} for q, a in P["faq"]]}
     if key == "reviews":
@@ -374,7 +380,12 @@ def page_article(lang, key):
                "dateModified": TODAY, "mainEntityOfPage": url_of(lang, key)}
         ld = [art] + ([ld] if ld else [])
     if qa_ld:
-        ld = (ld if isinstance(ld, list) else ([ld] if ld else [])) + [qa_ld]
+        ld = (ld if isinstance(ld, list) else ([ld] if ld else []))
+        faqld = next((x for x in ld if x.get("@type") == "FAQPage"), None)
+        if faqld:  # un solo FAQPage per pagina: la risposta diretta va in testa alle FAQ
+            faqld["mainEntity"] = qa_ld["mainEntity"] + faqld["mainEntity"]
+        else:
+            ld = ld + [qa_ld]
     if key == "about":
         ld = {"@context": "https://schema.org", "@type": "Person", "name": "Vito Semeraro", "jobTitle": "Host", "image": img_src("vito", 0), "worksFor": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"}}
     crumbs = []
