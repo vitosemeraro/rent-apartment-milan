@@ -16,7 +16,7 @@ CONFIG = {
     "rating": "5.0",
     "reviews_total": 25,
     "reviews_count": 0,        # aggiornato da data/reviews.json
-    "guides": ["nodeposit", "monthly", "students", "bicocca", "fairs", "neighborhood", "contract"],
+    "guides": ["nodeposit", "monthly", "prices", "students", "bicocca", "fairs", "neighborhood", "contract"],
 }
 
 # photos = nome del set in images.json (se manca usa un set di riserva)

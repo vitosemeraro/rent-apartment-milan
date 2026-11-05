@@ -14,12 +14,13 @@ PRICING = json.load(open(os.path.join(HERE, "data", "pricing.json"), encoding="u
 CSS = re.sub(r"\s*\n\s*", "", CSS)
 C = {l: importlib.import_module("lang_" + l) for l in LANGS}
 from nodeposit import D as _ND
+from prices import D as _PD, SHORT as _PS
 from mm_texts import M as _MM
 import blog as BLOG
 import aeo as AEO
 INDEXNOW_KEY = "7058b7a634092b9c7269dcca6835e7f9"
 for _l in LANGS:
-    C[_l].SLUG["nodeposit"] = _ND[_l][0]; C[_l].P["nodeposit"] = _ND[_l][1]; C[_l].L["mm"].update(_MM[_l]); C[_l].SLUG["blog"] = "blog"; C[_l].P["blog"] = BLOG.INDEX[_l]
+    C[_l].SLUG["nodeposit"] = _ND[_l][0]; C[_l].P["nodeposit"] = _ND[_l][1]; C[_l].SLUG["prices"] = _PD[_l][0]; C[_l].P["prices"] = _PD[_l][1]; C[_l].L["mm"].update(_MM[_l]); C[_l].SLUG["blog"] = "blog"; C[_l].P["blog"] = BLOG.INDEX[_l]
 TODAY = datetime.date.today().isoformat()
 esc = html.escape
 
@@ -171,6 +172,31 @@ def price_table(lang):
     return f'<h2>{h2}</h2><table><tr>{head}</tr>{rows}</table><p class="muted">{note.format(c=path_of(lang, "contact"))}</p>\n'
 
 
+def short_table(lang):
+    """Tabella prezzi a notte degli appartamenti per soggiorni brevi (min. < 28 notti), da data/pricing.json."""
+    T = C[lang]; cols, f_b, f_w, f_d, f_c, f_n, note = _PS.get(lang, _PS["en"])
+    rows, extra = "", ""
+    for lid, L in LISTINGS.items():
+        p = PRICING.get(lid, {})
+        if L["status"] != "live" or p.get("soon") or p.get("min_nights", 1) >= 28:
+            continue
+        t = T.L[lid]
+        rows += (f'<tr><td><a href="{path_of(lang, "l_" + lid)}">{esc(t["short"])}</a></td><td>{esc(t["area"])}</td><td>{L["guests"]}</td>'
+                 f'<td>{f_b.format(b=p["base"])}</td><td>{f_w.format(w=p["weekend"])}</td><td>{f_d.format(wk=p["weekly"], mo=p["monthly"])}</td>'
+                 f'<td>{f_c.format(c=p["cleaning"])}</td><td>{f_n.format(n=p["min_nights"])}</td></tr>')
+        if p.get("extra_fee"):
+            extra += note.format(x=p["extra_after"], f=p["extra_fee"]) + " "
+    head = "".join(f"<th>{c}</th>" for c in cols)
+    return f'<table><tr>{head}</tr>{rows}</table>' + (f'<p class="muted">{extra.strip()}</p>' if extra else "") + "\n"
+
+
+def fill_data(lang, s):
+    """Segnaposto della pagina dati prezzi: numeri da pricing.json, data di build e link interni."""
+    fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
+    s = s.replace("[[turro]]", fmt(month_price("turro"))).replace("[[vdn]]", fmt(month_price("vdn"))).replace("[[date]]", TODAY)
+    return re.sub(r"\[\[path:(\w+)\]\]", lambda m: path_of(lang, m.group(1)), s)
+
+
 def listing_card(lang, lid, sizes="(max-width:620px) 100vw, (max-width:960px) 50vw, 33vw"):
     T = C[lang]; L = LISTINGS[lid]; t = T.L[lid]
     tag = f'<span class="tag soon">{esc(T.ui["soon"])}</span>' if L["status"] == "soon" else f'<span class="tag">{esc(t["stay_tag"])}</span>'
@@ -296,10 +322,10 @@ def page_article(lang, key):
         s, i = P["img"]
         pic = img(s, i, "(max-width:1160px) 100vw, 1160px", eager=True, alt=P["h1"]).replace("<img ", '<img style="width:100%;height:100%;object-fit:cover" ')
         hero = f'<div class="round" style="margin:10px 0 26px;aspect-ratio:21/9">{pic}</div>'
-    if key == "faq":
-        extra = "".join(f'<details class="faq"><summary>{esc(q)}</summary><p>{a}</p></details>' for q, a in P["faq"])
+    if P.get("faq"):
+        extra = "".join(f'<details class="faq"><summary>{esc(fill_data(lang, q))}</summary><p>{fill_data(lang, a)}</p></details>' for q, a in P["faq"])
         ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub("<[^>]+>", "", a)}} for q, a in P["faq"]]}
+            {"@type": "Question", "name": fill_data(lang, q), "acceptedAnswer": {"@type": "Answer", "text": re.sub("<[^>]+>", "", fill_data(lang, a))}} for q, a in P["faq"]]}
     if key == "reviews":
         extra = f'<div class="grid g3" style="margin-top:20px">{reviews_grid(lang, 200)}</div>'
     if key == "contact":
@@ -324,8 +350,8 @@ def page_article(lang, key):
         extra = "".join(f'<a class="feat" style="display:block;text-decoration:none;color:inherit;margin-bottom:12px" href="{path_of(lang, k)}"><h3>{esc(T.P[k]["h1"])} →</h3><p>{esc(T.P[k]["desc"])}</p></a>' for k in CONFIG["guides"])
     kick = f'<span class="kicker">{esc(P["kicker"])}</span>' if P.get("kicker") else ""
     qa_html, qa_ld = AEO.answer_box(lang, key, esc)
-    body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(P["lead"])}</p>' if P.get("lead") else ""}{hero}
-<div class="prose">{qa_html}{P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students") else "")}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
+    body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(fill_data(lang, P["lead"]))}</p>' if P.get("lead") else ""}{hero}
+<div class="prose">{qa_html}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices") else "").replace("<!--SHORT-->", short_table(lang) if key == "prices" else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):
         art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": P["desc"], "inLanguage": lang,
                "author": {"@type": "Person", "name": "Vito Semeraro", "url": url_of(lang, "about")}, "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"},
