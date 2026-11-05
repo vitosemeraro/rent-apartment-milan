@@ -48,7 +48,7 @@ Dopo la riga 16 la routine propone nuovi temi partendo dalle query di Search Con
 ## AEO (risposte di AI Overviews, ChatGPT, Perplexity, Copilot)
 
 Già fatto sul sito:
-- Risposta diretta di 40–60 parole in cima alle guide principali (EN e IT), marcata FAQPage.
+- Risposta diretta di 40–60 parole in cima alle guide principali in tutte e 5 le lingue (EN, IT, ES, FR, DE), marcata FAQPage, e in apertura di tutti gli articoli del blog (05/11/2026).
 - `llms.txt` alla radice con descrizione, appartamenti, prezzi indicativi, guide e contatti.
 - `robots.txt` che consente esplicitamente GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Google-Extended, Bingbot, Applebot-Extended.
 - Dati strutturati: LodgingBusiness con NAP e sameAs verso Google Maps, Person per l'autore, Apartment, BlogPosting, FAQPage, BreadcrumbList.

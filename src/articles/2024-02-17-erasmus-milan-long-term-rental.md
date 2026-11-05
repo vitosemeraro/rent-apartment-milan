@@ -2,13 +2,15 @@
 lang: en
 path: milan-the-rising-star-of-university-cities-for-erasmus-students
 date: 2024-02-17
-updated: 2026-10-26
+updated: 2026-11-05
 title: Apartment Rental in Milan Long Term for Erasmus Students | RAM
 description: Erasmus in Milan: universities, when to book, how much a long-term rental costs and which contract you need. Furnished flats on the M1 with bills included and no 3-month deposit.
 h1: Long-Term Apartment Rental in Milan for Erasmus Students
 image: turro:4
 apts: turro, vdn
 ---
+For an Erasmus semester in Milan, start your search as soon as your nomination is confirmed: good flats go 2–3 months in advance. A room in a shared flat often costs €600–900 per month, a whole studio €1,500–2,500. Ask for a registered transitional lease, which you may need for your residence permit or scholarship.
+
 Milan has become one of the most popular Erasmus destinations in Europe. Its universities are strong, the job market is the most dynamic in Italy and the city is easy to explore. The hard part is housing: here's how to get it right.
 
 ## Erasmus universities in Milan
