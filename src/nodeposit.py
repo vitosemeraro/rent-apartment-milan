@@ -9,6 +9,7 @@ D = {
  "html": """<h2>How much you save</h2><table><tr><th>Up-front cost (studio at €1,500/month)</th><th>Typical Milan rental</th><th>RAM</th></tr><tr><td>Deposit</td><td>€3,000–4,500</td><td>No three-month deposit</td></tr><tr><td>Agency fee</td><td>≈ €1,800</td><td>€0</td></tr><tr><td>Bills activation</td><td>€100–200</td><td>Included</td></tr><tr><td>First month</td><td>€1,500</td><td>€1,500</td></tr></table>
 <h2>What "no deposit" means with us</h2><ul><li>No three months' deposit blocked in a bank account.</li><li>Electricity, gas, heating, water and gigabit Wi-Fi included in the monthly price.</li><li>A registered transitional or student lease, valid for residence and permits.</li><li>Fully furnished homes, ready on arrival day.</li></ul>
 <h2>Whole apartments, not rooms</h2><p>Many searches are for a room with no deposit. We rent whole studios and one-bedroom flats: for a little more than a room in a shared flat you get your own kitchen, bathroom and quiet, often shared with a partner or colleague.</p>
+<p>Compare the <a href="[[path:prices]]">monthly rent prices by area</a>, read how the <a href="[[path:contract]]">transitional lease contract</a> works, or see our <a href="[[path:monthly]]">monthly rentals in Milan</a>.</p>
 <div class="tip">Send your dates and the reason for your stay: I'll reply with the total monthly price and the contract conditions.</div>"""}),
 "it": ("affitto-milano-senza-deposito", {
  "nav": "Affitto senza deposito", "kicker": "Guida", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn", "mm"],
@@ -19,6 +20,7 @@ D = {
  "html": """<h2>Quanto risparmi</h2><table><tr><th>Costo iniziale (monolocale da 1.500 €/mese)</th><th>Affitto tipico a Milano</th><th>RAM</th></tr><tr><td>Deposito</td><td>3.000–4.500 €</td><td>Niente tre mesi di deposito</td></tr><tr><td>Agenzia</td><td>≈ 1.800 €</td><td>0 €</td></tr><tr><td>Attivazione utenze</td><td>100–200 €</td><td>Incluse</td></tr><tr><td>Primo mese</td><td>1.500 €</td><td>1.500 €</td></tr></table>
 <h2>Cosa significa "senza deposito" da noi</h2><ul><li>Nessun deposito di tre mesi bloccato.</li><li>Luce, gas, riscaldamento, acqua e Wi-Fi gigabit inclusi nel canone.</li><li>Contratto transitorio o per studenti registrato, valido per residenza e permessi.</li><li>Case arredate e pronte il giorno dell'arrivo.</li></ul>
 <h2>Appartamenti interi, non stanze</h2><p>Molti cercano una stanza senza deposito. Noi affittiamo monolocali e bilocali interi: con poco più di una stanza in condivisione hai cucina, bagno e silenzio tutti tuoi, magari da dividere con il partner o un collega.</p>
+<p>Confronta i <a href="[[path:prices]]">prezzi dell'affitto mensile per zona</a>, leggi come funziona il <a href="[[path:contract]]">contratto transitorio</a> o guarda i nostri <a href="[[path:monthly]]">affitti mensili a Milano</a>.</p>
 <div class="tip">Mandami le tue date e il motivo del soggiorno: ti rispondo con il prezzo mensile totale e le condizioni del contratto.</div>"""}),
 "es": ("pisos-milan-sin-fianza", {
  "nav": "Pisos sin fianza", "kicker": "Guía", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn", "mm"],
@@ -29,6 +31,7 @@ D = {
  "html": """<h2>Cuánto ahorras</h2><table><tr><th>Coste inicial (estudio a 1.500 €/mes)</th><th>Alquiler típico en Milán</th><th>RAM</th></tr><tr><td>Fianza</td><td>3.000–4.500 €</td><td>Sin fianza de tres meses</td></tr><tr><td>Agencia</td><td>≈ 1.800 €</td><td>0 €</td></tr><tr><td>Alta de suministros</td><td>100–200 €</td><td>Incluidos</td></tr><tr><td>Primer mes</td><td>1.500 €</td><td>1.500 €</td></tr></table>
 <h2>Qué significa "sin fianza" con nosotros</h2><ul><li>Ninguna fianza de tres meses bloqueada.</li><li>Luz, gas, calefacción, agua y Wi-Fi gigabit incluidos.</li><li>Contrato temporal o para estudiantes registrado.</li><li>Casas amuebladas, listas el día de llegada.</li></ul>
 <h2>Pisos enteros, no habitaciones</h2><p>Alquilamos estudios y pisos enteros: por poco más que una habitación compartida tienes cocina, baño y tranquilidad solo para ti.</p>
+<p>Compara los <a href="[[path:prices]]">precios del alquiler mensual por zona</a>, lee cómo funciona el <a href="[[path:contract]]">contrato de alquiler temporal</a> o mira nuestros <a href="[[path:monthly]]">alquileres mensuales en Milán</a>.</p>
 <div class="tip">Envíame tus fechas y te respondo con el precio mensual total.</div>"""}),
 "fr": ("appartement-milan-sans-caution", {
  "nav": "Appartements sans caution", "kicker": "Guide", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn", "mm"],
@@ -39,6 +42,7 @@ D = {
  "html": """<h2>Ce que vous économisez</h2><table><tr><th>Coût initial (studio à 1 500 €/mois)</th><th>Location typique à Milan</th><th>RAM</th></tr><tr><td>Caution</td><td>3 000–4 500 €</td><td>Pas de caution de trois mois</td></tr><tr><td>Agence</td><td>≈ 1 800 €</td><td>0 €</td></tr><tr><td>Ouverture des compteurs</td><td>100–200 €</td><td>Inclus</td></tr><tr><td>Premier mois</td><td>1 500 €</td><td>1 500 €</td></tr></table>
 <h2>Ce que "sans caution" veut dire chez nous</h2><ul><li>Aucune caution de trois mois bloquée.</li><li>Électricité, gaz, chauffage, eau et Wi-Fi gigabit inclus.</li><li>Bail temporaire ou étudiant enregistré.</li><li>Logements meublés, prêts le jour de l'arrivée.</li></ul>
 <h2>Des appartements entiers, pas des chambres</h2><p>Nous louons des studios et des deux-pièces entiers : pour un peu plus qu'une chambre en colocation, cuisine, salle de bains et calme rien que pour vous.</p>
+<p>Comparez les <a href="[[path:prices]]">prix de la location mensuelle par quartier</a>, lisez comment fonctionne le <a href="[[path:contract]]">bail temporaire</a> ou découvrez nos <a href="[[path:monthly]]">locations au mois à Milan</a>.</p>
 <div class="tip">Envoyez-moi vos dates, je réponds avec le prix mensuel total.</div>"""}),
 "de": ("wohnung-mailand-ohne-kaution", {
  "nav": "Wohnungen ohne Kaution", "kicker": "Ratgeber", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn", "mm"],
@@ -49,5 +53,6 @@ D = {
  "html": """<h2>So viel sparen Sie</h2><table><tr><th>Anfangskosten (Studio zu 1.500 €/Monat)</th><th>Typische Miete in Mailand</th><th>RAM</th></tr><tr><td>Kaution</td><td>3.000–4.500 €</td><td>Keine drei Monatsmieten</td></tr><tr><td>Makler</td><td>≈ 1.800 €</td><td>0 €</td></tr><tr><td>Anmeldung Nebenkosten</td><td>100–200 €</td><td>Inklusive</td></tr><tr><td>Erster Monat</td><td>1.500 €</td><td>1.500 €</td></tr></table>
 <h2>Was "ohne Kaution" bei uns heißt</h2><ul><li>Keine drei Monatsmieten Kaution gebunden.</li><li>Strom, Gas, Heizung, Wasser und Gigabit-WLAN inklusive.</li><li>Registrierter Zeit- oder Studentenmietvertrag.</li><li>Möblierte Wohnungen, bezugsfertig am Ankunftstag.</li></ul>
 <h2>Ganze Wohnungen statt Zimmer</h2><p>Wir vermieten ganze Studios und Zwei-Zimmer-Wohnungen: Für etwas mehr als ein WG-Zimmer haben Sie Küche, Bad und Ruhe für sich.</p>
+<p>Vergleichen Sie die <a href="[[path:prices]]">Monatsmieten nach Stadtteil</a>, lesen Sie, wie der <a href="[[path:contract]]">Zeitmietvertrag</a> funktioniert, oder sehen Sie sich unsere <a href="[[path:monthly]]">Wohnungen auf Zeit in Mailand</a> an.</p>
 <div class="tip">Schicken Sie mir Ihre Daten, ich antworte mit dem monatlichen Gesamtpreis.</div>"""}),
 }
