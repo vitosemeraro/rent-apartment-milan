@@ -80,11 +80,12 @@ P = {
 },
 "students": {
     "nav": "Alloggi per studenti a Milano", "kicker": "Guida", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn"],
-    "title": "Alloggi per studenti a Milano vicino a Politecnico, Bicocca, Bocconi | RAM",
-    "desc": "Appartamenti per studenti a Milano: come affittare vicino a Politecnico, Bicocca, Bocconi e IULM, contratto per studenti, consigli Erasmus e case sulla M1 con utenze incluse.",
+    "title": "Alloggi per studenti a Milano: prezzi e zone | RAM",
+    "desc": "Alloggi per studenti a Milano: prezzi reali per zona e durata, tragitti per Politecnico, Bicocca e Bocconi, contratto per studenti e utenze incluse.",
     "h1": "Alloggi per studenti a Milano: dove vivere e come affittare",
     "lead": "Milano ospita più di 200.000 studenti universitari. Trovare casa è il primo esame: ecco come superarlo.",
     "html": """<h2>Università e come arrivarci dalla M1</h2><table><tr><th>Università</th><th>Sede</th><th>Da Precotto / Turro</th></tr><tr><td>Milano-Bicocca</td><td>Bicocca</td><td>Circa 15 minuti a piedi o in tram</td></tr><tr><td>Politecnico di Milano</td><td>Città Studi (Leonardo)</td><td>M1 fino a Loreto, poi M2 fino a Piola: circa 15–20 minuti</td></tr><tr><td>Università Statale</td><td>Via Festa del Perdono / Città Studi</td><td>M1 fino a Duomo o M2 da Loreto: circa 20–25 minuti</td></tr><tr><td>Bocconi</td><td>Viale Bligny / Sarfatti</td><td>M1 fino a Duomo, poi M3 fino a Porta Romana o tram: circa 35 minuti</td></tr><tr><td>IULM, NABA</td><td>Romolo / Navigli</td><td>M1 + M2: circa 35–40 minuti</td></tr></table>
+<!--PRICES-->
 <h2>Stanza o appartamento intero?</h2><p>Una stanza in un appartamento condiviso costa meno, ma dividi cucina e bagno con sconosciuti e il contratto è spesso informale. Un monolocale o un bilocale ti dà privacy e silenzio per studiare, e puoi dividerlo con il partner o un compagno di corso. I nostri sono appartamenti interi: non li condividi con nessuno.</p>
 <h2>Il contratto per studenti</h2><p>Chi è iscritto a un'università in un comune diverso da quello di residenza può firmare un <b>contratto per studenti universitari</b> da 6 a 36 mesi. Per periodi più brevi (un semestre, l'Erasmus) si usa il <a href=\"/it/contratto-transitorio-milano/\">contratto transitorio</a> con motivo di studio documentato. Entrambi vanno registrati all'Agenzia delle Entrate: ti tutela ed è necessario per residenza, permessi e borse di studio.</p>
 <h2>Erasmus a Milano: checklist</h2><ul><li>Prenota l'alloggio prima di partire: il semestre Erasmus va da settembre a febbraio o da febbraio a luglio.</li><li>Chiedi un contratto registrato e una ricevuta per ogni pagamento.</li><li>Controlla cosa è incluso: Wi-Fi, riscaldamento e utenze possono pesare 150–250 € al mese.</li><li>Non pagare mai un anticipo prima di aver visto foto, contratto e identità dell'host.</li></ul>

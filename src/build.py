@@ -322,7 +322,7 @@ def page_article(lang, key):
     kick = f'<span class="kicker">{esc(P["kicker"])}</span>' if P.get("kicker") else ""
     qa_html, qa_ld = AEO.answer_box(lang, key, esc)
     body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(P["lead"])}</p>' if P.get("lead") else ""}{hero}
-<div class="prose">{qa_html}{P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key == "monthly" else "")}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
+<div class="prose">{qa_html}{P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students") else "")}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):
         art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": P["desc"], "inLanguage": lang,
                "author": {"@type": "Person", "name": "Vito Semeraro", "url": url_of(lang, "about")}, "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"},
