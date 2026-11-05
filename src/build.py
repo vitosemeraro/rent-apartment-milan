@@ -361,7 +361,7 @@ def page_article(lang, key):
     body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(fill_data(lang, P["lead"]))}</p>' if P.get("lead") else ""}{hero}
 <div class="prose">{qa_html}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices") else "").replace("<!--SHORT-->", short_table(lang) if key == "prices" else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):
-        art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": P["desc"], "inLanguage": lang,
+        art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": fill_data(lang, P["desc"]), "inLanguage": lang,
                "author": {"@type": "Person", "name": "Vito Semeraro", "url": url_of(lang, "about")}, "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"},
                "dateModified": TODAY, "mainEntityOfPage": url_of(lang, key)}
         ld = [art] + ([ld] if ld else [])
@@ -373,7 +373,7 @@ def page_article(lang, key):
     if key in CONFIG["guides"]:
         crumbs.append((T.ui["nav_guides"], path_of(lang, "guides")))
     crumbs.append((P.get("nav", P["h1"]), path_of(lang, key)))
-    return layout(lang, key, P["title"], P["desc"], body, ld=ld, crumbs=crumbs, robots="noindex,follow" if key == "thanks" else "index,follow")
+    return layout(lang, key, fill_data(lang, P["title"]), fill_data(lang, P["desc"]), body, ld=ld, crumbs=crumbs, robots="noindex,follow" if key == "thanks" else "index,follow")
 
 
 # ---------------------------------------------------------------- build

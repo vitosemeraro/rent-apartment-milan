@@ -65,19 +65,27 @@ P = {
 },
 "monthly": {
     "nav": "Wohnen auf Zeit in Mailand", "kicker": "Ratgeber", "article": True, "img": ("valdinon", 5), "apts": ["vdn", "turro"],
-    "title": "Wohnen auf Zeit in Mailand: möbliert, Nebenkosten inklusive | RAM",
-    "desc": "So mieten Sie eine möblierte Wohnung in Mailand für 1 bis 12 Monate: Preise, Verträge, Kaution und Stadtteile. Wohnungen an der M1 mit Nebenkosten und registriertem Vertrag.",
+    "title": "Wohnung auf Zeit in Mailand ab [[turro]] €/Monat | RAM",
+    "desc": "Möblierte Wohnung auf Zeit in Mailand ab [[turro]] € im Monat inkl. Nebenkosten: Preise, Zeitmietvertrag, Kaution und Viertel an der M1 (Turro, Precotto).",
     "h1": "Wohnen auf Zeit in Mailand: der praktische Ratgeber",
     "lead": "Sie kommen für einige Monate nach Mailand, beruflich, für ein Praktikum oder ein Semester? So funktioniert die mittelfristige Miete, und darauf sollten Sie achten.",
     "html": """<h2>Was ist eine mittelfristige Miete?</h2><p>Zwischen der Ferienwohnung (wenige Nächte) und dem klassischen italienischen 4+4-Mietvertrag liegt die <b>mittelfristige Miete</b>: 1 bis 18 Monate, möbliert, oft mit Nebenkosten. In Italien wird sie über den <b>Zeitmietvertrag</b> (contratto transitorio) oder, für Studierende, über den Studentenmietvertrag geregelt. Sie ist die naheliegende Lösung für Versetzungen, Praktikanten, Forschende und Erasmus-Studierende.</p>
 <h2>Was kostet eine Monatsmiete in Mailand?</h2><p>Mailand ist der teuerste Mietmarkt Italiens. Für eine möblierte Zwei-Zimmer-Wohnung außerhalb des Zentrums, aber gut an die U-Bahn angebunden, liegen die Preise auf den großen Plattformen meist zwischen 1.900 und 2.700 € im Monat. Im Zentrum steigen sie schnell. Vergleichen Sie immer die <b>Gesamtkosten</b>: Miete, Nebenkosten, WLAN, Makler und Kaution.</p>
 <table><tr><th>Kostenpunkt</th><th>Typische Miete in Mailand</th><th>RAM-Wohnungen</th></tr><tr><td>Kaution</td><td>2–3 Monatsmieten</td><td>Keine drei Monatsmieten</td></tr><tr><td>Makler</td><td>Oft eine Monatsmiete + MwSt.</td><td>Keiner, Sie buchen direkt</td></tr><tr><td>Nebenkosten und WLAN</td><td>Selbst anmelden und zahlen</td><td>Inklusive</td></tr><tr><td>Möbel</td><td>Oft nur teilweise</td><td>Komplett möbliert und ausgestattet</td></tr></table>
 <!--PRICES-->
-<h2>Welche Stadtteile?</h2><p>Schauen Sie zuerst auf den U-Bahn-Plan, dann auf den Namen des Viertels. Der Nordosten Mailands entlang der <b>roten Linie M1</b> (Precotto, Turro, Gorla) bietet ruhigere Straßen, niedrigere Preise als das Zentrum und eine direkte Linie zum Duomo, nach Cadorna und Rho Fiera. Die Universität Bicocca ist nah, und Loreto (Umstieg M2) liegt wenige Stationen entfernt für Politecnico und Hauptbahnhof.</p>
+<h2>Welche Viertel eignen sich für Wohnen auf Zeit?</h2><p>Schauen Sie zuerst auf den U-Bahn-Plan, dann auf den Namen des Viertels. Der Nordosten Mailands entlang der <b>roten Linie M1</b> (Precotto, Turro, Gorla) bietet ruhigere Straßen, niedrigere Preise als das Zentrum und eine direkte Linie zum Duomo, nach Cadorna und Rho Fiera. Die Universität Bicocca ist nah, und Loreto (Umstieg M2) liegt wenige Stationen entfernt für Politecnico und Hauptbahnhof.</p>
+<table><tr><th>Viertel</th><th>Charakter</th><th>Verbindung</th><th>RAM-Wohnung</th><th>Monatsmiete</th></tr><tr><td><b>Turro</b></td><td>Wohnviertel am Naviglio Martesana, Radweg, Supermarkt 24 h</td><td>M1 Turro 2 Gehminuten, Duomo ≈ 20 Min.</td><td><a href="[[path:l_turro]]">Studio, 38 m², 7. Stock</a></td><td>[[turro]] €</td></tr><tr><td><b>Precotto</b></td><td>Ruhige Wohnstraßen zwischen M1 und Bicocca, kostenlose Parkplätze auf der Straße</td><td>M1 Precotto 5 Gehminuten, San Babila ≈ 15 Min., Bicocca ≈ 15 Min.</td><td><a href="[[path:l_vdn]]">Zwei Zimmer mit Balkon</a></td><td>[[vdn]] €</td></tr></table>
+<p class="muted">Monatsmiete inklusive Strom, Gas, Heizung und WLAN, dazu eine einmalige Endreinigung (siehe Preistabelle oben).</p>
 <h2>Benötigte Unterlagen</h2><ul><li>Reisepass oder Personalausweis und italienische Steuernummer (codice fiscale), erhältlich bei der Agenzia delle Entrate oder im Konsulat.</li><li>Ein Nachweis des Aufenthaltsgrunds (Arbeitsvertrag, Immatrikulation, Praktikumsbestätigung): Er ist für den Zeitmietvertrag nötig.</li><li>Für Wohnsitz oder Visum ein <a href=\"/de/zeitmietvertrag-mailand/\">registrierter Vertrag</a>.</li></ul>
 <div class="tip"><b>Tipp:</b> Beginnen Sie 4–8 Wochen vor der Ankunft mit der Suche. September, Januar und Februar sind wegen Universitäten und Messen am gefragtesten.</div>
 <h2>Monatsaufenthalte mit RAM</h2><p>Die Zwei-Zimmer-Wohnung in der Via Val di Non und das Studio in Turro sind für lange Aufenthalte gedacht: Schreibtisch, Gigabit-Glasfaser, Waschmaschine, voll ausgestattete Küche und registrierter Vertrag. Mindestaufenthalt 30 Nächte.</p>""",
-},
+    "faq": [
+        ("Was kostet eine Wohnung auf Zeit bei RAM?", "Das Studio in Turro kostet [[turro]] € im Monat, die Zwei-Zimmer-Wohnung in der Via Val di Non [[vdn]] € im Monat, jeweils inklusive Strom, Gas, Heizung, Wasser und WLAN. Dazu kommt eine einmalige Endreinigung."),
+        ("Muss ich drei Monatsmieten Kaution zahlen?", "Nein. Bei Monatsaufenthalten verlangen wir nicht die üblichen drei Monatsmieten Kaution, und es gibt keine Maklerprovision. Die Zahlungsbedingungen stehen im Vertrag."),
+        ("Bekomme ich einen registrierten Vertrag?", "Ja. Ab 30 Tagen schließen wir einen Zeit- oder Studentenmietvertrag und registrieren ihn bei der Agenzia delle Entrate. Er gilt für Wohnsitz und Aufenthaltstitel."),
+        ("Fällt eine Kurtaxe an?", "Für Monatsverträge entfällt die Kurtaxe der Stadt Mailand. Sie gilt nur für Aufenthalte unter 30 Nächten."),
+        ("Wie komme ich von Turro oder Precotto ins Zentrum?", "Mit der U-Bahn M1: Beide Wohnungen liegen wenige Gehminuten von einer Station, der Duomo ist in etwa 20 Minuten erreichbar, Rho Fiera ohne Umsteigen."),
+    ]},
 "students": {
     "nav": "Studentenwohnungen in Mailand", "kicker": "Ratgeber", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn"],
     "title": "Studentenwohnung in Mailand nahe Politecnico, Bicocca, Bocconi | RAM",
