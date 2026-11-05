@@ -114,10 +114,13 @@ def layout(lang, key, title, desc, body, ld=None, og_img=None, crumbs=None, robo
 
 
 JS = """(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
-function ga(){if(window.__ga)return;window.__ga=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=GAID';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','GAID',{anonymize_ip:true})}
 var c=document.getElementById('consent'),v=null;try{v=localStorage.getItem('ram_consent')}catch(e){}
-if(v==='1'){ga()}else if(v===null){setTimeout(function(){c.style.display='block'},1200)}
-c.addEventListener('click',function(e){var x=e.target.getAttribute('data-c');if(x===null)return;try{localStorage.setItem('ram_consent',x)}catch(e){}c.style.display='none';if(x==='1')ga()});
+window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:v==='1'?'granted':'denied',wait_for_update:500});
+gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',false);
+(function(){var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=GAID';document.head.appendChild(s);gtag('js',new Date());gtag('config','GAID',{anonymize_ip:true})})();
+if(v===null){setTimeout(function(){c.style.display='block'},1200)}
+c.addEventListener('click',function(e){var x=e.target.getAttribute('data-c');if(x===null)return;try{localStorage.setItem('ram_consent',x)}catch(e){}c.style.display='none';gtag('consent','update',{analytics_storage:x==='1'?'granted':'denied'})});
 function src(h){var m=[['chatgpt|openai','chatgpt'],['perplexity','perplexity'],['gemini|bard','gemini'],['copilot','copilot'],['claude','claude'],['google','google'],['bing','bing'],['duckduckgo','duckduckgo'],['yahoo','yahoo'],['facebook|fb.','facebook'],['instagram','instagram'],['airbnb','airbnb'],['booking.com','booking']];for(var i=0;i<m.length;i++)if(new RegExp(m[i][0]).test(h))return m[i][1];return h.slice(0,40)}
 var S='direct';try{var u=new URLSearchParams(location.search).get('utm_source'),r=document.referrer?new URL(document.referrer).hostname.replace(/^www[.]/,''):'';if(u)S=src(u.toLowerCase());else if(r)S=r==location.hostname?'internal':src(r)}catch(e){}
 window.ramEv=function(e,l,v){try{var d=JSON.stringify({e:e,p:location.pathname,l:l||'',s:S,v:Math.round(v||0)});if(!(navigator.sendBeacon&&navigator.sendBeacon('/ev.php',d)))fetch('/ev.php',{method:'POST',body:d,keepalive:true})}catch(x){}};
