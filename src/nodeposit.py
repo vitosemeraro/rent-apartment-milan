@@ -12,7 +12,7 @@ D = {
 <div class="tip">Send your dates and the reason for your stay: I'll reply with the total monthly price and the contract conditions.</div>"""}),
 "it": ("affitto-milano-senza-deposito", {
  "nav": "Affitto senza deposito", "kicker": "Guida", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn", "mm"],
- "title": "Affitto a Milano senza deposito, utenze incluse | RAM",
+ "title": "Affitto a Milano senza deposito da {min_month} €/mese | RAM",
  "desc": "Monolocale o bilocale arredato a Milano senza i 3 mesi di deposito: utenze e Wi-Fi inclusi, contratto registrato, a 2 minuti dalla M1. Affitti mensili.",
  "h1": "Affitto a Milano senza deposito",
  "lead": "A Milano i proprietari chiedono di solito 2–3 mensilità di deposito più l'agenzia. Con RAM entri in casa senza bloccare migliaia di euro.",

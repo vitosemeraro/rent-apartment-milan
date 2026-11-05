@@ -144,6 +144,12 @@ def month_price(lid):
     return int(round(p["base"] * 30 * (1 - p["monthly"] / 100), -1))
 
 
+# Prezzo minimo mensile (appartamenti da 28+ notti) nel title della pagina senza deposito
+MIN_MONTH = min(month_price(k) for k, v in PRICING.items() if isinstance(v, dict) and v.get("min_nights", 0) >= 28 and not v.get("soon"))
+for _l in LANGS:
+    C[_l].P["nodeposit"]["title"] = C[_l].P["nodeposit"]["title"].replace("{min_month}", f"{MIN_MONTH:,}".replace(",", "."))
+
+
 PRICE_TABLE = {
     "it": ("I prezzi mensili di RAM per zona", ["Appartamento", "Zona", "Ospiti", "Canone mensile", "Pulizia finale", "Soggiorno minimo"], "da {p} €", "{p} € una volta", "{n} notti",
            "Canone mensile spese incluse: utenze, riscaldamento e Wi-Fi. Il preventivo esatto dipende dalle date: <a href=\"{c}\">chiedilo qui</a>."),
