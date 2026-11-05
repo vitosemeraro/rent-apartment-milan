@@ -3,7 +3,7 @@ D = {
 "en": ("apartments-milan-no-deposit", {
  "nav": "Apartments with no deposit", "kicker": "Guide", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn", "mm"],
  "title": "Apartments in Milan with no deposit, bills included | RAM",
- "desc": "Rent a furnished studio or flat in Milan without the usual 3-month deposit: bills and Wi-Fi included, registered contract, 2 min from the M1 metro. Monthly stays.",
+ "desc": "Rent a furnished studio or flat in Milan with no 3-month deposit: bills and Wi-Fi included, registered contract, 2 min from the M1 metro. Monthly stays.",
  "h1": "Apartments in Milan with no deposit",
  "lead": "In Milan landlords usually ask for 2–3 months' deposit plus an agency fee. With RAM you move in without blocking thousands of euros.",
  "html": """<h2>How much you save</h2><table><tr><th>Up-front cost (studio at €1,500/month)</th><th>Typical Milan rental</th><th>RAM</th></tr><tr><td>Deposit</td><td>€3,000–4,500</td><td>No three-month deposit</td></tr><tr><td>Agency fee</td><td>≈ €1,800</td><td>€0</td></tr><tr><td>Bills activation</td><td>€100–200</td><td>Included</td></tr><tr><td>First month</td><td>€1,500</td><td>€1,500</td></tr></table>
@@ -13,7 +13,7 @@ D = {
 "it": ("affitto-milano-senza-deposito", {
  "nav": "Affitto senza deposito", "kicker": "Guida", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn", "mm"],
  "title": "Affitto a Milano senza deposito, utenze incluse | RAM",
- "desc": "Affitta un monolocale o bilocale arredato a Milano senza i soliti 3 mesi di deposito: utenze e Wi-Fi inclusi, contratto registrato, a 2 minuti dalla M1. Soggiorni mensili.",
+ "desc": "Monolocale o bilocale arredato a Milano senza i 3 mesi di deposito: utenze e Wi-Fi inclusi, contratto registrato, a 2 minuti dalla M1. Affitti mensili.",
  "h1": "Affitto a Milano senza deposito",
  "lead": "A Milano i proprietari chiedono di solito 2–3 mensilità di deposito più l'agenzia. Con RAM entri in casa senza bloccare migliaia di euro.",
  "html": """<h2>Quanto risparmi</h2><table><tr><th>Costo iniziale (monolocale da 1.500 €/mese)</th><th>Affitto tipico a Milano</th><th>RAM</th></tr><tr><td>Deposito</td><td>3.000–4.500 €</td><td>Niente tre mesi di deposito</td></tr><tr><td>Agenzia</td><td>≈ 1.800 €</td><td>0 €</td></tr><tr><td>Attivazione utenze</td><td>100–200 €</td><td>Incluse</td></tr><tr><td>Primo mese</td><td>1.500 €</td><td>1.500 €</td></tr></table>
@@ -42,8 +42,8 @@ D = {
 <div class="tip">Envoyez-moi vos dates, je réponds avec le prix mensuel total.</div>"""}),
 "de": ("wohnung-mailand-ohne-kaution", {
  "nav": "Wohnungen ohne Kaution", "kicker": "Ratgeber", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn", "mm"],
- "title": "Wohnung in Mailand ohne Kaution, Nebenkosten inklusive | RAM",
- "desc": "Möbliertes Studio oder Wohnung in Mailand ohne die übliche Kaution von 3 Monatsmieten: Nebenkosten und WLAN inklusive, registrierter Vertrag, 2 Min. zur M1.",
+ "title": "Wohnung in Mailand ohne Kaution, Nebenkosten inkl. | RAM",
+ "desc": "Möbliertes Studio oder Wohnung in Mailand ohne Kaution von 3 Monatsmieten: Nebenkosten und WLAN inklusive, registrierter Vertrag, 2 Min. zur M1.",
  "h1": "Wohnungen in Mailand ohne Kaution",
  "lead": "In Mailand verlangen Vermieter meist 2–3 Monatsmieten Kaution plus Maklergebühr. Bei RAM ziehen Sie ein, ohne Tausende Euro zu binden.",
  "html": """<h2>So viel sparen Sie</h2><table><tr><th>Anfangskosten (Studio zu 1.500 €/Monat)</th><th>Typische Miete in Mailand</th><th>RAM</th></tr><tr><td>Kaution</td><td>3.000–4.500 €</td><td>Keine drei Monatsmieten</td></tr><tr><td>Makler</td><td>≈ 1.800 €</td><td>0 €</td></tr><tr><td>Anmeldung Nebenkosten</td><td>100–200 €</td><td>Inklusive</td></tr><tr><td>Erster Monat</td><td>1.500 €</td><td>1.500 €</td></tr></table>
