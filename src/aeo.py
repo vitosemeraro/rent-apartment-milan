@@ -80,6 +80,12 @@ def llms_txt(M):
     out += ["", "## Guides"]
     for k in cfg["guides"]:
         out.append(f"- [{T.P[k]['nav']}]({SITE}{path_of('en', k)}): {T.P[k]['desc']}")
+    blog = getattr(M, "BLOG", None)
+    if blog and blog.ARTICLES:
+        out += ["", "## Articles"]
+        for a in blog.ARTICLES:
+            title = a.get("h1") or a.get("title", "").split(" | ")[0]
+            out.append(f"- [{title}]({SITE}{a['url']}) ({a['lang']}, {a['updated']}): {a.get('description', '')}")
     out += ["", "## Other languages", f"- Italiano: {SITE}/it/", f"- Español: {SITE}/es/", f"- Français: {SITE}/fr/", f"- Deutsch: {SITE}/de/", "",
             "## Booking", f"- Each apartment page has a calendar with live availability and an instant quote (nightly price, cleaning, discounts and Milan tourist tax). Requests go to {cfg['email']}.", ""]
     return "\n".join(out)
