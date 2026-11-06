@@ -126,8 +126,8 @@ P = {
 },
 "contract": {
     "nav": "Transitional lease in Milan", "kicker": "Guide", "article": True, "img": ("vito", 5), "apts": ["vdn", "turro"],
-    "title": "Transitional lease contract in Milan explained (contratto transitorio) | RAM",
-    "desc": "What a transitional lease is in Italy, how long it lasts, which documents you need, registration, deposit and residence. A clear guide for expats and students in Milan.",
+    "title": "Contratto transitorio 2026: Milan transitional lease | RAM",
+    "desc": "A transitional lease (contratto transitorio) is an Italian rental contract for 1 to 18 months for work or study. Duration, documents and registration.",
     "h1": "The transitional lease (contratto transitorio), explained simply",
     "lead": "It is the most common contract for stays of 1 to 18 months in Italy. Here is what it is and why it protects you.",
     "html": """<h2>What it is</h2><p>The transitional lease is provided for by Italian law no. 431/1998 (art. 5). It is used when the tenant, or the landlord, has a <b>temporary need</b>: a work assignment, an internship, a course of study, a medical treatment. It lasts from <b>1 to 18 months</b> and the reason must be written in the contract and, when requested, documented.</p>
