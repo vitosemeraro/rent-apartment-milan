@@ -244,8 +244,10 @@ def cta_band(lang):
 def page_home(lang):
     T = C[lang]; P = T.P["home"]
     cards = "".join(listing_card(lang, lid) for lid in LISTINGS)
+    hn = P.get("hero_note")
+    hero_note = f'<p style="margin:-6px 0 18px">{esc(hn[0])}: <a href="{path_of(lang, hn[1])}" data-evt="hero_students">{esc(hn[2])} →</a></p>' if hn else ""
     guides = "".join(f'<a class="feat" style="text-decoration:none;color:inherit" href="{path_of(lang, k)}"><h3>{esc(T.P[k]["nav"])} →</h3><p>{esc(T.P[k]["desc"])}</p></a>' for k in CONFIG["guides"])
-    body = f"""<section class="hero"><div class="wrap hero-grid"><div><span class="kicker">{esc(P["kicker"])}</span><h1>{esc(P["h1"])}</h1><p class="lead">{esc(P["lead"])}</p>
+    body = f"""<section class="hero"><div class="wrap hero-grid"><div><span class="kicker">{esc(P["kicker"])}</span><h1>{esc(P["h1"])}</h1><p class="lead">{esc(P["lead"])}</p>{hero_note}
 <div class="cta-row"><a class="btn" href="{path_of(lang, "apartments")}" data-evt="cta_apartments">{esc(T.ui["see_apts"])}</a><a class="btn ghost" href="{path_of(lang, "contact")}" data-evt="cta_contact">{esc(T.ui["ask"])}</a></div>
 <div class="trust">{badge_sh(T)}<span class="badge">★ {CONFIG["rating"]} · {T.ui["n_reviews"].format(n=CONFIG["reviews_count"])}</span><span class="badge">Ⓜ M1 Precotto · Turro</span></div></div>
 <div class="hero-img">{img("valdinon", 0, "(max-width:860px) 100vw, 50vw", eager=True, alt=P["hero_alt"])}</div></div></section>

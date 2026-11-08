@@ -44,11 +44,12 @@ FORM = {"name": "Name", "email": "E-Mail", "apt": "Wohnung", "any": "Egal / bitt
 
 P = {
 "home": {
-    "title": "Wohnung in Mailand mieten ohne Kaution, auch für Studenten | RAM",
+    "title": "Wohnung auf Zeit in Mailand mieten, ohne Kaution | RAM",
     "desc": "Möblierte Wohnungen in Mailand an der M1: Wohnen auf Zeit mit Nebenkosten und registriertem Vertrag, Kurzaufenthalte für Messen und Urlaub. Direkt bei Vito buchen.",
     "kicker": "Mailand · rote Linie M1 · Precotto & Turro",
     "h1": "Möblierte Wohnungen in Mailand, betreut von einem echten Gastgeber",
     "lead": "Vier Wohnungen im Nordosten Mailands, wenige Minuten von der U-Bahn M1: ideal für Arbeit, Studium, Messen oder ein paar Nächte in der Stadt. Nebenkosten inklusive, klare Verträge und ein Gastgeber, der antwortet.",
+    "hero_note": ("Sie studieren in Mailand? Lesen Sie den Ratgeber", "students", "Studentenwohnungen in Mailand"),
     "hero_alt": "Helles Schlafzimmer mit Balkon in der Wohnung Via Val di Non, Mailand Precotto",
     "apts_title": "Wählen Sie Ihre Wohnung",
     "why_kicker": "Warum RAM", "why_title": "In Mailand mieten ohne den üblichen Ärger",
