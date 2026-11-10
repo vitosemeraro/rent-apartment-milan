@@ -439,6 +439,13 @@ def main():
     open(os.path.join(DIST, "indexnow.json"), "w").write(AEO.indexnow_payload(me, all_urls, INDEXNOW_KEY))
     for f in os.listdir(os.path.join(HERE, "static")):
         shutil.copy(os.path.join(HERE, "static", f), os.path.join(DIST, f))
+    # Cloudflare Workers: script, configurazione e file da escludere dagli asset
+    os.makedirs(os.path.join(DIST, "_worker"), exist_ok=True)
+    CF = os.path.join(HERE, "cloudflare")
+    shutil.copy(os.path.join(CF, "worker.js"), os.path.join(DIST, "_worker", "worker.js"))
+    shutil.copy(os.path.join(CF, "wrangler.jsonc"), os.path.join(DIST, "wrangler.jsonc"))
+    shutil.copy(os.path.join(CF, "assetsignore"), os.path.join(DIST, ".assetsignore"))
+    shutil.copy(os.path.join(CF, "schema.sql"), os.path.join(DIST, "schema.sql"))
     # 404 multilingua semplice
     T = C["en"]
     write("/404.html", layout("en", "home", "Page not found – RAM", "Page not found", f'<section><div class="wrap prose"><h1>Page not found</h1><p>The page you are looking for has moved. <a href="/">Go to the homepage</a> · <a href="/it/">Italiano</a> · <a href="/apartments/">Apartments</a></p></div></section>', robots="noindex"))
