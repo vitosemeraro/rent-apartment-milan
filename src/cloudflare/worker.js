@@ -122,7 +122,8 @@ async function contact(req, env) {
     || (!booking && (!din || !dout));
   const subject = (spam ? '[RAM possibile spam] ' : '[RAM richiesta] ') + (booking ? `Prenotazione ${aptName} ` : '') + `${name} ${din}` + (dout ? ` - ${dout}` : '');
   try {
-    await env.EMAIL.send({ to: TO, from: { email: FROM, name: 'RAM sito' }, replyTo: { email, name }, subject, text: body });
+    const sent = await env.EMAIL.send({ to: TO, from: { email: FROM, name: 'RAM sito' }, replyTo: { email, name }, subject, text: body });
+    console.log('email sent', sent && sent.messageId);
   } catch (e) {
     console.log('email error', e && e.code, e && e.message);
     // rete di sicurezza: se l'email non parte, la richiesta resta salvata nel database
