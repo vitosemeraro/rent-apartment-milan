@@ -125,6 +125,11 @@ async function contact(req, env) {
     await env.EMAIL.send({ to: TO, from: { email: FROM, name: 'RAM sito' }, replyTo: { email, name }, subject, text: body });
   } catch (e) {
     console.log('email error', e && e.code, e && e.message);
+    // rete di sicurezza: se l'email non parte, la richiesta resta salvata nel database
+    if (env.DB) {
+      await env.DB.prepare('INSERT INTO requests (ts, subject, body, reply_to, error) VALUES (?, ?, ?, ?, ?)')
+        .bind(new Date().toISOString(), subject, body, email, String((e && (e.code || e.message)) || e)).run().catch(() => {});
+    }
   }
   return see(THANKS[lang]);
 }
