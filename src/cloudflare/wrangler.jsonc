@@ -13,6 +13,10 @@
   },
   "send_email": [{ "name": "EMAIL", "allowed_destination_addresses": ["vsemeraro@gmail.com"] }],
   "d1_databases": [{ "binding": "DB", "database_name": "ram-events", "database_id": "7f2f4c20-ed20-4f3d-8604-46334a952f66" }],
+  "routes": [
+    { "pattern": "rent-apartment-milan.com/*", "zone_name": "rent-apartment-milan.com" },
+    { "pattern": "www.rent-apartment-milan.com/*", "zone_name": "rent-apartment-milan.com" }
+  ],
   "observability": { "enabled": true },
   "keep_vars": true
 }

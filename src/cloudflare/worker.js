@@ -45,7 +45,7 @@ export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
     // dominio canonico senza www (http->https lo fa Cloudflare con "Always Use HTTPS")
-    if (url.hostname === 'www.rent-apartment-milan.com') {
+    if (url.hostname === 'www.rent-apartment-milan.com' || (url.protocol === 'http:' && url.hostname === 'rent-apartment-milan.com')) {
       return Response.redirect(SITE + url.pathname + url.search, 301);
     }
     const p = url.pathname;
