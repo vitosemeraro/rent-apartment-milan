@@ -89,7 +89,7 @@ P = {
     ]},
 "students": {
     "nav": "Studentenwohnungen in Mailand", "kicker": "Ratgeber", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn"],
-    "title": "Studentenwohnung in Mailand nahe Politecnico, Bicocca, Bocconi | RAM",
+    "title": "Studentenwohnung Mailand ab [[turro]] € inkl. Nebenkosten | RAM",
     "desc": "Wohnungen für Studierende in Mailand: mieten nahe Politecnico, Bicocca, Bocconi und IULM, Studentenmietvertrag, Erasmus-Tipps und Wohnungen an der M1 mit Nebenkosten.",
     "h1": "Studentenwohnungen in Mailand: wo wohnen und wie mieten",
     "lead": "Mailand hat über 200.000 Studierende. Die Wohnungssuche ist die erste Prüfung: So bestehen Sie sie.",
