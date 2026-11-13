@@ -30,7 +30,7 @@ Più visite organiche in target e più richieste di prenotazione diretta (modulo
 | 2 | 2026-11-09 | Salone del Mobile 2027: where to stay and how to get to Rho Fiera | en, it, de | fiere | done 2026-11-02 |
 | 3 | 2026-11-16 | Studentenwohnung in Mailand: Kosten, Viertel, Verträge 2027 | de, en | studenti DE | done 2026-11-09 |
 | 4 | 2026-11-23 | Cheap monthly rent in Milan: realistic prices by area (monthly rent milan) | en, it | professionisti, studenti | todo |
-| 5 | 2026-11-30 | Remote work from Milan for a month: fibre, desk, coworking near M1 | en, it | remote worker | todo |
+| 5 | 2026-11-30 | Remote work from Milan for a month: fibre, desk, coworking near M1 | en, it | remote worker | done 2026-11-13 (anticipato dalla Regia) |
 | 6 | 2026-12-07 | Erasmus spring semester in Milan: housing checklist February 2027 | en, es, fr | Erasmus | todo |
 | 7 | 2026-12-14 | Visiting professor or researcher at Bicocca: where to stay | en, it | docenti, ricercatori | todo |
 | 8 | 2026-12-21 | Studio for rent in Milan with no deposit (studio rent milan no deposit) | en, it | studenti, giovani | todo |
