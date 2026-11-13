@@ -59,7 +59,7 @@ P = {
     "rev_title": "Five-star stays", "guides_title": "Guides to renting in Milan",
 },
 "apartments": {
-    "title": "Furnished apartments for rent in Milan (M1 Precotto, Turro) | RAM",
+    "title": "4 apartments in Milan on the M1 line: Precotto, Turro | RAM",
     "desc": "Four furnished apartments in north-east Milan near the M1 metro: two-room flat for groups up to 8, one-bedroom with balcony, studio near Naviglio Martesana.",
     "h1": "Our apartments in Milan",
     "lead": "All homes are within walking distance of the M1 red line (Precotto or Turro), in quiet residential streets with shops open 24/7 nearby.",
