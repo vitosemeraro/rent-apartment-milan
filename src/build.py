@@ -67,9 +67,13 @@ def badge_sh(T):
 
 
 # ---------------------------------------------------------------- layout
-def layout(lang, key, title, desc, body, ld=None, og_img=None, crumbs=None, robots="index,follow", xcss="", xjs="", canon=None):
+def layout(lang, key, title, desc, body, ld=None, og_img=None, crumbs=None, robots="index,follow", xcss="", xjs="", canon=None, translations=None):
     T = C[lang]
-    if canon:  # articoli: URL proprio, hreflang solo sulla lingua dell'articolo
+    tr = translations or {}
+    if canon and len(tr) > 1:  # articolo tradotto: hreflang verso tutte le versioni (campo group del front-matter)
+        alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{SITE}{u}">' for l, u in tr.items())
+        alts += f'<link rel="alternate" hreflang="x-default" href="{SITE}{tr.get(CONFIG["default_lang"], canon)}">'
+    elif canon:  # articoli: URL proprio, hreflang solo sulla lingua dell'articolo
         alts = f'<link rel="alternate" hreflang="{lang}" href="{SITE}{canon}">'
     else:
         alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{url_of(l, key)}">' for l in LANGS)
@@ -78,7 +82,7 @@ def layout(lang, key, title, desc, body, ld=None, og_img=None, crumbs=None, robo
     for k in ("apartments", "monthly", "blog", "about", "reviews", "contact"):
         cur = ' aria-current="page"' if k == key else ""
         nav += f'<a href="{path_of(lang, k)}"{cur}>{esc(T.ui["nav_" + ("guides" if k == "blog" else k)])}</a>'
-    langs = "".join(f'<li><a href="{path_of(l, "blog" if canon else key)}" hreflang="{l}" lang="{l}">{LANG_NAMES[l]}</a></li>' for l in LANGS)
+    langs = "".join(f'<li><a href="{tr.get(l) or path_of(l, "blog" if canon else key)}" hreflang="{l}" lang="{l}">{LANG_NAMES[l]}</a></li>' for l in LANGS)
     nav += f'<details class="lang"><summary aria-label="Language">🌐 {lang.upper()}</summary><ul>{langs}</ul></details>'
     ld_all = [{
         "@context": "https://schema.org", "@type": "BreadcrumbList",

@@ -42,7 +42,7 @@ Più visite organiche in target e più richieste di prenotazione diretta (modulo
 | 14 | 2027-02-01 | Internship in Milan: where to live for 3–6 months | en, it, fr | stagisti | todo |
 | 15 | 2027-02-08 | Transitional lease explained for non-EU students (visa, permesso) | en, es | studenti extra UE | todo |
 | 16 | 2027-02-15 | Milan Design Week on a budget: share an apartment for 8 | en, it, de, fr | fiere, gruppi | todo |
-| 17 | 2026-11-12 (giovedì, Regia) | Affitto a Milano per uno o due mesi: prezzi e cosa è incluso (affitto breve milano 1-2 mesi) | it, en | professionisti, stagisti, ricercatori | done 2026-11-12 |
+| 17 | 2026-11-12 (giovedì, Regia) | Affitto a Milano per uno o due mesi: prezzi e cosa è incluso (affitto breve milano 1-2 mesi) | it, en, de, fr, es | professionisti, stagisti, ricercatori | done 2026-11-12 (de, fr, es il 2026-11-13, Regia; versioni collegate con `group:` nel front-matter) |
 
 Dopo la riga 16 la routine propone nuovi temi partendo dalle query di Search Console in posizione 5–20 e dalle domande ricorrenti degli ospiti, e li aggiunge in coda.
 

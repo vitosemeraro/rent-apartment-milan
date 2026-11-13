@@ -7,6 +7,7 @@ description: Affitto a Milano per uno o due mesi: da 1.200 € al mese con utenz
 h1: Affitto breve a Milano per uno o due mesi: prezzi e cosa è incluso
 image: valdinon:1
 apts: turro, vdn, mm
+group: one-two-months
 ---
 Un **affitto a Milano per uno o due mesi** da noi costa **1.200 € al mese** per il monolocale di Turro e **1.400 €** per il bilocale di via Val di Non, con luce, gas, riscaldamento, acqua e Wi-Fi inclusi. Paghi una sola pulizia finale, firmi un contratto registrato e non versi tre mesi di deposito. Entrambi sono a pochi minuti dalla M1.
 

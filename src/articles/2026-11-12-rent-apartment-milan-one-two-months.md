@@ -7,6 +7,7 @@ description: Renting in Milan for one or two months: from €1,200 a month with 
 h1: Renting in Milan for One or Two Months: Prices and What Is Included
 image: valdinon:1
 apts: turro, vdn, mm
+group: one-two-months
 ---
 To **rent an apartment in Milan for one or two months** with us costs **€1,200 a month** for the Turro studio and **€1,400** for the Via Val di Non flat, with electricity, gas, heating, water and Wi-Fi included. You pay one final cleaning, sign a registered lease and leave no three-month deposit. Both flats are a few minutes from the M1.
 

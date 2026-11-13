@@ -39,6 +39,14 @@ ARTICLES = sorted((_parse(p) for p in glob.glob(os.path.join(HERE, "articles", "
                   key=lambda a: a["date"], reverse=True)
 
 
+def translations(a):
+    """Versioni dello stesso articolo (stesso valore di group nel front-matter), per hreflang e selettore lingua."""
+    g = a.get("group")
+    if not g:
+        return {}
+    return {x["lang"]: x["url"] for x in ARTICLES if x.get("group") == g}
+
+
 def page_article(a, M):
     lang = a["lang"]; T = M.C[lang]; I = INDEX[lang]
     html_body = markdown.markdown(a["body"], extensions=["tables"])
@@ -57,7 +65,7 @@ def page_article(a, M):
           "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"}}
     if a.get("image"):
         s, i = a["image"].split(":"); ld["image"] = M.img_src(s, int(i))
-    return M.layout(lang, "blog", a["title"], a["description"], body, ld=ld, canon=a["url"],
+    return M.layout(lang, "blog", a["title"], a["description"], body, ld=ld, canon=a["url"], translations=translations(a),
                     crumbs=[("Blog", M.path_of(lang, "blog")), (a["h1"][:60], a["url"])])
 
 
