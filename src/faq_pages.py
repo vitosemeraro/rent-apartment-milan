@@ -15,6 +15,7 @@ FAQ = {
   ("Cosa è incluso nel canone mensile?", "Luce, gas, riscaldamento, acqua e Wi-Fi in fibra sono inclusi. Si aggiunge solo la pulizia finale, indicata nella tabella dei prezzi."),
   ("Con un affitto mensile si paga la tassa di soggiorno?", "No. La tassa di soggiorno del Comune di Milano vale per i soggiorni sotto i 30 notti e non è dovuta per i contratti mensili."),
   ("Con quanto anticipo conviene cercare casa?", "Inizia 4–8 settimane prima dell'arrivo. Settembre, gennaio e febbraio sono i mesi più richiesti per università e fiere."),
+  ("Quanto costa un affitto mensile a Turro e a Precotto?", "Con RAM il monolocale di Turro costa [[turro]] € al mese e il bilocale di via Val di Non, a Precotto vicino alla Bicocca, [[vdn]] € al mese, spese incluse. Per 3 mesi il totale con la pulizia finale è [[tot:turro:3]] € a Turro e [[tot:vdn:3]] € a Precotto."),
  ],
  "students": [
   ("Quanto dura il contratto per studenti universitari?", "Da 6 a 36 mesi, per chi è iscritto a un'università in un comune diverso da quello di residenza. Per un semestre o l'Erasmus si usa il <a href=\"[[path:contract]]\">contratto transitorio</a> con motivo di studio documentato."),

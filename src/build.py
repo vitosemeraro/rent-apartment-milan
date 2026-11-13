@@ -203,6 +203,9 @@ def fill_data(lang, s):
     """Segnaposto della pagina dati prezzi: numeri da pricing.json, data di build e link interni."""
     fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
     s = s.replace("[[turro]]", fmt(month_price("turro"))).replace("[[vdn]]", fmt(month_price("vdn"))).replace("[[date]]", TODAY).replace("[[min_month]]", fmt(MIN_MONTH))
+    # [[tot:<lid>:<mesi>]] = costo totale (canone x mesi + pulizia finale); [[clean:<lid>]] = pulizia finale
+    s = re.sub(r"\[\[tot:(\w+):(\d+)\]\]", lambda m: fmt(month_price(m.group(1)) * int(m.group(2)) + PRICING[m.group(1)]["cleaning"]), s)
+    s = re.sub(r"\[\[clean:(\w+)\]\]", lambda m: fmt(PRICING[m.group(1)]["cleaning"]), s)
     return re.sub(r"\[\[path:(\w+)\]\]", lambda m: path_of(lang, m.group(1)), s)
 
 
