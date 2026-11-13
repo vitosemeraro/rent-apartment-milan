@@ -211,6 +211,14 @@ def fill_data(lang, s):
     return re.sub(r"\[\[path:(\w+)\]\]", lambda m: path_of(lang, m.group(1)), s)
 
 
+# Riempie subito i segnaposto di title e desc: li usano anche elenchi guide, home, blog e llms.txt
+for _l in LANGS:
+    for _p in C[_l].P.values():
+        for _f in ("title", "desc"):
+            if isinstance(_p, dict) and "[[" in _p.get(_f, ""):
+                _p[_f] = fill_data(_l, _p[_f])
+
+
 def listing_card(lang, lid, sizes="(max-width:620px) 100vw, (max-width:960px) 50vw, 33vw"):
     T = C[lang]; L = LISTINGS[lid]; t = T.L[lid]
     tag = f'<span class="tag soon">{esc(T.ui["soon"])}</span>' if L["status"] == "soon" else f'<span class="tag">{esc(t["stay_tag"])}</span>'
