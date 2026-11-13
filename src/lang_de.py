@@ -17,7 +17,7 @@ ui = {
     "superhost": "Superhost-Inserat auf Airbnb", "foot_about": "Möblierte Wohnungen im Nordosten Mailands an der roten Linie M1, für Aufenthalte von wenigen Nächten bis zu mehreren Monaten. Persönlich betreut von Vito.",
     "cin_note": "Ferienwohnungen registriert in der Lombardei. CIN in jeder Anzeige.",
     "cookie_text": "Wir verwenden ein Statistik-Cookie (Google Analytics) nur mit Ihrer Zustimmung. <a href=\"{privacy}\">Datenschutz und Cookies</a>.",
-    "cookie_ok": "Akzeptieren", "cookie_no": "Ablehnen",
+    "cookie_ok": "Akzeptieren", "cookie_no": "Ablehnen", "cookie_set": "Einstellungen", "cookie_close": "Schließen und ohne Zustimmung fortfahren", "cookie_nec": "Notwendig: immer aktiv", "cookie_stat": "Statistik (Google Analytics)", "cookie_save": "Auswahl speichern",
     "soon": "Demnächst", "price_night": "ab {p} € <small>/ Nacht</small>", "price_month_req": "Monatspreis <small>auf Anfrage</small>",
     "guests": "{n} Gäste", "cta_kicker": "Schreiben Sie Vito", "cta_title": "Nennen Sie mir Ihre Daten, ich antworte in wenigen Stunden",
     "cta_text": "Arbeit, Studium, eine Messe oder ein Familienurlaub: Schicken Sie mir Daten und Gästezahl, und ich sage Ihnen, welche Wohnung passt und was sie insgesamt kostet, ohne Überraschungen.",

@@ -17,7 +17,7 @@ ui = {
     "superhost": "Annonce Superhôte sur Airbnb", "foot_about": "Appartements meublés au nord-est de Milan, sur la ligne rouge M1, pour des séjours de quelques nuits à plusieurs mois. Gérés personnellement par Vito.",
     "cin_note": "Locations touristiques enregistrées en Lombardie. CIN indiqué sur chaque annonce.",
     "cookie_text": "Nous utilisons un cookie de mesure d'audience (Google Analytics) uniquement avec votre accord. <a href=\"{privacy}\">Confidentialité et cookies</a>.",
-    "cookie_ok": "Accepter", "cookie_no": "Refuser",
+    "cookie_ok": "Accepter", "cookie_no": "Refuser", "cookie_set": "Paramètres", "cookie_close": "Fermer et continuer sans accepter", "cookie_nec": "Nécessaires : toujours actifs", "cookie_stat": "Statistiques (Google Analytics)", "cookie_save": "Enregistrer mes choix",
     "soon": "Bientôt", "price_night": "à partir de {p} € <small>/ nuit</small>", "price_month_req": "Prix mensuel <small>sur demande</small>",
     "guests": "{n} voyageurs", "cta_kicker": "Écrire à Vito", "cta_title": "Donnez-moi vos dates, je réponds en quelques heures",
     "cta_text": "Travail, études, un salon ou un voyage en famille : envoyez vos dates et le nombre de voyageurs, je vous dis quel appartement vous convient et le prix total, sans surprise.",
