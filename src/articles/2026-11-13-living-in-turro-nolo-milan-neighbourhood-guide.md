@@ -3,12 +3,12 @@ lang: en
 date: 2026-11-13
 updated: 2026-11-13
 title: Living in Turro and NoLo, Milan: Honest Area Guide | RAM
-description: Living in Turro and NoLo, north-east Milan: M1 metro, Naviglio Martesana, nightlife, pros and cons, and a furnished Turro flat from €1,300 a month.
+description: Living in Turro and NoLo, north-east Milan: M1 metro, Naviglio Martesana, nightlife, pros and cons, and a furnished Turro flat from €1,200 a month.
 h1: Living in Turro and NoLo: the Honest Neighbourhood Guide
 image: turro:8
 apts: turro, vdn, mm
 ---
-**Turro and NoLo** are neighbouring districts in north-east Milan on the **M1 red line**. Turro is quiet and residential, on the Naviglio Martesana; NoLo, just south towards Loreto, is livelier, with bars and a creative crowd. The Duomo is about 20 minutes away, and our furnished Turro studio costs **€1,300 a month**, bills included.
+**Turro and NoLo** are neighbouring districts in north-east Milan on the **M1 red line**. Turro is quiet and residential, on the Naviglio Martesana; NoLo, just south towards Loreto, is livelier, with bars and a creative crowd. The Duomo is about 20 minutes away, and our furnished Turro studio costs **€1,200 a month**, bills included.
 
 ## Where exactly are Turro and NoLo?
 
@@ -63,9 +63,9 @@ If you are here for a trade fair, see our guide to [staying for the fairs at Rho
 
 ## How much does a furnished flat in Turro cost?
 
-Our [studio in Turro](/apartments/studio-turro-martesana/) is 38 m², on the 7th floor with a balcony, for up to 2 people. It costs **€1,300 a month** with electricity, gas, heating, water and Wi-Fi included, plus a final cleaning of €83. The minimum stay is 30 nights, with a registered [transitional lease](/transitional-lease-contract-milan/) and no three-month deposit.
+Our [studio in Turro](/apartments/studio-turro-martesana/) is 38 m², on the 7th floor with a balcony, for up to 2 people. It costs **€1,200 a month** with electricity, gas, heating, water and Wi-Fi included, plus a final cleaning of €83. The minimum stay is 30 nights, with a registered [transitional lease](/transitional-lease-contract-milan/) and no three-month deposit.
 
-For more space, the one-bedroom in Via Val di Non, two stops north at Precotto, costs €1,550 a month. To compare areas, see our guide to [monthly rentals in Milan](/monthly-rentals-milan/).
+For more space, the one-bedroom in Via Val di Non, two stops north at Precotto, costs €1,400 a month. To compare areas, see our guide to [monthly rentals in Milan](/monthly-rentals-milan/).
 
 ## FAQ
 

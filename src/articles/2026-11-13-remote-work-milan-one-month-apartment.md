@@ -3,12 +3,12 @@ lang: en
 date: 2026-11-13
 updated: 2026-11-13
 title: Remote Work in Milan for a Month: Fibre, Desk, Prices
-description: Furnished apartment in Milan for a month of remote work: desk, Wi-Fi with gigabit fibre, bills included, from €1,300 a month near the M1. Prices inside.
+description: Furnished apartment in Milan for a month of remote work: desk, Wi-Fi with gigabit fibre, bills included, from €1,200 a month near the M1. Prices inside.
 h1: Remote Work from Milan for a Month: a Furnished Flat with Desk and Fibre
 image: valdinon:1
 apts: vdn, turro, mm
 ---
-A **furnished apartment in Milan for a month of remote work** costs **€1,300** with us for the Turro studio and **€1,550** for the Via Val di Non one-bedroom, bills and Wi-Fi included. Both have a desk; the Val di Non flat has **gigabit fibre** and a separate bedroom. You sign a registered lease, leave no three-month deposit and live a few minutes from the M1.
+A **furnished apartment in Milan for a month of remote work** costs **€1,200** with us for the Turro studio and **€1,400** for the Via Val di Non one-bedroom, bills and Wi-Fi included. Both have a desk; the Val di Non flat has **gigabit fibre** and a separate bedroom. You sign a registered lease, leave no three-month deposit and live a few minutes from the M1.
 
 ## What does a month of remote work in Milan cost?
 
@@ -16,8 +16,8 @@ Monthly prices are host prices for a direct booking, with electricity, gas, heat
 
 | Apartment | Work setup | Internet | Monthly price | Final cleaning | Total 1 month |
 | --- | --- | --- | --- | --- | --- |
-| [One-bedroom, Via Val di Non](/apartments/one-bedroom-val-di-non-balcony/) | Dedicated workstation, separate bedroom | Gigabit fibre Wi-Fi | €1,550 | €59 | €1,609 |
-| [Studio, Turro](/apartments/studio-turro-martesana/) | Work desk in a 38 m² studio | Wi-Fi | €1,300 | €83 | €1,383 |
+| [One-bedroom, Via Val di Non](/apartments/one-bedroom-val-di-non-balcony/) | Dedicated workstation, separate bedroom | Gigabit fibre Wi-Fi | €1,400 | €59 | €1,459 |
+| [Studio, Turro](/apartments/studio-turro-martesana/) | Work desk in a 38 m² studio | Wi-Fi | €1,200 | €83 | €1,283 |
 | [Comfort apartment, Precotto](/apartments/precotto-comfort-apartment-m1/) | Dining table for the group | Fast Wi-Fi | from €85 a night, 15% off for a month | €70 | depends on dates |
 
 Special dates or platform fees can change the total, so check the booking calendar on each apartment page. For the rest of the city, see [monthly rent prices in Milan by area](/milan-monthly-rent-prices-by-area/).

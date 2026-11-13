@@ -8,7 +8,7 @@ h1: Semestre Erasmus de primavera 2027 en Milán: checklist de alojamiento
 image: turro:4
 apts: turro, vdn
 ---
-Para un **semestre Erasmus de primavera en Milán** (de febrero a julio de 2027), empieza a buscar alojamiento en cuanto confirmen tu nominación: los buenos pisos vuelan con 2–3 meses de antelación. Prepara pasaporte, codice fiscale y carta de aceptación. Un piso entero amueblado cuesta **1.300–1.550 € al mes**, gastos incluidos, sin fianza de tres meses.
+Para un **semestre Erasmus de primavera en Milán** (de febrero a julio de 2027), empieza a buscar alojamiento en cuanto confirmen tu nominación: los buenos pisos vuelan con 2–3 meses de antelación. Prepara pasaporte, codice fiscale y carta de aceptación. Un piso entero amueblado cuesta **1.200–1.400 € al mes**, gastos incluidos, sin fianza de tres meses.
 
 ## ¿Cuándo empiezo a buscar si llego en febrero?
 
@@ -47,8 +47,8 @@ Alquilamos estudios y pisos enteros, no habitaciones. El precio mensual incluye 
 
 | Apartamento | Huéspedes | Estancia mínima | Precio al mes | 5 meses + limpieza |
 | --- | --- | --- | --- | --- |
-| [Estudio, Turro](/es/apartamentos/estudio-turro-martesana/) | hasta 2 | 30 noches | 1.300 € | 6.583 € |
-| [Piso de un dormitorio, Via Val di Non](/es/apartamentos/piso-un-dormitorio-val-di-non-balcon/) | hasta 2 | 28 noches | 1.550 € | 7.809 € |
+| [Estudio, Turro](/es/apartamentos/estudio-turro-martesana/) | hasta 2 | 30 noches | 1.200 € | 6.083 € |
+| [Piso de un dormitorio, Via Val di Non](/es/apartamentos/piso-un-dormitorio-val-di-non-balcon/) | hasta 2 | 28 noches | 1.400 € | 7.059 € |
 
 Son precios del anfitrión para reserva directa. Las comisiones de las plataformas o fechas especiales pueden cambiar el total: usa el calendario de reservas de la ficha del apartamento para la cifra exacta. Para el resto de la ciudad, mira los [precios del alquiler mensual en Milán por zona](/es/precios-alquiler-mensual-milan-por-zona/).
 

@@ -3,12 +3,12 @@ lang: it
 date: 2026-11-12
 updated: 2026-11-12
 title: Affitto a Milano per 1 o 2 mesi: prezzi e cosa è incluso
-description: Affitto a Milano per uno o due mesi: da 1.300 € al mese con utenze e Wi-Fi inclusi, contratto registrato e niente tre mesi di deposito. Totali e documenti.
+description: Affitto a Milano per uno o due mesi: da 1.200 € al mese con utenze e Wi-Fi inclusi, contratto registrato e niente tre mesi di deposito. Totali e documenti.
 h1: Affitto breve a Milano per uno o due mesi: prezzi e cosa è incluso
 image: valdinon:1
 apts: turro, vdn, mm
 ---
-Un **affitto a Milano per uno o due mesi** da noi costa **1.300 € al mese** per il monolocale di Turro e **1.550 €** per il bilocale di via Val di Non, con luce, gas, riscaldamento, acqua e Wi-Fi inclusi. Paghi una sola pulizia finale, firmi un contratto registrato e non versi tre mesi di deposito. Entrambi sono a pochi minuti dalla M1.
+Un **affitto a Milano per uno o due mesi** da noi costa **1.200 € al mese** per il monolocale di Turro e **1.400 €** per il bilocale di via Val di Non, con luce, gas, riscaldamento, acqua e Wi-Fi inclusi. Paghi una sola pulizia finale, firmi un contratto registrato e non versi tre mesi di deposito. Entrambi sono a pochi minuti dalla M1.
 
 ## Quanto costa in totale un mese o due?
 
@@ -16,8 +16,8 @@ I canoni sono prezzi host per la prenotazione diretta, spese incluse. La pulizia
 
 | Appartamento | Ospiti | Minimo | Canone mensile | Pulizia finale | Totale 1 mese | Totale 2 mesi |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Monolocale, Turro](/it/appartamenti/monolocale-turro-martesana/) | fino a 2 | 30 notti | 1.300 € | 83 € | 1.383 € | 2.683 € |
-| [Bilocale, via Val di Non](/it/appartamenti/bilocale-val-di-non-balcone/) | fino a 2 | 28 notti | 1.550 € | 59 € | 1.609 € | 3.159 € |
+| [Monolocale, Turro](/it/appartamenti/monolocale-turro-martesana/) | fino a 2 | 30 notti | 1.200 € | 83 € | 1.283 € | 2.483 € |
+| [Bilocale, via Val di Non](/it/appartamenti/bilocale-val-di-non-balcone/) | fino a 2 | 28 notti | 1.400 € | 59 € | 1.459 € | 2.859 € |
 
 Commissioni di una piattaforma o date particolari possono cambiare il totale: per la cifra esatta usa il calendario nella pagina dell'appartamento. Per confrontare con il resto della città c'è la guida ai [prezzi degli affitti mensili per zona](/it/prezzi-affitto-mensile-milano-per-zona/).
 

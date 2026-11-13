@@ -49,8 +49,8 @@ We rent **whole apartments**, not rooms. The monthly price includes electricity,
 
 | Apartment | Guests | Minimum stay | Monthly price | Final cleaning (once) |
 | --- | --- | --- | --- | --- |
-| Studio in Turro, 38 m² | up to 2 | 30 nights | €1,300 | €83 |
-| One-bedroom in Precotto, Via Val di Non | up to 2 | 28 nights | €1,550 | €59 |
+| Studio in Turro, 38 m² | up to 2 | 30 nights | €1,200 | €83 |
+| One-bedroom in Precotto, Via Val di Non | up to 2 | 28 nights | €1,400 | €59 |
 
 For a broader look at budgets and areas, see our guide to [student apartments in Milan](/blog/student-apartment-milan-costs-areas-contracts/) and the page on [student housing in Milan](/student-housing-milan/).
 

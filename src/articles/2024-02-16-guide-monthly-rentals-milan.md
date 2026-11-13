@@ -9,7 +9,7 @@ h1: Your Guide to Monthly Rentals in Milan
 image: turro:7
 apts: turro, vdn
 ---
-A monthly rental in Milan usually means a minimum stay of 28–30 nights, one monthly price and a registered transitional lease for stays over 30 days. Renting directly from the host saves the agency fee, often one month's rent. RAM's Turro studio on the M1 costs €1,300 per month, all bills included.
+A monthly rental in Milan usually means a minimum stay of 28–30 nights, one monthly price and a registered transitional lease for stays over 30 days. Renting directly from the host saves the agency fee, often one month's rent. RAM's Turro studio on the M1 costs €1,200 per month, all bills included.
 
 A month or more in Milan is the best way to live the city like a local: your own kitchen, your neighbourhood café, the evening walk along the canal. Here's how monthly rentals work.
 

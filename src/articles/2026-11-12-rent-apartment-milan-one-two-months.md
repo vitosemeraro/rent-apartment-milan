@@ -3,12 +3,12 @@ lang: en
 date: 2026-11-12
 updated: 2026-11-12
 title: Rent an Apartment in Milan for 1 or 2 Months | RAM
-description: Renting in Milan for one or two months: from €1,300 a month with bills and Wi-Fi included, a registered lease and no three-month deposit. Totals inside.
+description: Renting in Milan for one or two months: from €1,200 a month with bills and Wi-Fi included, a registered lease and no three-month deposit. Totals inside.
 h1: Renting in Milan for One or Two Months: Prices and What Is Included
 image: valdinon:1
 apts: turro, vdn, mm
 ---
-To **rent an apartment in Milan for one or two months** with us costs **€1,300 a month** for the Turro studio and **€1,550** for the Via Val di Non flat, with electricity, gas, heating, water and Wi-Fi included. You pay one final cleaning, sign a registered lease and leave no three-month deposit. Both flats are a few minutes from the M1.
+To **rent an apartment in Milan for one or two months** with us costs **€1,200 a month** for the Turro studio and **€1,400** for the Via Val di Non flat, with electricity, gas, heating, water and Wi-Fi included. You pay one final cleaning, sign a registered lease and leave no three-month deposit. Both flats are a few minutes from the M1.
 
 ## What does one or two months cost in total?
 
@@ -16,8 +16,8 @@ Monthly prices are host prices for a direct booking, bills included. Final clean
 
 | Apartment | Guests | Minimum | Monthly price | Final cleaning | Total 1 month | Total 2 months |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Studio, Turro](/apartments/studio-turro-martesana/) | up to 2 | 30 nights | €1,300 | €83 | €1,383 | €2,683 |
-| [One-bedroom, Via Val di Non](/apartments/one-bedroom-val-di-non-balcony/) | up to 2 | 28 nights | €1,550 | €59 | €1,609 | €3,159 |
+| [Studio, Turro](/apartments/studio-turro-martesana/) | up to 2 | 30 nights | €1,200 | €83 | €1,283 | €2,483 |
+| [One-bedroom, Via Val di Non](/apartments/one-bedroom-val-di-non-balcony/) | up to 2 | 28 nights | €1,400 | €59 | €1,459 | €2,859 |
 
 Platform fees or special dates can change the total, so check the booking calendar on the apartment page for the exact figure. To compare with the rest of the city, see [monthly rent prices in Milan by area](/milan-monthly-rent-prices-by-area/).
 

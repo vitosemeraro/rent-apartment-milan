@@ -8,7 +8,7 @@ h1: Erasmus Spring Semester 2027 in Milan: Your Housing Checklist
 image: turro:4
 apts: turro, vdn
 ---
-For an **Erasmus spring semester in Milan** (February to July 2027), start looking for housing as soon as your nomination is confirmed: good flats go 2–3 months ahead. Prepare your passport, codice fiscale and acceptance letter. With us a whole furnished flat costs **€1,300–1,550 a month**, bills included, no three-month deposit.
+For an **Erasmus spring semester in Milan** (February to July 2027), start looking for housing as soon as your nomination is confirmed: good flats go 2–3 months ahead. Prepare your passport, codice fiscale and acceptance letter. With us a whole furnished flat costs **€1,200–1,400 a month**, bills included, no three-month deposit.
 
 ## When should I start looking for a February arrival?
 
@@ -47,8 +47,8 @@ We rent whole studios and flats, not rooms. The monthly price includes electrici
 
 | Apartment | Guests | Minimum stay | Monthly price | 5 months + cleaning |
 | --- | --- | --- | --- | --- |
-| [Studio, Turro](/apartments/studio-turro-martesana/) | up to 2 | 30 nights | €1,300 | €6,583 |
-| [One-bedroom, Via Val di Non](/apartments/one-bedroom-val-di-non-balcony/) | up to 2 | 28 nights | €1,550 | €7,809 |
+| [Studio, Turro](/apartments/studio-turro-martesana/) | up to 2 | 30 nights | €1,200 | €6,083 |
+| [One-bedroom, Via Val di Non](/apartments/one-bedroom-val-di-non-balcony/) | up to 2 | 28 nights | €1,400 | €7,059 |
 
 These are host prices for a direct booking. Platform fees or special dates can change the total, so use the booking calendar on the apartment page for the exact figure. For the rest of the city, see [monthly rent prices in Milan by area](/milan-monthly-rent-prices-by-area/).
 

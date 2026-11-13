@@ -8,7 +8,7 @@ h1: Studentenwohnung in Mailand: Kosten, Viertel und Verträge 2027
 image: valdinon:4
 apts: turro, vdn
 ---
-Eine **Studentenwohnung in Mailand** kostet bei uns **1.300 € bis 1.550 € im Monat**, Nebenkosten und WLAN inklusive, möbliert, ohne Drei-Monats-Kaution. Beide Wohnungen liegen im Nordosten, wenige Gehminuten von der roten Linie M1. Zur Bicocca sind es etwa 15 Minuten, zum Politecnico etwa 15 bis 20 Minuten.
+Eine **Studentenwohnung in Mailand** kostet bei uns **1.200 € bis 1.400 € im Monat**, Nebenkosten und WLAN inklusive, möbliert, ohne Drei-Monats-Kaution. Beide Wohnungen liegen im Nordosten, wenige Gehminuten von der roten Linie M1. Zur Bicocca sind es etwa 15 Minuten, zum Politecnico etwa 15 bis 20 Minuten.
 
 ## Was kostet eine Studentenwohnung in Mailand?
 
@@ -16,8 +16,8 @@ Wir vermieten **ganze Studios und Wohnungen**, keine Zimmer. Die Monatsmiete sch
 
 | Viertel | Wohnung | U-Bahn | Nächste Uni | Gäste | Mindestaufenthalt | Monatsmiete | Reinigung (einmalig) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Turro | Studio, 38 m² | M1 Turro, 2 Gehminuten | Politecnico, etwa 15–20 Minuten | bis 2 | 30 Nächte | 1.300 € | 83 € |
-| Precotto | Zwei Zimmer, Via Val di Non | M1 Precotto, etwa 5 Gehminuten | Bicocca, etwa 15 Minuten | bis 2 | 28 Nächte | 1.550 € | 59 € |
+| Turro | Studio, 38 m² | M1 Turro, 2 Gehminuten | Politecnico, etwa 15–20 Minuten | bis 2 | 30 Nächte | 1.200 € | 83 € |
+| Precotto | Zwei Zimmer, Via Val di Non | M1 Precotto, etwa 5 Gehminuten | Bicocca, etwa 15 Minuten | bis 2 | 28 Nächte | 1.400 € | 59 € |
 
 Das sind Gastgeberpreise bei Direktbuchung. Plattformgebühren oder Sondertermine können den Betrag ändern: Maßgeblich ist der Buchungskalender auf der Wohnungsseite.
 

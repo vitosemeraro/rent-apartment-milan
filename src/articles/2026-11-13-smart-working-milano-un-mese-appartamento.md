@@ -3,12 +3,12 @@ lang: it
 date: 2026-11-13
 updated: 2026-11-13
 title: Smart working a Milano per un mese: fibra, scrivania, prezzi
-description: Casa arredata a Milano per un mese di smart working: scrivania, fibra gigabit, utenze incluse, da 1.300 € al mese vicino alla M1. Prezzi e contratto.
+description: Casa arredata a Milano per un mese di smart working: scrivania, fibra gigabit, utenze incluse, da 1.200 € al mese vicino alla M1. Prezzi e contratto.
 h1: Smart working a Milano per un mese: casa arredata con scrivania e fibra
 image: valdinon:1
 apts: vdn, turro, mm
 ---
-Un **appartamento arredato a Milano per un mese di smart working** da noi costa **1.300 €** per il monolocale di Turro e **1.550 €** per il bilocale di via Val di Non, utenze e Wi-Fi inclusi. Entrambi hanno una scrivania; il bilocale ha la **fibra gigabit** e la camera separata. Firmi un contratto registrato, non versi tre mesi di deposito e sei a pochi minuti dalla M1.
+Un **appartamento arredato a Milano per un mese di smart working** da noi costa **1.200 €** per il monolocale di Turro e **1.400 €** per il bilocale di via Val di Non, utenze e Wi-Fi inclusi. Entrambi hanno una scrivania; il bilocale ha la **fibra gigabit** e la camera separata. Firmi un contratto registrato, non versi tre mesi di deposito e sei a pochi minuti dalla M1.
 
 ## Quanto costa un mese di smart working a Milano?
 
@@ -16,8 +16,8 @@ I canoni sono prezzi host per la prenotazione diretta, con luce, gas, riscaldame
 
 | Appartamento | Postazione | Internet | Canone mensile | Pulizia finale | Totale 1 mese |
 | --- | --- | --- | --- | --- | --- |
-| [Bilocale, via Val di Non](/it/appartamenti/bilocale-val-di-non-balcone/) | Postazione di lavoro dedicata, camera separata | Wi-Fi in fibra gigabit | 1.550 € | 59 € | 1.609 € |
-| [Monolocale, Turro](/it/appartamenti/monolocale-turro-martesana/) | Scrivania in un monolocale di 38 m² | Wi-Fi | 1.300 € | 83 € | 1.383 € |
+| [Bilocale, via Val di Non](/it/appartamenti/bilocale-val-di-non-balcone/) | Postazione di lavoro dedicata, camera separata | Wi-Fi in fibra gigabit | 1.400 € | 59 € | 1.459 € |
+| [Monolocale, Turro](/it/appartamenti/monolocale-turro-martesana/) | Scrivania in un monolocale di 38 m² | Wi-Fi | 1.200 € | 83 € | 1.283 € |
 | [Bilocale comfort, Precotto](/it/appartamenti/bilocale-comfort-precotto-m1/) | Tavolo da pranzo per il gruppo | Wi-Fi veloce | da 85 € a notte, 15% di sconto sul mese | 70 € | dipende dalle date |
 
 Date speciali o commissioni delle piattaforme possono cambiare il totale: controlla il calendario di prenotazione nella pagina di ogni appartamento. Per il resto della città vedi i [prezzi degli affitti mensili a Milano per zona](/it/prezzi-affitto-mensile-milano-per-zona/).

@@ -46,7 +46,7 @@ I prezzi derivano dagli sconti mensili di ogni appartamento. Le cifre sono prezz
 | Monolocale a Turro | 2 | 30 notti | 71 € | 26% | 83 € |
 | Bilocale in Via Val di Non | 2 | 28 notti | 98 € | 20% | 59 € |
 
-Prenotando direttamente, il monolocale a Turro costa 1.300 € al mese e il bilocale di via Val di Non 1.550 € al mese, spese incluse (utenze e Wi-Fi), più la pulizia finale. Commissioni della piattaforma e date con tariffe speciali possono cambiare il totale: per la cifra esatta usa il calendario.
+Prenotando direttamente, il monolocale a Turro costa 1.200 € al mese e il bilocale di via Val di Non 1.400 € al mese, spese incluse (utenze e Wi-Fi), più la pulizia finale. Commissioni della piattaforma e date con tariffe speciali possono cambiare il totale: per la cifra esatta usa il calendario.
 
 ## Il contratto vale per visto e residenza?
 

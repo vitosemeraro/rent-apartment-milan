@@ -2,8 +2,8 @@
 lang: en
 date: 2026-10-26
 updated: 2026-11-13
-title: Rent in Milan With No Deposit: From €1,300/Month | RAM
-description: No three-month deposit, no agency fee: furnished M1 flats in Milan from €1,300 a month, bills and Wi-Fi included. Up front you pay only the first month.
+title: Rent in Milan With No Deposit: From €1,200/Month | RAM
+description: No three-month deposit, no agency fee: furnished M1 flats in Milan from €1,200 a month, bills and Wi-Fi included. Up front you pay only the first month.
 h1: How to Rent in Milan Without a Deposit
 image: turro:1
 apts: turro, vdn
@@ -46,7 +46,7 @@ Our prices come from the monthly discounts on each apartment. The figures below 
 | Studio in Turro | 2 | 30 nights | €71 | 26% | €83 |
 | One-bedroom, Via Val di Non | 2 | 28 nights | €98 | 20% | €59 |
 
-Booked directly, the studio in Turro costs €1,300 per month and the one-bedroom in Via Val di Non €1,550 per month, all bills and Wi-Fi included, plus the final cleaning. Platform fees and dates with special rates can change the total, so use the calendar for the exact figure.
+Booked directly, the studio in Turro costs €1,200 per month and the one-bedroom in Via Val di Non €1,400 per month, all bills and Wi-Fi included, plus the final cleaning. Platform fees and dates with special rates can change the total, so use the calendar for the exact figure.
 
 ## Is a monthly lease valid for visa and residence?
 

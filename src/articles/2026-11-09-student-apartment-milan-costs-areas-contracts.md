@@ -8,7 +8,7 @@ h1: Student Apartment in Milan: Costs, Areas and Contracts for 2027
 image: turro:1
 apts: turro, vdn
 ---
-A **student apartment in Milan** costs **€1,300 to €1,550 per month** with us, bills and Wi-Fi included, furnished, with no three-month deposit. Both flats are in north-east Milan, a few minutes' walk from the red **M1** line. Bicocca is about 15 minutes away and the Politecnico about 15 to 20.
+A **student apartment in Milan** costs **€1,200 to €1,400 per month** with us, bills and Wi-Fi included, furnished, with no three-month deposit. Both flats are in north-east Milan, a few minutes' walk from the red **M1** line. Bicocca is about 15 minutes away and the Politecnico about 15 to 20.
 
 ## How much does a student apartment cost in Milan?
 
@@ -16,8 +16,8 @@ We rent **whole studios and flats**, not rooms. The monthly price includes elect
 
 | Area | Apartment | Metro | Nearest university | Guests | Minimum stay | Monthly price | Cleaning (once) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Turro | Studio, 38 m² | M1 Turro, 2-minute walk | Politecnico, about 15–20 minutes | up to 2 | 30 nights | €1,300 | €83 |
-| Precotto | One-bedroom, Via Val di Non | M1 Precotto, about 5-minute walk | Bicocca, about 15 minutes | up to 2 | 28 nights | €1,550 | €59 |
+| Turro | Studio, 38 m² | M1 Turro, 2-minute walk | Politecnico, about 15–20 minutes | up to 2 | 30 nights | €1,200 | €83 |
+| Precotto | One-bedroom, Via Val di Non | M1 Precotto, about 5-minute walk | Bicocca, about 15 minutes | up to 2 | 28 nights | €1,400 | €59 |
 
 These are host prices for a direct booking. Platform fees or special dates can change the total, so use the booking calendar on the apartment page for the exact figure.
 
