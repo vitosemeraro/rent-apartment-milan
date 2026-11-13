@@ -12,7 +12,7 @@ FAQ = {
  ],
  "monthly": [
   ("Qual è il soggiorno minimo per un affitto mensile?", "28 notti per il bilocale di via Val di Non e 30 notti per il monolocale di Turro. Il bilocale comfort di Precotto si affitta anche per soggiorni brevi, da 2 notti."),
-  ("Cosa è incluso nel canone mensile?", "Luce, gas, riscaldamento, acqua e Wi-Fi in fibra sono inclusi. Si aggiunge solo la pulizia finale, indicata nella tabella dei prezzi."),
+  ("Le utenze sono incluse nell'affitto mensile?", "Sì. Il monolocale di Turro costa [[turro]] € al mese e il bilocale di via Val di Non [[vdn]] € al mese, con luce, gas, riscaldamento, acqua e Wi-Fi in fibra inclusi. Si aggiunge solo la pulizia finale, una volta sola, indicata nella tabella dei prezzi."),
   ("Con un affitto mensile si paga la tassa di soggiorno?", "No. La tassa di soggiorno del Comune di Milano vale per i soggiorni sotto i 30 notti e non è dovuta per i contratti mensili."),
   ("Con quanto anticipo conviene cercare casa?", "Inizia 4–8 settimane prima dell'arrivo. Settembre, gennaio e febbraio sono i mesi più richiesti per università e fiere."),
   ("Quanto costa un affitto mensile a Turro e a Precotto?", "Con RAM il monolocale di Turro costa [[turro]] € al mese e il bilocale di via Val di Non, a Precotto vicino alla Bicocca, [[vdn]] € al mese, spese incluse. Per 3 mesi il totale con la pulizia finale è [[tot:turro:3]] € a Turro e [[tot:vdn:3]] € a Precotto."),
