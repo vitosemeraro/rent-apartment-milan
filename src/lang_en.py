@@ -78,7 +78,7 @@ P = {
 <h2>Which areas to choose</h2><p>Look at the metro map before the neighbourhood name. North-east Milan along the <b>M1 red line</b> (Precotto, Turro, Gorla) offers quieter streets, lower prices than the centre and a direct line to Duomo, Cadorna and Rho Fiera. Bicocca University is close by, and Loreto (M2 interchange) is only a few stops away for Politecnico and Centrale station.</p>
 <h2>Documents you'll need</h2><ul><li>Passport or ID card and Italian tax code (codice fiscale), which you can request at the Agenzia delle Entrate or a consulate.</li><li>A document proving the reason for your stay (work contract, university enrolment, internship letter): it is required for the transitional lease.</li><li>For residence or visa purposes, a <a href=\"/transitional-lease-contract-milan/\">registered contract</a>.</li></ul>
 <div class="tip"><b>Tip:</b> start your search 4–8 weeks before arrival. September, January and February are the busiest months because of universities and trade fairs.</div>
-<h2>Monthly stays with RAM</h2><p>The one-bedroom in Via Val di Non and the studio in Turro are designed for long stays: desk, gigabit fibre, washing machine, fully equipped kitchen and a registered contract. Minimum stay 30 nights.</p>
+<h2>Monthly stays with RAM</h2><p>The one-bedroom in Via Val di Non and the studio in Turro are designed for long stays: desk, gigabit fibre, washing machine, fully equipped kitchen and a registered contract. Minimum stay [[min:vdn]] nights in Via Val di Non and [[min:turro]] in Turro.</p>
 <h2>Where can I read more?</h2><p>For exact totals on a one- or two-month stay, read <a href=\"/blog/rent-apartment-milan-one-two-months/\">renting in Milan for one or two months</a>; for everyday life as a long-stay guest, <a href=\"/your-guide-to-monthly-rentals-milan/\">our guide to living in Milan on a monthly rental</a>. This guide is also available in Italian: <a href=\"/it/affitti-mensili-milano/\" hreflang=\"it\" lang=\"it\">Affitti mensili a Milano</a>.</p>""",
 },
 "students": {
@@ -223,5 +223,5 @@ L = {
     "amenities": ["Double bed 152×203", "Air conditioning in bedroom and kitchen", "Balcony with barbecue", "Dedicated workstation", "Gigabit fibre Wi-Fi", "Full kitchen with oven", "Microwave", "Nespresso and kettle", "Washing machine", "Iron and ironing board", "2 Full HD TVs with Chromecast", "Self check-in with smart lock", "Lift", "Bed linen and towels"],
     "location": "Via Val di Non 26, in a quiet residential street of Precotto, between the M1 and Bicocca, with free street parking.",
     "nearby": [("M1 Precotto", "5 min on foot"), ("Bicocca University", "≈ 15 min"), ("San Babila", "≈ 15 min by M1"), ("Niguarda hospital", "≈ 15 min"), ("Rho Fiera", "M1 direct")],
-    "box": ["Minimum stay 30 nights", "Bills and Wi-Fi included", "Registered transitional lease", "Max 2 guests, no pets"]},
+    "box": ["Minimum stay [[min:vdn]] nights", "Bills and Wi-Fi included", "Registered transitional lease", "Max 2 guests, no pets"]},
 }

@@ -253,6 +253,7 @@ def fill_data(lang, s):
     s = s.replace("[[turro]]", fmt(month_price("turro"))).replace("[[vdn]]", fmt(month_price("vdn"))).replace("[[date]]", TODAY).replace("[[min_month]]", fmt(MIN_MONTH))
     # [[tot:<lid>:<mesi>]] = costo totale (canone x mesi + pulizia finale); [[clean:<lid>]] = pulizia finale
     s = re.sub(r"\[\[tot:(\w+):(\d+)\]\]", lambda m: fmt(month_price(m.group(1)) * int(m.group(2)) + PRICING[m.group(1)]["cleaning"]), s)
+    s = re.sub(r"\[\[min:(\w+)\]\]", lambda m: str(PRICING[m.group(1)]["min_nights"]), s)  # soggiorno minimo da pricing.json
     s = re.sub(r"\[\[clean:(\w+)\]\]", lambda m: fmt(PRICING[m.group(1)]["cleaning"]), s)
     s = s.replace("[[mm]]", fmt(PRICING["mm"]["base"])).replace("[[mm_x]]", str(PRICING["mm"]["extra_after"]))
     if "[[grp" in s:
@@ -373,7 +374,7 @@ def page_listing(lang, lid):
         else:
             price = f'<div class="p">{T.ui["from"]} €{P_["base"]} <small>/ {T.ui["night"]}</small></div>'
         cta = BK.render(lang, lid, PRICING, path_of(lang, "privacy"))
-    box_list = "".join(f"<li>{esc(x)}</li>" for x in t["box"])
+    box_list = "".join(f"<li>{esc(fill_data(lang, x))}</li>" for x in t["box"])
     revs = reviews_grid(lang, 6, lid)
     rev_sec = f'<h2>{esc(T.ui["guests_say"])}</h2><div class="grid g2">{revs}</div>' if revs else ""
     others = "".join(listing_card(lang, o) for o in LISTINGS if o != lid)

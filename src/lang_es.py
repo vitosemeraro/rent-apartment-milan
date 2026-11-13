@@ -76,7 +76,7 @@ P = {
 <h2>Qué zonas elegir</h2><p>Mira el plano del metro antes que el nombre del barrio. El noreste de Milán en la <b>línea roja M1</b> (Precotto, Turro, Gorla) ofrece calles más tranquilas, precios más bajos que el centro y una línea directa al Duomo, Cadorna y Rho Fiera. La Universidad Bicocca está cerca y Loreto (transbordo M2) a pocas paradas para el Politécnico y la estación Centrale.</p>
 <h2>Documentos necesarios</h2><ul><li>Pasaporte o DNI y código fiscal italiano (codice fiscale), que se solicita en la Agenzia delle Entrate o en un consulado.</li><li>Un documento que justifique el motivo de la estancia (contrato de trabajo, matrícula, carta de prácticas): lo exige el contrato temporal.</li><li>Para empadronarte o tramitar el visado, un <a href=\"/es/contrato-alquiler-temporal-milan/\">contrato registrado</a>.</li></ul>
 <div class="tip"><b>Consejo:</b> empieza a buscar 4–8 semanas antes de llegar. Septiembre, enero y febrero son los meses con más demanda por universidades y ferias.</div>
-<h2>Estancias mensuales con RAM</h2><p>El piso de Via Val di Non y el estudio de Turro están pensados para estancias largas: escritorio, fibra gigabit, lavadora, cocina completa y contrato registrado. Estancia mínima de 30 noches.</p>""",
+<h2>Estancias mensuales con RAM</h2><p>El piso de Via Val di Non y el estudio de Turro están pensados para estancias largas: escritorio, fibra gigabit, lavadora, cocina completa y contrato registrado. Estancia mínima de [[min:vdn]] noches en Via Val di Non y [[min:turro]] en Turro.</p>""",
 },
 "students": {
     "nav": "Alojamiento para estudiantes", "kicker": "Guía", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn"],
@@ -220,5 +220,5 @@ L = {
     "amenities": ["Cama de matrimonio 152×203", "Aire acondicionado en dormitorio y cocina", "Balcón con barbacoa", "Puesto de trabajo", "Wi-Fi de fibra gigabit", "Cocina completa con horno", "Microondas", "Nespresso y hervidor", "Lavadora", "Plancha y tabla", "2 TV Full HD con Chromecast", "Llegada autónoma con cerradura inteligente", "Ascensor", "Sábanas y toallas"],
     "location": "Via Val di Non 26, en una calle residencial tranquila de Precotto, entre la M1 y la Bicocca, con aparcamiento gratuito en la calle.",
     "nearby": [("M1 Precotto", "5 min a pie"), ("Universidad Bicocca", "≈ 15 min"), ("San Babila", "≈ 15 min en M1"), ("Hospital Niguarda", "≈ 15 min"), ("Rho Fiera", "M1 directa")],
-    "box": ["Estancia mínima 30 noches", "Gastos y Wi-Fi incluidos", "Contrato temporal registrado", "Máx. 2 huéspedes, sin mascotas"]},
+    "box": ["Estancia mínima [[min:vdn]] noches", "Gastos y Wi-Fi incluidos", "Contrato temporal registrado", "Máx. 2 huéspedes, sin mascotas"]},
 }

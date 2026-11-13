@@ -82,7 +82,7 @@ P = {
 <p class="muted">Monatsmiete inklusive Strom, Gas, Heizung und WLAN, dazu eine einmalige Endreinigung (siehe Preistabelle oben).</p>
 <h2>Benötigte Unterlagen</h2><ul><li>Reisepass oder Personalausweis und italienische Steuernummer (codice fiscale), erhältlich bei der Agenzia delle Entrate oder im Konsulat.</li><li>Ein Nachweis des Aufenthaltsgrunds (Arbeitsvertrag, Immatrikulation, Praktikumsbestätigung): Er ist für den Zeitmietvertrag nötig.</li><li>Für Wohnsitz oder Visum ein <a href=\"/de/zeitmietvertrag-mailand/\">registrierter Vertrag</a>.</li></ul>
 <div class="tip"><b>Tipp:</b> Beginnen Sie 4–8 Wochen vor der Ankunft mit der Suche. September, Januar und Februar sind wegen Universitäten und Messen am gefragtesten.</div>
-<h2>Monatsaufenthalte mit RAM</h2><p>Die Zwei-Zimmer-Wohnung in der Via Val di Non und das Studio in Turro sind für lange Aufenthalte gedacht: Schreibtisch, Gigabit-Glasfaser, Waschmaschine, voll ausgestattete Küche und registrierter Vertrag. Mindestaufenthalt 30 Nächte.</p>""",
+<h2>Monatsaufenthalte mit RAM</h2><p>Die Zwei-Zimmer-Wohnung in der Via Val di Non und das Studio in Turro sind für lange Aufenthalte gedacht: Schreibtisch, Gigabit-Glasfaser, Waschmaschine, voll ausgestattete Küche und registrierter Vertrag. Mindestaufenthalt [[min:vdn]] Nächte in der Via Val di Non und [[min:turro]] in Turro.</p>""",
     "faq": [
         ("Was kostet eine Wohnung auf Zeit bei RAM?", "Das Studio in Turro kostet [[turro]] € im Monat, die Zwei-Zimmer-Wohnung in der Via Val di Non [[vdn]] € im Monat, jeweils inklusive Strom, Gas, Heizung, Wasser und WLAN. Dazu kommt eine einmalige Endreinigung."),
         ("Kann ich eine möblierte Wohnung in Mailand für nur einen Monat mieten?", "Ja. Der Mindestaufenthalt in unseren Monatswohnungen beträgt 30 Nächte, ab dann ist ein registrierter Zeitmietvertrag möglich. Die Wohnungen sind komplett möbliert und ausgestattet, Sie brauchen nur Ihren Koffer."),
@@ -233,5 +233,5 @@ L = {
     "amenities": ["Doppelbett 152×203", "Klimaanlage in Schlafzimmer und Küche", "Balkon mit Grill", "Eigener Arbeitsplatz", "Gigabit-Glasfaser-WLAN", "Komplette Küche mit Backofen", "Mikrowelle", "Nespresso und Wasserkocher", "Waschmaschine", "Bügeleisen und -brett", "2 Full-HD-TVs mit Chromecast", "Selbst-Check-in mit Smart Lock", "Aufzug", "Bettwäsche und Handtücher"],
     "location": "Via Val di Non 26, in einer ruhigen Wohnstraße in Precotto zwischen M1 und Bicocca, mit kostenlosen Parkplätzen auf der Straße.",
     "nearby": [("M1 Precotto", "5 Gehminuten"), ("Universität Bicocca", "≈ 15 Min."), ("San Babila", "≈ 15 Min. mit M1"), ("Krankenhaus Niguarda", "≈ 15 Min."), ("Rho Fiera", "M1 direkt")],
-    "box": ["Mindestaufenthalt 30 Nächte", "Nebenkosten und WLAN inklusive", "Registrierter Zeitmietvertrag", "Max. 2 Gäste, keine Haustiere"]},
+    "box": ["Mindestaufenthalt [[min:vdn]] Nächte", "Nebenkosten und WLAN inklusive", "Registrierter Zeitmietvertrag", "Max. 2 Gäste, keine Haustiere"]},
 }

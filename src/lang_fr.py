@@ -76,7 +76,7 @@ P = {
 <h2>Quels quartiers choisir</h2><p>Regardez le plan du métro avant le nom du quartier. Le nord-est de Milan le long de la <b>ligne rouge M1</b> (Precotto, Turro, Gorla) offre des rues plus calmes, des prix inférieurs au centre et une ligne directe vers le Duomo, Cadorna et Rho Fiera. L'université Bicocca est toute proche et Loreto (correspondance M2) à quelques stations pour le Politecnico et la gare Centrale.</p>
 <h2>Documents nécessaires</h2><ul><li>Passeport ou carte d'identité et code fiscal italien (codice fiscale), à demander à l'Agenzia delle Entrate ou au consulat.</li><li>Un justificatif du motif du séjour (contrat de travail, inscription universitaire, convention de stage) : il est exigé pour le bail temporaire.</li><li>Pour la résidence ou le visa, un <a href=\"/fr/bail-temporaire-milan/\">bail enregistré</a>.</li></ul>
 <div class="tip"><b>Conseil :</b> commencez vos recherches 4 à 8 semaines avant l'arrivée. Septembre, janvier et février sont les mois les plus demandés à cause des universités et des salons.</div>
-<h2>Séjours au mois avec RAM</h2><p>Le deux-pièces de la Via Val di Non et le studio de Turro sont pensés pour les longs séjours : bureau, fibre gigabit, lave-linge, cuisine équipée et bail enregistré. Séjour minimum de 30 nuits.</p>""",
+<h2>Séjours au mois avec RAM</h2><p>Le deux-pièces de la Via Val di Non et le studio de Turro sont pensés pour les longs séjours : bureau, fibre gigabit, lave-linge, cuisine équipée et bail enregistré. Séjour minimum de [[min:vdn]] nuits Via Val di Non et [[min:turro]] à Turro.</p>""",
 },
 "students": {
     "nav": "Logement étudiant à Milan", "kicker": "Guide", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn"],
@@ -220,5 +220,5 @@ L = {
     "amenities": ["Lit double 152×203", "Climatisation chambre et cuisine", "Balcon avec barbecue", "Espace de travail dédié", "Wi-Fi fibre gigabit", "Cuisine équipée avec four", "Micro-ondes", "Nespresso et bouilloire", "Lave-linge", "Fer et planche à repasser", "2 TV Full HD avec Chromecast", "Arrivée autonome, serrure connectée", "Ascenseur", "Draps et serviettes"],
     "location": "Via Val di Non 26, dans une rue résidentielle calme de Precotto, entre la M1 et la Bicocca, avec stationnement gratuit.",
     "nearby": [("M1 Precotto", "5 min à pied"), ("Université Bicocca", "≈ 15 min"), ("San Babila", "≈ 15 min en M1"), ("Hôpital Niguarda", "≈ 15 min"), ("Rho Fiera", "M1 directe")],
-    "box": ["Séjour minimum 30 nuits", "Charges et Wi-Fi inclus", "Bail temporaire enregistré", "2 voyageurs max, pas d'animaux"]},
+    "box": ["Séjour minimum [[min:vdn]] nuits", "Charges et Wi-Fi inclus", "Bail temporaire enregistré", "2 voyageurs max, pas d'animaux"]},
 }
