@@ -29,6 +29,7 @@ nav.main a:hover,nav.main a[aria-current]{background:var(--soft)}
 .hero{position:relative;padding:48px 0 30px}
 .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
 .hero .kicker,.kicker{display:inline-block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:12px}
+.hero p.answer{font-size:1.08rem;max-width:38em;margin:0 0 10px}.hero p.answer-links{margin:0 0 16px;font-size:.98rem}
 .hero p.lead,.lead{font-size:1.15rem;color:var(--mut);max-width:38em}
 .hero-img{border-radius:22px;overflow:hidden;aspect-ratio:4/3;background:var(--soft)}
 .hero-img img{width:100%;height:100%;object-fit:cover}

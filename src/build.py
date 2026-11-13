@@ -246,8 +246,17 @@ def page_home(lang):
     cards = "".join(listing_card(lang, lid) for lid in LISTINGS)
     hn = P.get("hero_note")
     hero_note = f'<p style="margin:-6px 0 18px">{esc(hn[0])}: <a href="{path_of(lang, hn[1])}" data-evt="hero_students">{esc(hn[2])} →</a></p>' if hn else ""
+    # Risposta diretta in apertura (prezzi da pricing.json) e link alle guide più cercate
+    answer = ""
+    if P.get("answer"):
+        fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
+        nights = [PRICING[k]["base"] for k, L in LISTINGS.items() if L["status"] == "live" and not PRICING.get(k, {}).get("soon") and PRICING[k].get("min_nights", 1) < 28]
+        answer = '<p class="answer"><b>' + esc(P["answer"].format(turro=fmt(month_price("turro")), vdn=fmt(month_price("vdn")), night=min(nights) if nights else "")) + '</b></p>'
+        if P.get("answer_links"):
+            lab, keys = P["answer_links"]
+            answer += f'<p class="answer-links">{esc(lab)}: ' + " · ".join(f'<a href="{path_of(lang, k)}" data-evt="hero_guide">{esc(T.P[k]["nav"])}</a>' for k in keys) + '</p>'
     guides = "".join(f'<a class="feat" style="text-decoration:none;color:inherit" href="{path_of(lang, k)}"><h3>{esc(T.P[k]["nav"])} →</h3><p>{esc(T.P[k]["desc"])}</p></a>' for k in CONFIG["guides"])
-    body = f"""<section class="hero"><div class="wrap hero-grid"><div><span class="kicker">{esc(P["kicker"])}</span><h1>{esc(P["h1"])}</h1><p class="lead">{esc(P["lead"])}</p>{hero_note}
+    body = f"""<section class="hero"><div class="wrap hero-grid"><div><span class="kicker">{esc(P["kicker"])}</span><h1>{esc(P["h1"])}</h1>{answer}<p class="lead">{esc(P["lead"])}</p>{hero_note}
 <div class="cta-row"><a class="btn" href="{path_of(lang, "apartments")}" data-evt="cta_apartments">{esc(T.ui["see_apts"])}</a><a class="btn ghost" href="{path_of(lang, "contact")}" data-evt="cta_contact">{esc(T.ui["ask"])}</a></div>
 <div class="trust">{badge_sh(T)}<span class="badge">★ {CONFIG["rating"]} · {T.ui["n_reviews"].format(n=CONFIG["reviews_count"])}</span><span class="badge">Ⓜ M1 Precotto · Turro</span></div></div>
 <div class="hero-img">{img("valdinon", 0, "(max-width:860px) 100vw, 50vw", eager=True, alt=P["hero_alt"])}</div></div></section>

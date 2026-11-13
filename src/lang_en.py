@@ -50,6 +50,8 @@ P = {
     "h1": "Furnished apartments in Milan, managed by a real host",
     "lead": "Four homes in the north-east of Milan, a few minutes from the M1 metro: perfect for work, university, trade fairs or a few nights in the city. Bills included, clear contracts, and a host who answers.",
     "hero_alt": "Bright bedroom with balcony in the Val di Non apartment, Milan Precotto",
+    "answer": "In short: RAM rents furnished flats in north-east Milan, all a short walk from the M1 red line (Precotto, Turro, Bicocca). Monthly stays cost from €{turro} to €{vdn} a month with bills and Wi-Fi included, short stays start at €{night} a night, and there is no three-month deposit and no agency fee.",
+    "answer_links": ("Start here", ["nodeposit", "monthly", "contract"]),
     "apts_title": "Choose your apartment",
     "why_kicker": "Why rent with RAM", "why_title": "Renting in Milan without the usual headaches",
     "host_kicker": "Your host", "host_title": "Hi, I'm Vito",
