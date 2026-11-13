@@ -4,7 +4,7 @@ import json
 
 QA = {
 "en": {
- "nodeposit": ("Can I rent an apartment in Milan without a deposit?", "Yes. RAM rents furnished studios and flats in north-east Milan for monthly stays without the usual three-month deposit. Bills and gigabit Wi-Fi are included in one monthly price, the lease is registered, and the apartments are a few minutes from the M1 metro (Precotto and Turro)."),
+ "nodeposit": ("Where can I rent an apartment in Milan with no deposit?", "With RAM, in north-east Milan. We rent furnished studios and flats in Precotto and Turro, a few minutes from the M1 metro, for monthly stays without the usual three-month deposit. Bills and gigabit Wi-Fi are included in one monthly price, and the lease is registered."),
  "monthly": ("How much does a monthly rental cost in Milan?", "A furnished one-bedroom flat outside the centre but on the metro typically costs €1,900–2,700 per month on the main platforms. RAM's monthly apartments on the M1 start from about €1,300 per month for the Turro studio, with all bills included and no three-month deposit."),
  "students": ("Where should students live in Milan?", "Choose by commute, not by fame. From Precotto and Turro on the M1 you reach Bicocca in about 15 minutes, Politecnico (Città Studi) in 15–20 and the Statale in 20–25. Whole furnished apartments with a registered student or transitional lease avoid shared-flat contracts and big deposits."),
  "bicocca": ("Where to stay near Bicocca University in Milan?", "Precotto borders Bicocca to the east: from Via Val di Non the university buildings are about 15 minutes away on foot, by bike or tram 7, and the M1 takes you to the Duomo in about 20 minutes. RAM offers a one-bedroom flat with desk, balcony and gigabit fibre from 28 nights."),
