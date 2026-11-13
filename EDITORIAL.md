@@ -36,7 +36,7 @@ Più visite organiche in target e più richieste di prenotazione diretta (modulo
 | 8 | 2026-12-21 | Studio for rent in Milan with no deposit (studio rent milan no deposit) | en, it | studenti, giovani | todo |
 | 9 | 2026-12-28 | MIDO, MICAM and February fairs 2027: apartments for teams | en, it, de | fiere | todo |
 | 10 | 2027-01-04 | Codice fiscale, residence and lease: first week in Milan for expats | en, es | expat | todo |
-| 11 | 2027-01-11 | Living in Turro and NoLo: the honest neighbourhood guide (turro flats) | en, it | tutti | todo |
+| 11 | 2027-01-11 | Living in Turro and NoLo: the honest neighbourhood guide (turro flats) | en, it | tutti | done 2026-11-13 (anticipato, Regia) |
 | 12 | 2027-01-18 | Doctors and residents at Niguarda hospital: monthly apartments nearby | it, en | medici, specializzandi | todo |
 | 13 | 2027-01-25 | Room vs whole studio in Milan: the real monthly cost compared | en, it, de | studenti | todo |
 | 14 | 2027-02-01 | Internship in Milan: where to live for 3–6 months | en, it, fr | stagisti | todo |
