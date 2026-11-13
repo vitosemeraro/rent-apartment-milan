@@ -46,6 +46,8 @@ Più visite organiche in target e più richieste di prenotazione diretta (modulo
 
 Dopo la riga 16 la routine propone nuovi temi partendo dalle query di Search Console in posizione 5–20 e dalle domande ricorrenti degli ospiti, e li aggiunge in coda.
 
+Search Console senza USA (dal 13/11/2026): circa metà delle impressioni a 28 giorni (789 su 1.599) viene dagli Stati Uniti, con 0 clic e a picchi, su query in tedesco. È traffico di tool, non di persone. Quando la routine sceglie temi, keyword o priorità da Search Console, legge i dati anche con il filtro paese diverso da USA (OpenSEO get_search_console_performance con filters [{dimension:"country", operator:"notEquals", expression:"usa"}]) e decide su quel dato.
+
 ## AEO (risposte di AI Overviews, ChatGPT, Perplexity, Copilot)
 
 Già fatto sul sito:
