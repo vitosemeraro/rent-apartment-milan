@@ -9,7 +9,7 @@ SLUG = {
     "about": "ihr-gastgeber", "reviews": "bewertungen", "faq": "haeufige-fragen", "contact": "kontakt", "privacy": "datenschutz", "thanks": "danke",
 }
 ui = {
-    "month": "Monat", "price_month": "ab {p} € <small>/ Monat</small>",
+    "month": "Monat", "month_low": "{lo} €/Monat für Nächte im Dezember und Januar, danach {std} €.", "price_month": "ab {p} € <small>/ Monat</small>",
     "guestfav": "Gäste-Favorit auf Airbnb",
     "home": "Start", "skip": "Zum Inhalt", "logo_sub": "Vitos Wohnungen", "menu": "Menü",
     "nav_apartments": "Wohnungen", "nav_monthly": "Wohnen auf Zeit", "nav_guides": "Ratgeber", "nav_about": "Ihr Gastgeber",

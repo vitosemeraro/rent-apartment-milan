@@ -1,5 +1,5 @@
 {
-  "_note": "month = canone mensile spese incluse netto deciso da Vito il 13/11/2026 (1200 Jaurès, 1400 Val di Non) (vince sul calcolo da base). Regole di prezzo copiate dalle impostazioni Airbnb il 25/10/2026. Prezzo host (senza commissione ospite). Tassa di soggiorno Milano: euro per persona adulta a notte, prime 14 notti, under 18 esenti. PA = stesse regole short term di MM (13/11/2026).",
+  "_note": "month = canone mensile spese incluse netto deciso da Vito il 13/11/2026 (1200 Jaurès, 1400 Val di Non) (vince sul calcolo da base). Regole di prezzo copiate dalle impostazioni Airbnb il 25/10/2026. Prezzo host (senza commissione ospite). Tassa di soggiorno Milano: euro per persona adulta a notte, prime 14 notti, under 18 esenti. PA = stesse regole short term di MM (13/11/2026). month_low = canone ridotto per le notti nel periodo (dic-gen), ok di Vito 13/11/2026.",
   "tourist_tax": {
     "2026": 9.5,
     "2027": 9.5,
@@ -140,7 +140,12 @@
     "length": {},
     "min_nights": 30,
     "max_guests": 2,
-    "events": []
+    "events": [],
+    "month_low": {
+      "from": "2026-12-01",
+      "to": "2027-02-01",
+      "price": 1100
+    }
   },
   "vdn": {
     "month": 1400,
@@ -155,6 +160,11 @@
     "length": {},
     "min_nights": 28,
     "max_guests": 2,
-    "events": []
+    "events": [],
+    "month_low": {
+      "from": "2026-12-01",
+      "to": "2027-02-01",
+      "price": 1300
+    }
   }
 }

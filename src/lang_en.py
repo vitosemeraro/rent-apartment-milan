@@ -9,7 +9,7 @@ SLUG = {
     "about": "about", "reviews": "reviews", "faq": "faq", "contact": "contact", "privacy": "privacy", "thanks": "thank-you",
 }
 ui = {
-    "month": "month", "price_month": "from €{p} <small>/ month</small>",
+    "month": "month", "month_low": "€{lo}/month for nights in December and January, then €{std}.", "price_month": "from €{p} <small>/ month</small>",
     "guestfav": "Guest favourite on Airbnb",
     "home": "Home", "skip": "Skip to content", "logo_sub": "apartments by Vito", "menu": "Menu",
     "nav_apartments": "Apartments", "nav_monthly": "Monthly stays", "nav_guides": "Guides", "nav_about": "Your host",

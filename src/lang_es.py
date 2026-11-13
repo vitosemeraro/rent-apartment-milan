@@ -9,7 +9,7 @@ SLUG = {
     "about": "anfitrion", "reviews": "opiniones", "faq": "preguntas-frecuentes", "contact": "contacto", "privacy": "privacidad", "thanks": "gracias",
 }
 ui = {
-    "month": "mes", "price_month": "desde {p} € <small>/ mes</small>",
+    "month": "mes", "month_low": "{lo} €/mes para las noches de diciembre y enero, después {std} €.", "price_month": "desde {p} € <small>/ mes</small>",
     "guestfav": "Favorito de los huéspedes en Airbnb",
     "home": "Inicio", "skip": "Ir al contenido", "logo_sub": "los apartamentos de Vito", "menu": "Menú",
     "nav_apartments": "Apartamentos", "nav_monthly": "Alquiler mensual", "nav_guides": "Guías", "nav_about": "Tu anfitrión",

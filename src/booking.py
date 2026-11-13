@@ -78,7 +78,7 @@ var ad=+f.adults.value,ch=+f.children.value,g=ad+ch;if(g>P.max_guests){f.childre
 if(!a||!b){q.innerHTML='';btn.disabled=true;return}var n=Math.round((b-a)/864e5);if(n<P.min_nights){er.textContent=T.min.replace('{n}',P.min_nights);q.innerHTML='';btn.disabled=true;return}
 var nightsSum=0,extra=0,taxv=0;for(var i=0,d=new Date(a);i<n;i++,d=add(d,1)){nightsSum+=price(d);extra+=Math.max(0,g-P.extra_after)*P.extra_fee;if(i<TX.max&&n<30)taxv+=(TX.r[d.getFullYear()]||TX.r.def)*ad}
 var disc=0;if(n>=28)disc=P.monthly;else if(n>=7)disc=P.weekly;else if(P.length[n])disc=P.length[n];var lead=Math.round((a-today)/864e5);if(P.lastminute&&lead<=P.lastminute_days)disc=Math.max(disc,P.lastminute);
-if(P.month&&n>=28){nightsSum=P.month*n/30;disc=0}
+if(P.month&&n>=28){nightsSum=0;for(var j=0,e=new Date(a);j<n;j++,e=add(e,1)){var lw=P.month_low,s=k(e);nightsSum+=((lw&&s>=lw.from&&s<lw.to)?lw.price:P.month)/30}disc=0}
 var base=nightsSum+extra,dv=base*disc/100,tot=base-dv+P.cleaning+taxv;
 var rows=[[n+' '+(n==1?T.night:T.nights),eur(nightsSum)]];if(extra)rows.push([T.extra,eur(extra)]);if(dv)rows.push([T.disc+' '+disc+'%','− '+eur(dv)]);rows.push([T.clean,eur(P.cleaning)]);if(n<30)rows.push([T.tax+' ('+ad+' × '+Math.min(n,TX.max)+')',eur(taxv)]);
 q.innerHTML='<table>'+rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'}).join('')+'<tr class="tot"><td>'+T.total+'</td><td>'+eur(tot)+'</td></tr></table>';

@@ -131,6 +131,18 @@ document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))
 
 
 # ---------------------------------------------------------------- blocks
+def month_low(lid):
+    """Canone ridotto stagionale (es. dic-gen) se il periodo non è ancora finito, altrimenti None."""
+    lw = PRICING[lid].get("month_low")
+    return lw if lw and TODAY < lw["to"] else None
+
+
+def month_from(lid):
+    """Prezzo 'da' mostrato su schede e box: il più basso tra canone e offerta stagionale in corso."""
+    lw = month_low(lid)
+    return min(month_price(lid), lw["price"]) if lw else month_price(lid)
+
+
 def month_price(lid):
     p = PRICING[lid]
     if p.get("month"):
@@ -275,7 +287,7 @@ def listing_card(lang, lid, sizes="(max-width:620px) 100vw, (max-width:960px) 50
     tag = f'<span class="tag soon">{esc(T.ui["soon"])}</span>' if L["status"] == "soon" else f'<span class="tag">{esc(t["stay_tag"])}</span>'
     pr = PRICING.get(lid, {})
     if pr.get("soon"): price = T.ui["price_month_req"]
-    elif pr.get("min_nights", 1) >= 28: price = T.ui["price_month"].format(p=f"{month_price(lid):,}".replace(",", "."))
+    elif pr.get("min_nights", 1) >= 28: price = T.ui["price_month"].format(p=f"{month_from(lid):,}".replace(",", "."))
     else: price = T.ui["price_night"].format(p=pr["base"])
     return f"""<article class="card">{tag}<div class="ph">{img(L["photos"], L.get("cover", 0), sizes, alt=t["name"])}</div><div class="bd">
 <h3><a href="{path_of(lang, "l_" + lid)}">{esc(t["name"])}</a></h3><div class="meta"><span>{esc(t["area"])}</span><span>{T.ui["guests"].format(n=L["guests"])}</span><span>{esc(t["rooms"])}</span></div>
@@ -370,7 +382,11 @@ def page_listing(lang, lid):
         cta = f'<a class="btn" href="{path_of(lang, "contact")}?apt={lid}" data-evt="cta_contact" data-label="{lid}">{esc(T.ui["notify"])}</a>'
     else:
         if P_.get("min_nights", 1) >= 28:
-            price = f'<div class="p">{T.ui["from"]} €{month_price(lid):,} <small>/ {T.ui["month"]}</small></div>'.replace(",", ".")
+            price = f'<div class="p">{T.ui["from"]} €{month_from(lid):,} <small>/ {T.ui["month"]}</small></div>'.replace(",", ".")
+            lw = month_low(lid)
+            if lw:
+                fm = lambda v: f"{v:,}".replace(",", ".")
+                price += f'<p class="muted" style="font-size:14px;margin:4px 0 0">{esc(T.ui["month_low"].format(lo=fm(lw["price"]), std=fm(month_price(lid))))}</p>'
         else:
             price = f'<div class="p">{T.ui["from"]} €{P_["base"]} <small>/ {T.ui["night"]}</small></div>'
         cta = BK.render(lang, lid, PRICING, path_of(lang, "privacy"))
