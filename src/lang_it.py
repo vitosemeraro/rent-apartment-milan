@@ -17,7 +17,7 @@ ui = {
     "superhost": "Annuncio Superhost su Airbnb", "foot_about": "Appartamenti arredati a Milano nord-est, sulla linea rossa M1, per soggiorni da poche notti a diversi mesi. Gestiti personalmente da Vito.",
     "cin_note": "Locazioni turistiche registrate in Lombardia. CIN indicato in ogni annuncio.",
     "cookie_text": "Usiamo un cookie statistico (Google Analytics) solo con il tuo consenso. <a href=\"{privacy}\">Privacy e cookie</a>.",
-    "cookie_ok": "Accetto", "cookie_no": "Rifiuto",
+    "cookie_ok": "Accetta", "cookie_no": "Rifiuto", "cookie_set": "Impostazioni", "cookie_close": "Chiudi e continua senza accettare", "cookie_nec": "Necessari: sempre attivi", "cookie_stat": "Statistiche (Google Analytics)", "cookie_save": "Salva le scelte",
     "soon": "In arrivo", "price_night": "da {p} € <small>/ notte</small>", "price_month_req": "Prezzo mensile <small>su richiesta</small>",
     "guests": "{n} ospiti", "cta_kicker": "Scrivi a Vito", "cta_title": "Dimmi le tue date, ti rispondo in poche ore",
     "cta_text": "Lavoro, studio, una fiera o un viaggio in famiglia: mandami date e numero di ospiti e ti dico quale appartamento fa per te e il prezzo totale, senza sorprese.",

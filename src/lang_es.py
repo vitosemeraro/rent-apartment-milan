@@ -17,7 +17,7 @@ ui = {
     "superhost": "Anuncio Superanfitrión en Airbnb", "foot_about": "Apartamentos amueblados en el noreste de Milán, en la línea roja M1, para estancias de unas noches a varios meses. Gestionados personalmente por Vito.",
     "cin_note": "Alquileres turísticos registrados en Lombardía. CIN indicado en cada anuncio.",
     "cookie_text": "Usamos una cookie de analítica (Google Analytics) solo con tu consentimiento. <a href=\"{privacy}\">Privacidad y cookies</a>.",
-    "cookie_ok": "Aceptar", "cookie_no": "Rechazar",
+    "cookie_ok": "Aceptar", "cookie_no": "Rechazar", "cookie_set": "Ajustes", "cookie_close": "Cerrar y continuar sin aceptar", "cookie_nec": "Necesarias: siempre activas", "cookie_stat": "Estadísticas (Google Analytics)", "cookie_save": "Guardar opciones",
     "soon": "Próximamente", "price_night": "desde {p} € <small>/ noche</small>", "price_month_req": "Precio mensual <small>bajo consulta</small>",
     "guests": "{n} huéspedes", "cta_kicker": "Escribe a Vito", "cta_title": "Dime tus fechas y te respondo en pocas horas",
     "cta_text": "Trabajo, estudios, una feria o un viaje en familia: envíame fechas y número de huéspedes y te digo qué apartamento te conviene y el precio total, sin sorpresas.",

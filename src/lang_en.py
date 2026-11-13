@@ -17,7 +17,7 @@ ui = {
     "superhost": "Superhost listing on Airbnb", "foot_about": "Furnished apartments in north-east Milan on the M1 red line, for stays from a few nights to several months. Managed personally by Vito.",
     "cin_note": "Short-term rentals registered in Lombardy. CIN on each listing.",
     "cookie_text": "We use an analytics cookie (Google Analytics) only with your consent. <a href=\"{privacy}\">Privacy & cookie policy</a>.",
-    "cookie_ok": "Accept", "cookie_no": "Decline",
+    "cookie_ok": "Accept", "cookie_no": "Decline", "cookie_set": "Settings", "cookie_close": "Close and continue without accepting", "cookie_nec": "Necessary: always on", "cookie_stat": "Statistics (Google Analytics)", "cookie_save": "Save choices",
     "soon": "Coming soon", "price_night": "from €{p} <small>/ night</small>", "price_month_req": "Monthly price <small>on request</small>",
     "guests": "{n} guests", "cta_kicker": "Write to Vito", "cta_title": "Tell me your dates, I'll reply within a few hours",
     "cta_text": "Work, study, a trade fair or a family trip: send your dates and number of guests and I'll tell you which apartment fits and the total price, with no surprises.",
