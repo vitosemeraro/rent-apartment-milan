@@ -58,7 +58,7 @@ def page_article(a, M):
     apts = "".join(M.listing_card(lang, l) for l in a["apts"] if l in M.LISTINGS)
     side = f'<section><div class="wrap"><h2>{M.esc(T.ui["apts_for_this"])}</h2><div class="grid g3">{apts}</div></div></section>' if apts else ""
     body = f"""<section style="padding-top:20px"><div class="wrap"><span class="kicker">{I["kicker"]}</span><h1>{M.esc(a["h1"])}</h1>
-<p class="muted" style="font-size:14px">{I["updated"]}: {a["updated"]} · Vito Semeraro</p>{hero}<div class="prose">{html_body}</div></div></section>{side}{M.cta_band(lang)}"""
+<p class="muted" style="font-size:14px">{I["updated"]}: {a["updated"]} · Vito Semeraro</p>{hero}{M.quick_cta(lang, "blog")}<div class="prose">{html_body}</div></div></section>{side}{M.cta_band(lang)}"""
     ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": a["h1"], "description": a["description"], "inLanguage": lang,
           "datePublished": a["date"], "dateModified": a["updated"], "mainEntityOfPage": M.SITE + a["url"],
           "author": {"@type": "Person", "name": "Vito Semeraro", "url": M.url_of(lang, "about")},
