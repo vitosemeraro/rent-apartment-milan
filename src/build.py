@@ -173,7 +173,7 @@ PRICE_TABLE = {
 def price_table(lang):
     """Tabella prezzi mensili per zona, calcolata da data/pricing.json (solo appartamenti da 28+ notti)."""
     T = C[lang]; h2, cols, f_rent, f_clean, f_min, note = PRICE_TABLE.get(lang, PRICE_TABLE["en"])
-    fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
+    fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else "\u00a0" if lang == "fr" else ",")
     rows = ""
     for lid, L in LISTINGS.items():
         p = PRICING.get(lid, {})
@@ -261,7 +261,7 @@ def group_table(lang, lid="mm"):
 
 def fill_data(lang, s):
     """Segnaposto della pagina dati prezzi: numeri da pricing.json, data di build e link interni."""
-    fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
+    fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else "\u00a0" if lang == "fr" else ",")
     s = s.replace("[[turro]]", fmt(month_price("turro"))).replace("[[vdn]]", fmt(month_price("vdn"))).replace("[[date]]", TODAY).replace("[[min_month]]", fmt(MIN_MONTH))
     # [[tot:<lid>:<mesi>]] = costo totale (canone x mesi + pulizia finale); [[clean:<lid>]] = pulizia finale
     s = re.sub(r"\[\[tot:(\w+):(\d+)\]\]", lambda m: fmt(month_price(m.group(1)) * int(m.group(2)) + PRICING[m.group(1)]["cleaning"]), s)
@@ -325,7 +325,7 @@ def page_home(lang):
     # Risposta diretta in apertura (prezzi da pricing.json) e link alle guide più cercate
     answer = ""
     if P.get("answer"):
-        fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
+        fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else "\u00a0" if lang == "fr" else ",")
         nights = [PRICING[k]["base"] for k, L in LISTINGS.items() if L["status"] == "live" and not PRICING.get(k, {}).get("soon") and PRICING[k].get("min_nights", 1) < 28]
         answer = '<p class="answer"><b>' + esc(P["answer"].format(turro=fmt(month_price("turro")), vdn=fmt(month_price("vdn")), night=min(nights) if nights else "")) + '</b></p>'
         if P.get("answer_links"):
