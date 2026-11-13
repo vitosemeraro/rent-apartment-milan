@@ -14,6 +14,17 @@ For an **Erasmus spring semester in Milan** (February to July 2027), start looki
 
 Spring semesters in Milan start in February, but each university sets its own dates. Check the academic calendar of your host university, then work back from your arrival day.
 
+### Spring 2027 semester dates: Bocconi and Politecnico
+
+These are the dates published by the universities for 2026/27. For the other universities (Statale, Bicocca, IULM, NABA, Brera) check your course calendar.
+
+| University | Arrival and welcome | Lessons start | Lessons end | Exams |
+| --- | --- | --- | --- | --- |
+| [Bocconi](https://www.unibocconi.it/en/international-students/incoming-exchange-students/academics-exchange-students-academic-calendar-202627) (exchange students) | Welcome check-in 25–29 January 2027, orientation 29 January | 3 February 2027 | 15 May 2027 (some Law courses 22 May) | 17–31 May and 3 June–10 July 2027 |
+| [Politecnico di Milano](https://www2.polimi.it/fileadmin/user_upload/studenti/calendari-scadenze/CALENDARIO_A4_ENG_26-27.pdf) | Set by your school | 22 February 2027 | See the academic calendar | See the academic calendar |
+
+If you are at Bocconi, plan to move in by **24 January 2027**: the welcome check-in days are mandatory. At the Politecnico you can arrive in mid-February.
+
 | When | What to do |
 | --- | --- |
 | As soon as you are nominated | Decide your budget and whether you want a room or a whole flat |

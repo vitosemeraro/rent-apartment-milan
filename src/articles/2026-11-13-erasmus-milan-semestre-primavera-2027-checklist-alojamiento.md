@@ -14,6 +14,17 @@ Para un **semestre Erasmus de primavera en Milán** (de febrero a julio de 2027)
 
 El semestre de primavera en Milán empieza en febrero, pero cada universidad fija sus fechas. Consulta el calendario académico de tu universidad de destino y organízate hacia atrás desde el día de llegada.
 
+### Fechas del semestre de primavera 2027: Bocconi y Politecnico
+
+Son las fechas publicadas por las universidades para 2026/27. Para las demás (Statale, Bicocca, IULM, NABA, Brera) consulta el calendario de tu carrera.
+
+| Universidad | Llegada y bienvenida | Inicio de clases | Fin de clases | Exámenes |
+| --- | --- | --- | --- | --- |
+| [Bocconi](https://www.unibocconi.it/en/international-students/incoming-exchange-students/academics-exchange-students-academic-calendar-202627) (estudiantes de intercambio) | Welcome check-in del 25 al 29 de enero de 2027, orientación el 29 de enero | 3 de febrero de 2027 | 15 de mayo de 2027 (algunos cursos de Derecho, 22 de mayo) | 17–31 de mayo y 3 de junio–10 de julio de 2027 |
+| [Politecnico di Milano](https://www2.polimi.it/fileadmin/user_upload/studenti/calendari-scadenze/CALENDARIO_A4_ENG_26-27.pdf) | La fija tu escuela | 22 de febrero de 2027 | Ver el calendario académico | Ver el calendario académico |
+
+Si vas a la Bocconi, intenta entrar en el piso antes del **24 de enero de 2027**: los días de welcome check-in son obligatorios. Para el Politecnico basta con llegar a mediados de febrero.
+
 | Cuándo | Qué hacer |
 | --- | --- |
 | Al recibir la nominación | Define tu presupuesto y si quieres habitación o piso entero |
