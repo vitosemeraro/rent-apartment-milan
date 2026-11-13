@@ -208,6 +208,7 @@ def fill_data(lang, s):
     # [[tot:<lid>:<mesi>]] = costo totale (canone x mesi + pulizia finale); [[clean:<lid>]] = pulizia finale
     s = re.sub(r"\[\[tot:(\w+):(\d+)\]\]", lambda m: fmt(month_price(m.group(1)) * int(m.group(2)) + PRICING[m.group(1)]["cleaning"]), s)
     s = re.sub(r"\[\[clean:(\w+)\]\]", lambda m: fmt(PRICING[m.group(1)]["cleaning"]), s)
+    s = s.replace("[[mm]]", fmt(PRICING["mm"]["base"])).replace("[[mm_x]]", str(PRICING["mm"]["extra_after"]))
     return re.sub(r"\[\[path:(\w+)\]\]", lambda m: path_of(lang, m.group(1)), s)
 
 
@@ -397,7 +398,7 @@ def page_article(lang, key):
     kick = f'<span class="kicker">{esc(P["kicker"])}</span>' if P.get("kicker") else ""
     qa_html, qa_ld = AEO.answer_box(lang, key, esc, fill_data)
     body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(fill_data(lang, P["lead"]))}</p>' if P.get("lead") else ""}{hero}
-<div class="prose">{qa_html}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices", "bicocca", "nodeposit") else "").replace("<!--SHORT-->", short_table(lang) if key == "prices" else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
+<div class="prose">{qa_html}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices", "bicocca", "nodeposit") else "").replace("<!--SHORT-->", short_table(lang) if key in ("prices", "fairs") else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):
         art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": fill_data(lang, P["desc"]), "inLanguage": lang,
                "author": {"@type": "Person", "name": "Vito Semeraro", "url": url_of(lang, "about")}, "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"},
