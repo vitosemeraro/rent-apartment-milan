@@ -131,3 +131,4 @@ nav.main a:hover,nav.main a[aria-current]{background:rgba(255,255,255,.16)}
 .stations>.card:before{content:"";position:absolute;top:-44px;left:0;width:28px;height:28px;border-radius:50%;background:#fff;border:6px solid var(--acc);box-sizing:border-box}
 .tag{border-radius:0}
 @media(max-width:620px){.stations{padding-top:0}.stations:before,.stations>.card:before{display:none}}
+@media(max-width:700px){.prose table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}

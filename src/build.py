@@ -152,15 +152,15 @@ for _l in LANGS:
 
 
 PRICE_TABLE = {
-    "it": ("I prezzi mensili di RAM per zona", ["Appartamento", "Zona", "Ospiti", "Canone mensile", "Pulizia finale", "Soggiorno minimo"], "da {p} €", "{p} € una volta", "{n} notti",
+    "it": ("I prezzi mensili di RAM per zona", ["Appartamento", "Tipo", "Zona", "Ospiti", "Canone mensile", "Pulizia finale", "Soggiorno minimo", "Totale 3 mesi"], "da {p} €", "{p} € una volta", "{n} notti",
            "Canone mensile spese incluse: utenze, riscaldamento e Wi-Fi. Il preventivo esatto dipende dalle date: <a href=\"{c}\">chiedilo qui</a>."),
-    "en": ("RAM monthly prices by area", ["Apartment", "Area", "Guests", "Monthly rent", "Final cleaning", "Minimum stay"], "from €{p}", "€{p} one-off", "{n} nights",
+    "en": ("RAM monthly prices by area", ["Apartment", "Type", "Area", "Guests", "Monthly rent", "Final cleaning", "Minimum stay", "3 months total"], "from €{p}", "€{p} one-off", "{n} nights",
            "Monthly rent with all bills included: utilities, heating and Wi-Fi. The exact quote depends on your dates: <a href=\"{c}\">ask here</a>."),
-    "es": ("Precios mensuales de RAM por zona", ["Apartamento", "Zona", "Huéspedes", "Alquiler mensual", "Limpieza final", "Estancia mínima"], "desde {p} €", "{p} € una vez", "{n} noches",
+    "es": ("Precios mensuales de RAM por zona", ["Apartamento", "Tipo", "Zona", "Huéspedes", "Alquiler mensual", "Limpieza final", "Estancia mínima", "Total 3 meses"], "desde {p} €", "{p} € una vez", "{n} noches",
            "Alquiler mensual con todos los gastos incluidos: suministros, calefacción y wifi. El presupuesto exacto depende de tus fechas: <a href=\"{c}\">pídelo aquí</a>."),
-    "fr": ("Les prix mensuels de RAM par quartier", ["Appartement", "Quartier", "Voyageurs", "Loyer mensuel", "Ménage final", "Séjour minimum"], "à partir de {p} €", "{p} € une fois", "{n} nuits",
+    "fr": ("Les prix mensuels de RAM par quartier", ["Appartement", "Type", "Quartier", "Voyageurs", "Loyer mensuel", "Ménage final", "Séjour minimum", "Total 3 mois"], "à partir de {p} €", "{p} € une fois", "{n} nuits",
            "Loyer mensuel charges comprises : énergie, chauffage et Wi-Fi. Le devis exact dépend de vos dates : <a href=\"{c}\">demandez-le ici</a>."),
-    "de": ("Monatspreise von RAM nach Stadtteil", ["Wohnung", "Stadtteil", "Gäste", "Monatsmiete", "Endreinigung", "Mindestaufenthalt"], "ab {p} €", "{p} € einmalig", "{n} Nächte",
+    "de": ("Monatspreise von RAM nach Stadtteil", ["Wohnung", "Typ", "Stadtteil", "Gäste", "Monatsmiete", "Endreinigung", "Mindestaufenthalt", "Summe 3 Monate"], "ab {p} €", "{p} € einmalig", "{n} Nächte",
            "Monatsmiete inklusive aller Nebenkosten: Strom, Gas, Heizung und WLAN. Das genaue Angebot hängt von Ihren Daten ab: <a href=\"{c}\">hier anfragen</a>."),
 }
 
@@ -175,8 +175,10 @@ def price_table(lang):
         if L["status"] != "live" or p.get("soon") or p.get("min_nights", 1) < 28:
             continue
         t = T.L[lid]
-        rows += (f'<tr><td><a href="{path_of(lang, "l_" + lid)}">{esc(t["short"])}</a></td><td>{esc(t["area"])}</td><td>{L["guests"]}</td>'
-                 f'<td>{f_rent.format(p=fmt(month_price(lid)))}</td><td>{f_clean.format(p=p["cleaning"])}</td><td>{f_min.format(n=p["min_nights"])}</td></tr>')
+        # Totale 3 mesi = 3 canoni + pulizia finale (una volta), tutto da data/pricing.json
+        tot3 = f_rent.format(p=fmt(3 * month_price(lid) + p["cleaning"]))
+        rows += (f'<tr><td><a href="{path_of(lang, "l_" + lid)}">{esc(t["short"])}</a></td><td>{esc(t["rooms"])}</td><td>{esc(t["area"])}</td><td>{L["guests"]}</td>'
+                 f'<td>{f_rent.format(p=fmt(month_price(lid)))}</td><td>{f_clean.format(p=p["cleaning"])}</td><td>{f_min.format(n=p["min_nights"])}</td><td>{tot3}</td></tr>')
     head = "".join(f"<th>{c}</th>" for c in cols)
     return f'<h2>{h2}</h2><table><tr>{head}</tr>{rows}</table><p class="muted">{note.format(c=path_of(lang, "contact"))}</p>\n'
 
