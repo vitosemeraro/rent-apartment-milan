@@ -2,18 +2,18 @@
 lang: it
 path: it/affitto-breve-milano
 date: 2026-11-05
-updated: 2026-11-05
-title: Affitto breve Milano: appartamento da 2 notti sulla M1 | RAM
-description: Affitto breve a Milano da 2 notti: appartamento fino a 8 ospiti a Precotto sulla M1, da 85 € a notte. Prezzi, sconti, tassa di soggiorno e come prenotare.
-h1: Affitto breve a Milano: appartamento da 2 notti sulla M1
+updated: 2026-11-13
+title: Affitto a breve termine Milano: da 2 notti sulla M1 | RAM
+description: Affitto a breve termine a Milano: da 2 notti sulla M1 o da 1 a 3 mesi con utenze incluse. Prezzi veri, sconti, tassa di soggiorno e come prenotare.
+h1: Affitto a breve termine a Milano: da 2 notti a 3 mesi sulla M1
 image: mm:0
 apts: mm, turro, vdn
 ---
-Cerchi un **affitto breve a Milano**? Il nostro bilocale a Precotto si prenota da **2 notti**, ospita fino a 8 persone e parte da **85 € a notte**, con biancheria inclusa. È a pochi minuti a piedi dalla M1: Duomo in circa 20 minuti, Rho Fiera senza cambi. Prenoti direttamente, senza agenzia.
+Cerchi un **affitto a breve termine a Milano**? Per poche notti il nostro bilocale a Precotto si prenota da **2 notti**, ospita fino a 8 persone e parte da **85 € a notte**, con biancheria inclusa. Se ti serve casa **da 1 a 3 mesi**, il monolocale di Turro e il bilocale di via Val di Non costano 1.200 € e 1.400 € al mese con utenze incluse: li trovi negli [affitti mensili a Milano](/it/affitti-mensili-milano/) e nella guida all'[affitto per 1 o 2 mesi](/it/blog/affitto-milano-uno-due-mesi/). Tutti sono a pochi minuti a piedi dalla M1 e si prenotano direttamente, senza agenzia.
 
-## Cos'è un affitto breve a Milano?
+## Cos'è un affitto a breve termine a Milano?
 
-È un soggiorno in un appartamento arredato per **meno di 30 notti**: vacanza, fiera, visita di lavoro o weekend in città. Paghi a notte, entri con check-in autonomo e hai cucina e soggiorno, che in hotel non hai. Per i soggiorni da un mese in su si usa invece un contratto transitorio registrato: lo spiega la guida agli [affitti mensili a Milano](/it/affitti-mensili-milano/).
+In senso stretto l'affitto breve è un soggiorno in un appartamento arredato per **meno di 30 notti**: vacanza, fiera, visita di lavoro o weekend in città. Paghi a notte, entri con check-in autonomo e hai cucina e soggiorno, che in hotel non hai. Per i soggiorni da un mese in su, che molti chiamano comunque affitto a breve termine (di solito da 1 a 3 mesi), si usa invece un contratto transitorio registrato: lo spiega la guida agli [affitti mensili a Milano](/it/affitti-mensili-milano/).
 
 ## Quale appartamento si può affittare per poche notti?
 
