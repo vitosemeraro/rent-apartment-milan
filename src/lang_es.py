@@ -126,7 +126,7 @@ P = {
 },
 "contract": {
     "nav": "Contrato de alquiler temporal", "kicker": "Guía", "article": True, "img": ("vito", 5), "apts": ["vdn", "turro"],
-    "title": "Contrato de alquiler temporal en Milán (contratto transitorio) explicado | RAM",
+    "title": "Contrato temporal en Milán: pisos desde [[min_month]] €/mes | RAM",
     "desc": "Qué es el contrato de alquiler temporal en Italia, cuánto dura, qué documentos necesitas, registro, fianza y empadronamiento. Guía clara para expatriados y estudiantes en Milán.",
     "h1": "El contrato temporal (contratto transitorio), explicado fácil",
     "lead": "Es el contrato más habitual en Italia para estancias de 1 a 18 meses. Esto es lo que es y por qué te protege.",

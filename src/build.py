@@ -202,7 +202,7 @@ def short_table(lang):
 def fill_data(lang, s):
     """Segnaposto della pagina dati prezzi: numeri da pricing.json, data di build e link interni."""
     fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
-    s = s.replace("[[turro]]", fmt(month_price("turro"))).replace("[[vdn]]", fmt(month_price("vdn"))).replace("[[date]]", TODAY)
+    s = s.replace("[[turro]]", fmt(month_price("turro"))).replace("[[vdn]]", fmt(month_price("vdn"))).replace("[[date]]", TODAY).replace("[[min_month]]", fmt(MIN_MONTH))
     return re.sub(r"\[\[path:(\w+)\]\]", lambda m: path_of(lang, m.group(1)), s)
 
 
