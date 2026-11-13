@@ -116,6 +116,8 @@ P = {
 <h2>¿Cuánto cuesta una noche?</h2><!--SHORT-->
 <h2>Principales eventos de Fiera Milano</h2><table><tr><th>Evento</th><th>Periodo habitual</th></tr><tr><td>HOMI, Milano Home</td><td>Enero</td></tr><tr><td>MIDO (óptica), BIT (turismo)</td><td>Febrero</td></tr><tr><td>MICAM, Lineapelle, Sì Sposaitalia</td><td>Febrero y septiembre</td></tr><tr><td>Salone del Mobile / Milan Design Week</td><td>Abril</td></tr><tr><td>Lamiera, TUTTOFOOD</td><td>Mayo</td></tr><tr><td>EICMA (motos)</td><td>Noviembre</td></tr><tr><td>Fashion Week</td><td>Febrero y septiembre</td></tr></table><p>Las fechas cambian cada año: consulta la web del organizador.</p>
 <h2>Para equipos y expositores</h2><p>Nuestro piso confort de Precotto aloja hasta 8 personas: ideal para el equipo de un stand que quiere repartir gastos y tener cocina para desayunar antes de la feria. Para una o dos personas, el estudio de Turro y el piso de Val di Non son alternativas más tranquilas a un hotel.</p>
+<h2>¿Cuánto paga cada persona en grupo?</h2><p><strong>Para un grupo de 8 la casa de Precotto cuesta unos [[grp_max]] por persona y noche en fechas normales y unos [[grp_max_ev]] en fechas de feria, limpieza final incluida. El precio es por toda la casa, hasta 8 huéspedes.</strong></p>
+<!--GROUPS-->
 <div class="tip"><b>Reserva pronto:</b> para el Salone del Mobile los apartamentos se reservan con 4–6 meses de antelación. Escríbeme fechas y número de personas y te digo qué hay disponible.</div>""",
 },
 "neighborhood": {

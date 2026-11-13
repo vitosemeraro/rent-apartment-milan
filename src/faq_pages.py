@@ -29,6 +29,11 @@ FAQ = {
   ('Qual è il soggiorno minimo?', "28 notti per il bilocale di via Val di Non e 30 notti per il monolocale di Turro. Per soggiorni più brevi c'è il bilocale comfort di Precotto, da 2 notti."),
   ('Che contratto si firma per un semestre alla Bicocca?', 'Per soggiorni oltre i 30 giorni firmiamo un <a href="[[path:contract]]">contratto transitorio</a> o per studenti universitari e lo registriamo all\'Agenzia delle Entrate: vale per residenza e permesso di soggiorno.'),
  ],
+ "fairs": [
+  ('Quanto costa a persona un appartamento per il Salone del Mobile con RAM?', 'Per un gruppo di 8 nella casa di Precotto circa [[grp_max]] a persona a notte nelle date normali e circa [[grp_max_ev]] nelle date di fiera, pulizia finale inclusa e tassa di soggiorno a parte. Il preventivo esatto per le tue date è nel calendario della <a href="[[path:l_mm]]">scheda dell\'appartamento</a>.'),
+  ('Conviene più di un hotel per un gruppo?', 'Un hotel fa pagare a camera e un gruppo di 8 ha bisogno di quattro doppie. A Precotto dividete una casa intera con due bagni e due cucine, con un solo prezzo per tutta la casa.'),
+  ('Come si arriva a Rho Fiera dagli appartamenti?', 'Con la metro rossa M1 da Precotto o Turro, sui treni diretti a Rho Fiera, senza cambi.'),
+ ],
 },
 "en": {
  "nodeposit": [
@@ -54,6 +59,11 @@ FAQ = {
   ('How much is a monthly apartment near Bicocca?', 'The Via Val di Non one-bedroom flat costs €[[vdn]] per month and the Turro studio €[[turro]] per month, with electricity, gas, heating, water and Wi-Fi included and no three-month deposit.'),
   ('What is the minimum stay?', '28 nights for the Via Val di Non flat and 30 nights for the Turro studio. For shorter stays there is the comfort flat in Precotto, from 2 nights.'),
   ('Which contract do I sign for a semester at Bicocca?', 'For stays over 30 days we sign a <a href="[[path:contract]]">transitional</a> or university student lease and register it with the Agenzia delle Entrate: it is valid for residence and permits.'),
+ ],
+ "fairs": [
+  ('How much does an apartment for Salone del Mobile cost per person with RAM?', 'For a group of 8 in the Precotto home, about [[grp_max]] per person per night on standard dates and about [[grp_max_ev]] on fair dates, final cleaning included and tourist tax extra. The exact quote for your dates is in the calendar on the <a href="[[path:l_mm]]">apartment page</a>.'),
+  ('Is it cheaper than a hotel for a group?', 'A hotel charges per room and a group of 8 needs four double rooms. In Precotto you share a whole home with two bathrooms and two kitchens, with one price for the whole home.'),
+  ('How do I get to Rho Fiera from the apartments?', 'On the M1 red line from Precotto or Turro, on trains bound for Rho Fiera, with no changes.'),
  ],
 },
 "es": {
@@ -81,6 +91,11 @@ FAQ = {
   ('¿Cuál es la estancia mínima?', '28 noches para el piso de Via Val di Non y 30 noches para el estudio de Turro. Para estancias más cortas está el piso comfort de Precotto, desde 2 noches.'),
   ('¿Qué contrato se firma para un semestre en la Bicocca?', 'Para estancias de más de 30 días firmamos un <a href="[[path:contract]]">contrato temporal</a> o de estudiantes universitarios y lo registramos en la Agenzia delle Entrate: vale para la residencia y el permiso de estancia.'),
  ],
+ "fairs": [
+  ('¿Cuánto cuesta por persona un apartamento para el Salone del Mobile con RAM?', 'Para un grupo de 8 en la casa de Precotto, unos [[grp_max]] por persona y noche en fechas normales y unos [[grp_max_ev]] en fechas de feria, limpieza final incluida y tasa turística aparte. El presupuesto exacto está en el calendario de la <a href="[[path:l_mm]]">ficha del apartamento</a>.'),
+  ('¿Sale más barato que un hotel para un grupo?', 'Un hotel cobra por habitación y un grupo de 8 necesita cuatro dobles. En Precotto compartís una casa entera con dos baños y dos cocinas, con un único precio para toda la casa.'),
+  ('¿Cómo se llega a Rho Fiera desde los apartamentos?', 'Con la línea roja M1 desde Precotto o Turro, en los trenes con destino Rho Fiera, sin transbordos.'),
+ ],
 },
 "fr": {
  "nodeposit": [
@@ -107,6 +122,11 @@ FAQ = {
   ('Quelle est la durée minimale ?', "28 nuits pour le deux-pièces de la Via Val di Non et 30 nuits pour le studio de Turro. Pour des séjours plus courts, il y a l'appartement confort de Precotto, dès 2 nuits."),
   ('Quel bail signer pour un semestre à la Bicocca ?', 'Pour les séjours de plus de 30 jours, nous signons un <a href="[[path:contract]]">bail temporaire</a> ou étudiant et l\'enregistrons auprès de l\'Agenzia delle Entrate : il est valable pour la résidence et le titre de séjour.'),
  ],
+ "fairs": [
+  ('Combien coûte par personne un appartement pour le Salone del Mobile avec RAM ?', 'Pour un groupe de 8 dans le logement de Precotto, environ [[grp_max]] par personne et par nuit aux dates normales et environ [[grp_max_ev]] pendant les salons, ménage final inclus et taxe de séjour en plus. Le devis exact est dans le calendrier de la <a href="[[path:l_mm]]">fiche de l\'appartement</a>.'),
+  ("Est-ce moins cher qu'un hôtel pour un groupe ?", 'Un hôtel facture à la chambre et un groupe de 8 a besoin de quatre chambres doubles. À Precotto vous partagez un logement entier avec deux salles de bain et deux cuisines, avec un seul prix pour tout le logement.'),
+  ('Comment rejoindre Rho Fiera depuis les appartements ?', 'Avec la ligne rouge M1 depuis Precotto ou Turro, dans les trains en direction de Rho Fiera, sans changement.'),
+ ],
 },
 "de": {
  "nodeposit": [
@@ -132,6 +152,11 @@ FAQ = {
   ('Was kostet eine Monatswohnung nahe der Bicocca?', 'Die Wohnung in der Via Val di Non kostet [[vdn]] € im Monat und das Studio in Turro [[turro]] € im Monat, Strom, Gas, Heizung, Wasser und WLAN inklusive und ohne drei Monatsmieten Kaution.'),
   ('Wie lange ist der Mindestaufenthalt?', '28 Nächte für die Wohnung in der Via Val di Non und 30 Nächte für das Studio in Turro. Für kürzere Aufenthalte gibt es die Komfort-Wohnung in Precotto, ab 2 Nächten.'),
   ('Welchen Vertrag unterschreibe ich für ein Semester an der Bicocca?', 'Für Aufenthalte über 30 Tage schließen wir einen <a href="[[path:contract]]">Zeitmietvertrag</a> oder Studentenmietvertrag und registrieren ihn bei der Agenzia delle Entrate: Er gilt für Wohnsitz und Aufenthaltsgenehmigung.'),
+ ],
+ "fairs": [
+  ('Was kostet eine Wohnung für den Salone del Mobile pro Person bei RAM?', 'Für eine Gruppe von 8 in der Wohnung in Precotto etwa [[grp_max]] pro Person und Nacht an normalen Terminen und etwa [[grp_max_ev]] an Messeterminen, Endreinigung inklusive, Kurtaxe extra. Den genauen Preis zeigt der Kalender auf der <a href="[[path:l_mm]]">Seite der Wohnung</a>.'),
+  ('Ist das für eine Gruppe günstiger als ein Hotel?', 'Ein Hotel rechnet pro Zimmer, und eine Gruppe von 8 braucht vier Doppelzimmer. In Precotto teilen Sie sich eine ganze Wohnung mit zwei Bädern und zwei Küchen, mit einem Preis für die ganze Wohnung.'),
+  ('Wie komme ich von den Wohnungen zur Rho Fiera?', 'Mit der roten Linie M1 ab Precotto oder Turro, in den Zügen Richtung Rho Fiera, ohne Umsteigen.'),
  ],
 },
 }

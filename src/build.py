@@ -201,6 +201,59 @@ def short_table(lang):
     return f'<table><tr>{head}</tr>{rows}</table>' + (f'<p class="muted">{extra.strip()}</p>' if extra else "") + "\n"
 
 
+# Tabella "prezzo a persona per gruppi" della guida fiere: calcolata da data/pricing.json come il calendario
+# (booking.py): 4 notti da lunedì a venerdì, sconto durata, ospite extra, pulizia finale; tassa di soggiorno a parte.
+GROUP_NIGHTS = 4
+
+
+def group_cost(lid, guests, rate):
+    p = PRICING[lid]
+    n = GROUP_NIGHTS
+    base = n * rate + n * max(0, guests - p["extra_after"]) * p["extra_fee"]
+    disc = p.get("length", {}).get(str(n), 0)
+    tot = base * (1 - disc / 100) + p["cleaning"]
+    return tot, tot / (guests * n)
+
+
+def event_max(lid):
+    ev = PRICING[lid].get("events", [])
+    return max((e[2] for e in ev), default=PRICING[lid]["base"])
+
+
+_GT = {
+    "en": ("Guests", "Total for {n} nights", "Per person per night", "Fair dates (up to €{r}/night)", "€{v}",
+           "Two-room flat in Precotto, {n} nights Monday–Friday at the standard rate of €{b} per night for up to {x} guests, €{f} per night for each extra guest, {d}% discount for {n} nights and €{c} final cleaning included. On fair dates the nightly rate can rise to €{r}: last column. Milan tourist tax is extra: €{t} per adult per night. A hotel charges per room: a group of 8 needs four double rooms, here you share one home with two bathrooms and two kitchens."),
+    "it": ("Ospiti", "Totale {n} notti", "A persona a notte", "Date di fiera (fino a {r} €/notte)", "{v} €",
+           "Bilocale di Precotto, {n} notti da lunedì a venerdì al prezzo standard di {b} € a notte fino a {x} ospiti, {f} € a notte per ogni ospite in più, sconto del {d}% per {n} notti e pulizia finale di {c} € inclusa. Nelle date di fiera il prezzo a notte può salire fino a {r} €: ultima colonna. La tassa di soggiorno di Milano è a parte: {t} € per adulto a notte. Un hotel fa pagare a camera: un gruppo di 8 ha bisogno di quattro doppie, qui dividete una casa con due bagni e due cucine."),
+    "es": ("Huéspedes", "Total {n} noches", "Por persona y noche", "Fechas de feria (hasta {r} €/noche)", "{v} €",
+           "Piso de Precotto, {n} noches de lunes a viernes a la tarifa estándar de {b} € por noche hasta {x} huéspedes, {f} € por noche por cada huésped adicional, descuento del {d}% por {n} noches y limpieza final de {c} € incluida. En fechas de feria la tarifa puede subir hasta {r} € por noche: última columna. La tasa turística de Milán va aparte: {t} € por adulto y noche. Un hotel cobra por habitación: un grupo de 8 necesita cuatro dobles; aquí compartís una casa con dos baños y dos cocinas."),
+    "fr": ("Voyageurs", "Total {n} nuits", "Par personne et par nuit", "Dates de salon (jusqu'à {r} €/nuit)", "{v} €",
+           "Appartement de Precotto, {n} nuits du lundi au vendredi au tarif standard de {b} € par nuit jusqu'à {x} voyageurs, {f} € par nuit par voyageur supplémentaire, remise de {d} % pour {n} nuits et ménage final de {c} € inclus. Pendant les salons, le prix par nuit peut monter jusqu'à {r} € : dernière colonne. La taxe de séjour de Milan est en plus : {t} € par adulte et par nuit. Un hôtel facture à la chambre : un groupe de 8 a besoin de quatre chambres doubles, ici vous partagez un logement avec deux salles de bain et deux cuisines."),
+    "de": ("Gäste", "Gesamt {n} Nächte", "Pro Person und Nacht", "Messetermine (bis {r} €/Nacht)", "{v} €",
+           "Wohnung in Precotto, {n} Nächte Montag bis Freitag zum Standardpreis von {b} € pro Nacht bis {x} Gäste, {f} € pro Nacht für jeden weiteren Gast, {d} % Rabatt für {n} Nächte und Endreinigung von {c} € inklusive. An Messeterminen kann der Preis auf bis zu {r} € pro Nacht steigen: letzte Spalte. Die Mailänder Kurtaxe kommt hinzu: {t} € pro Erwachsenem und Nacht. Ein Hotel rechnet pro Zimmer: Eine Gruppe von 8 braucht vier Doppelzimmer, hier teilen Sie sich eine Wohnung mit zwei Bädern und zwei Küchen."),
+}
+
+
+def _money(lang, v):
+    return _GT.get(lang, _GT["en"])[4].format(v=f"{int(round(v)):,}".replace(",", "." if lang in ("it", "es", "de") else ","))
+
+
+def group_table(lang, lid="mm"):
+    """Prezzo a persona per gruppi nella guida fiere, da data/pricing.json."""
+    p = PRICING[lid]; h_g, h_t, h_pp, h_ev, _, note = _GT.get(lang, _GT["en"])
+    ev = event_max(lid); n = GROUP_NIGHTS
+    rows = ""
+    for g in (4, 6, p["max_guests"]):
+        tot, pp = group_cost(lid, g, p["base"])
+        _, pp_ev = group_cost(lid, g, ev)
+        rows += f"<tr><td>{g}</td><td>{_money(lang, tot)}</td><td>{_money(lang, pp)}</td><td>{_money(lang, pp_ev)}</td></tr>"
+    head = f"<tr><th>{h_g}</th><th>{h_t.format(n=n)}</th><th>{h_pp}</th><th>{h_ev.format(r=ev)}</th></tr>"
+    tax = PRICING["tourist_tax"].get(TODAY[:4], PRICING["tourist_tax"]["2026"])
+    tax = f"{tax:.2f}".replace(".", "," if lang in ("it", "es", "fr", "de") else ".")
+    txt = note.format(n=n, b=p["base"], x=p["extra_after"], f=p["extra_fee"], d=p.get("length", {}).get(str(n), 0), c=p["cleaning"], r=ev, t=tax)
+    return f'<table>{head}{rows}</table><p class="muted">{txt}</p>\n'
+
+
 def fill_data(lang, s):
     """Segnaposto della pagina dati prezzi: numeri da pricing.json, data di build e link interni."""
     fmt = lambda v: f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else ",")
@@ -209,6 +262,9 @@ def fill_data(lang, s):
     s = re.sub(r"\[\[tot:(\w+):(\d+)\]\]", lambda m: fmt(month_price(m.group(1)) * int(m.group(2)) + PRICING[m.group(1)]["cleaning"]), s)
     s = re.sub(r"\[\[clean:(\w+)\]\]", lambda m: fmt(PRICING[m.group(1)]["cleaning"]), s)
     s = s.replace("[[mm]]", fmt(PRICING["mm"]["base"])).replace("[[mm_x]]", str(PRICING["mm"]["extra_after"]))
+    if "[[grp" in s:
+        mx = PRICING["mm"]["max_guests"]
+        s = s.replace("[[grp_max]]", _money(lang, group_cost("mm", mx, PRICING["mm"]["base"])[1])).replace("[[grp_max_ev]]", _money(lang, group_cost("mm", mx, event_max("mm"))[1]))
     return re.sub(r"\[\[path:(\w+)\]\]", lambda m: path_of(lang, m.group(1)), s)
 
 
@@ -398,7 +454,7 @@ def page_article(lang, key):
     kick = f'<span class="kicker">{esc(P["kicker"])}</span>' if P.get("kicker") else ""
     qa_html, qa_ld = AEO.answer_box(lang, key, esc, fill_data)
     body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(fill_data(lang, P["lead"]))}</p>' if P.get("lead") else ""}{hero}
-<div class="prose">{qa_html}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices", "bicocca", "nodeposit") else "").replace("<!--SHORT-->", short_table(lang) if key in ("prices", "fairs") else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
+<div class="prose">{qa_html}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices", "bicocca", "nodeposit") else "").replace("<!--SHORT-->", short_table(lang) if key in ("prices", "fairs") else "").replace("<!--GROUPS-->", group_table(lang) if key == "fairs" else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):
         art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": fill_data(lang, P["desc"]), "inLanguage": lang,
                "author": {"@type": "Person", "name": "Vito Semeraro", "url": url_of(lang, "about")}, "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"},
