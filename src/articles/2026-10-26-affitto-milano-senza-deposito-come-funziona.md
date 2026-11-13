@@ -1,14 +1,14 @@
 ---
 lang: it
 date: 2026-10-26
-updated: 2026-10-26
+updated: 2026-11-13
 title: Affitto Milano senza deposito: come funziona | RAM
 description: Come affittare a Milano senza i tre mesi di deposito: quanto risparmi, cosa controllare nel contratto e quali appartamenti sulla M1 vanno da 1 mese in su.
 h1: Come affittare a Milano senza deposito
 image: turro:1
 apts: turro, vdn
 ---
-Cerchi un **affitto a Milano senza deposito**? Si può fare, ma devi sapere cosa significa davvero "senza deposito" e cosa controllare prima di pagare. Questa guida spiega le regole di Milano, cosa cambia con una prenotazione diretta e quali appartamenti vanno bene per un soggiorno da un mese in su.
+Cerchi un **affitto a Milano senza deposito**? Si può fare, ma devi sapere cosa significa davvero "senza deposito" e cosa controllare prima di pagare. Questa guida spiega le regole di Milano, cosa cambia con una prenotazione diretta e quali appartamenti vanno bene per un soggiorno da un mese in su. Se vuoi andare dritto alle case disponibili, la pagina [affitto a Milano senza deposito](/it/affitto-milano-senza-deposito/) le elenca tutte con i prezzi.
 
 ## Quanto è il deposito a Milano?
 
