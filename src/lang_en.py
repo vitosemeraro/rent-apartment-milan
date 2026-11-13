@@ -67,9 +67,9 @@ P = {
 },
 "monthly": {
     "nav": "Monthly rentals in Milan", "kicker": "Guide", "article": True, "img": ("valdinon", 5), "apts": ["vdn", "turro"],
-    "title": "Monthly rentals in Milan: furnished flats, bills included | RAM",
-    "desc": "How to rent a furnished apartment in Milan for 1 to 12 months: prices, contracts, deposits and areas. Flats on the M1 with bills included and registered lease.",
-    "h1": "Monthly rentals in Milan: a practical guide",
+    "title": "Furnished Apartments in Milan, Monthly from €[[turro]] | RAM",
+    "desc": "Furnished apartments in Milan by the month from €[[turro]], bills and Wi-Fi included: prices, transitional lease, deposit and areas along the M1 line.",
+    "h1": "Furnished apartments in Milan by the month: a practical guide",
     "lead": "Coming to Milan for a few months for work, an internship or a semester? Here's how mid-term rentals work and what to watch out for.",
     "html": """<h2>What is a mid-term rental?</h2><p>Between a holiday let (a few nights) and a classic 4+4 lease there is the <b>mid-term rental</b>: from 1 to 18 months, furnished, often with bills included. In Italy it is regulated by the <b>transitional lease</b> (contratto transitorio) or, for university students, by the student lease. It is the natural option for people relocating for work, interns, researchers and Erasmus students.</p>
 <h2>How much does a monthly rental cost in Milan?</h2><p>Milan is the most expensive rental market in Italy. For a furnished one-bedroom flat outside the centre but well connected by metro, guest prices on the main platforms are typically between €1,900 and €2,700 per month. In the centre they rise quickly. Always compare the <b>total cost</b>: rent, bills, Wi-Fi, agency fees and deposit.</p>
@@ -78,7 +78,8 @@ P = {
 <h2>Which areas to choose</h2><p>Look at the metro map before the neighbourhood name. North-east Milan along the <b>M1 red line</b> (Precotto, Turro, Gorla) offers quieter streets, lower prices than the centre and a direct line to Duomo, Cadorna and Rho Fiera. Bicocca University is close by, and Loreto (M2 interchange) is only a few stops away for Politecnico and Centrale station.</p>
 <h2>Documents you'll need</h2><ul><li>Passport or ID card and Italian tax code (codice fiscale), which you can request at the Agenzia delle Entrate or a consulate.</li><li>A document proving the reason for your stay (work contract, university enrolment, internship letter): it is required for the transitional lease.</li><li>For residence or visa purposes, a <a href=\"/transitional-lease-contract-milan/\">registered contract</a>.</li></ul>
 <div class="tip"><b>Tip:</b> start your search 4–8 weeks before arrival. September, January and February are the busiest months because of universities and trade fairs.</div>
-<h2>Monthly stays with RAM</h2><p>The one-bedroom in Via Val di Non and the studio in Turro are designed for long stays: desk, gigabit fibre, washing machine, fully equipped kitchen and a registered contract. Minimum stay 30 nights.</p>""",
+<h2>Monthly stays with RAM</h2><p>The one-bedroom in Via Val di Non and the studio in Turro are designed for long stays: desk, gigabit fibre, washing machine, fully equipped kitchen and a registered contract. Minimum stay 30 nights.</p>
+<h2>Where can I read more?</h2><p>For exact totals on a one- or two-month stay, read <a href=\"/blog/rent-apartment-milan-one-two-months/\">renting in Milan for one or two months</a>; for everyday life as a long-stay guest, <a href=\"/your-guide-to-monthly-rentals-milan/\">our guide to living in Milan on a monthly rental</a>. This guide is also available in Italian: <a href=\"/it/affitti-mensili-milano/\" hreflang=\"it\" lang=\"it\">Affitti mensili a Milano</a>.</p>""",
 },
 "students": {
     "nav": "Student housing in Milan", "kicker": "Guide", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn"],

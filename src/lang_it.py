@@ -76,7 +76,8 @@ P = {
 <h2>Quali zone scegliere</h2><p>Guarda la mappa della metro prima del nome del quartiere. Milano nord-est lungo la <b>linea rossa M1</b> (Precotto, Turro, Gorla) offre vie più tranquille, prezzi più bassi del centro e una linea diretta per Duomo, Cadorna e Rho Fiera. L'Università Bicocca è vicina e Loreto (cambio M2) è a poche fermate per Politecnico e Stazione Centrale.</p>
 <h2>Documenti necessari</h2><ul><li>Documento d'identità o passaporto e codice fiscale.</li><li>Un documento che dimostri il motivo del soggiorno (contratto di lavoro, iscrizione universitaria, lettera di stage): serve per il contratto transitorio.</li><li>Per residenza o permesso di soggiorno, un <a href=\"/it/contratto-transitorio-milano/\">contratto registrato</a>.</li></ul>
 <div class="tip"><b>Consiglio:</b> inizia a cercare 4–8 settimane prima dell'arrivo. Settembre, gennaio e febbraio sono i mesi più richiesti per università e fiere.</div>
-<h2>Soggiorni mensili con RAM</h2><p>Il bilocale di via Val di Non e il monolocale di Turro sono pensati per i soggiorni lunghi: scrivania, fibra gigabit, lavatrice, cucina completa e contratto registrato. Soggiorno minimo 30 notti.</p>""",
+<h2>Soggiorni mensili con RAM</h2><p>Il bilocale di via Val di Non e il monolocale di Turro sono pensati per i soggiorni lunghi: scrivania, fibra gigabit, lavatrice, cucina completa e contratto registrato. Soggiorno minimo 30 notti.</p>
+<p>Devi mandare questa guida a un collega o a uno studente straniero? C'è la versione in inglese: <a href=\"/monthly-rentals-milan/\" hreflang=\"en\" lang=\"en\">Furnished apartments in Milan by the month</a>.</p>""",
 },
 "students": {
     "nav": "Alloggi per studenti a Milano", "kicker": "Guida", "article": True, "img": ("turro", 1), "apts": ["turro", "vdn"],
