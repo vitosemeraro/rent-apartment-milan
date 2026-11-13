@@ -8,6 +8,7 @@ FAQ = {
   ("Come si paga se non c'è deposito?", "Le modalità di pagamento vengono concordate nel contratto, che è registrato all'Agenzia delle Entrate. Non blocchi tre mesi di canone in anticipo."),
   ("Il contratto senza deposito vale per la residenza?", "Sì. Per soggiorni oltre i 30 giorni firmiamo un <a href=\"[[path:contract]]\">contratto transitorio</a> o per studenti e lo registriamo all'Agenzia delle Entrate: vale per residenza e permesso di soggiorno."),
   ("Affittate stanze senza deposito?", "No, solo appartamenti interi: monolocali e bilocali con cucina e bagno tutti tuoi, per una o due persone."),
+  ("Quanto deposito può chiedere per legge un proprietario a Milano?", "Al massimo tre mensilità del canone: lo stabilisce l'articolo 11 della legge 392/1978, che vale in tutta Italia. Il deposito matura interessi legali e va restituito a fine contratto. Su un canone di 1.500 € al mese vuol dire fino a 4.500 € bloccati prima di entrare."),
  ],
  "monthly": [
   ("Qual è il soggiorno minimo per un affitto mensile?", "28 notti per il bilocale di via Val di Non e 30 notti per il monolocale di Turro. Il bilocale comfort di Precotto si affitta anche per soggiorni brevi, da 2 notti."),

@@ -382,7 +382,7 @@ def page_article(lang, key):
     if key == "guides":
         extra = "".join(f'<a class="feat" style="display:block;text-decoration:none;color:inherit;margin-bottom:12px" href="{path_of(lang, k)}"><h3>{esc(T.P[k]["h1"])} →</h3><p>{esc(T.P[k]["desc"])}</p></a>' for k in CONFIG["guides"])
     kick = f'<span class="kicker">{esc(P["kicker"])}</span>' if P.get("kicker") else ""
-    qa_html, qa_ld = AEO.answer_box(lang, key, esc)
+    qa_html, qa_ld = AEO.answer_box(lang, key, esc, fill_data)
     body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(fill_data(lang, P["lead"]))}</p>' if P.get("lead") else ""}{hero}
 <div class="prose">{qa_html}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices") else "").replace("<!--SHORT-->", short_table(lang) if key == "prices" else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):

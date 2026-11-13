@@ -13,7 +13,7 @@ QA = {
  "contract": ("What is a transitional lease (contratto transitorio) in Italy?", "It is a lease for a temporary need such as work, an internship or study, lasting 1 to 18 months under law 431/1998, art. 5. The reason is written in the contract, which must be registered with the Agenzia delle Entrate; the registration is valid for residence and permits."),
 },
 "it": {
- "nodeposit": ("Si può affittare un appartamento a Milano senza deposito?", "Sì. RAM affitta monolocali e bilocali arredati a Milano nord-est per soggiorni mensili senza i soliti tre mesi di deposito. Utenze e Wi-Fi in fibra sono inclusi nel canone, il contratto è registrato e gli appartamenti sono a pochi minuti dalla M1 (Precotto e Turro)."),
+ "nodeposit": ("Si può affittare un appartamento a Milano senza deposito?", "Sì. RAM affitta monolocali e bilocali arredati a Milano nord-est senza i soliti tre mesi di deposito e senza agenzia: il monolocale di Turro costa [[turro]] € al mese e il bilocale di via Val di Non [[vdn]] € al mese, utenze e Wi-Fi in fibra inclusi. Il contratto è registrato e la M1 è a pochi minuti."),
  "monthly": ("Quanto costa un affitto mensile a Milano?", "Un bilocale arredato fuori dal centro ma sulla metro costa in genere 1.900–2.700 € al mese sulle principali piattaforme. Gli appartamenti mensili di RAM sulla M1 partono da circa 1.300 € al mese per il monolocale di Turro, spese incluse e senza tre mesi di deposito."),
  "students": ("Dove conviene vivere a Milano per uno studente?", "Scegli in base al tragitto, non alla fama della zona. Da Precotto e Turro sulla M1 arrivi in Bicocca in circa 15 minuti, al Politecnico (Città Studi) in 15–20 e alla Statale in 20–25. Un appartamento intero con contratto per studenti o transitorio registrato evita stanze in nero e depositi alti."),
  "bicocca": ("Dove alloggiare vicino all'Università Bicocca?", "Precotto confina con la Bicocca: da via Val di Non gli edifici dell'università sono a circa 15 minuti a piedi, in bici o con il tram 7, e con la M1 il Duomo è a circa 20 minuti. RAM offre un bilocale con scrivania, balcone e fibra gigabit da 28 notti."),
@@ -51,11 +51,13 @@ QA = {
 }
 
 
-def answer_box(lang, key, esc):
+def answer_box(lang, key, esc, fill=None):
     qa = QA.get(lang, {}).get(key)
     if not qa:
         return "", None
     q, a = qa
+    if fill:  # segnaposto prezzi ([[turro]], [[vdn]]) da pricing.json
+        q, a = fill(lang, q), fill(lang, a)
     html = f'<div class="tip" style="border-left-color:var(--acc)"><p style="margin:0 0 4px;font-weight:700">{esc(q)}</p><p style="margin:0">{esc(a)}</p></div>'
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}]}
     return html, ld
