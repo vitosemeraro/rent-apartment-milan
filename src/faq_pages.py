@@ -23,6 +23,12 @@ FAQ = {
   ("Posso dividere l'appartamento con un compagno di corso?", "Sì. Il monolocale di Turro e il bilocale di via Val di Non ospitano fino a 2 persone, e sono appartamenti interi che non condividi con altri."),
   ("Quanto costa un alloggio per studenti con RAM?", "Il monolocale di Turro costa [[turro]] € al mese e il bilocale di via Val di Non [[vdn]] € al mese, utenze incluse e senza tre mesi di deposito."),
  ],
+ "bicocca": [
+  ("Quanto dista l'Università Bicocca dagli appartamenti RAM?", "Da via Val di Non e da Precotto gli edifici dell'università (U1–U7) sono a circa 15 minuti a piedi, in bici o con il tram 7. La fermata M1 Precotto è a circa 5 minuti a piedi."),
+  ('Quanto costa al mese un appartamento vicino alla Bicocca?', 'Il bilocale di via Val di Non costa [[vdn]] € al mese e il monolocale di Turro [[turro]] € al mese, con luce, gas, riscaldamento, acqua e Wi-Fi inclusi e senza tre mensilità di deposito.'),
+  ('Qual è il soggiorno minimo?', "28 notti per il bilocale di via Val di Non e 30 notti per il monolocale di Turro. Per soggiorni più brevi c'è il bilocale comfort di Precotto, da 2 notti."),
+  ('Che contratto si firma per un semestre alla Bicocca?', 'Per soggiorni oltre i 30 giorni firmiamo un <a href="[[path:contract]]">contratto transitorio</a> o per studenti universitari e lo registriamo all\'Agenzia delle Entrate: vale per residenza e permesso di soggiorno.'),
+ ],
 },
 "en": {
  "nodeposit": [
@@ -42,6 +48,12 @@ FAQ = {
   ("Are bills included in student rentals?", "With RAM, yes: electricity, gas, heating, water and Wi-Fi are in the rent. Elsewhere Wi-Fi, heating and utilities can add €150–250 per month."),
   ("Can I share the apartment with a classmate?", "Yes. The Turro studio and the Via Val di Non flat host up to 2 people, and they are whole apartments you don't share with anyone else."),
   ("How much does student accommodation cost with RAM?", "The Turro studio costs €[[turro]] per month and the Via Val di Non flat €[[vdn]] per month, bills included and with no three-month deposit."),
+ ],
+ "bicocca": [
+  ('How far is Bicocca University from the RAM apartments?', 'From Via Val di Non and Precotto the university buildings (U1–U7) are about 15 minutes away on foot, by bike or tram 7. The M1 Precotto metro stop is about a 5-minute walk.'),
+  ('How much is a monthly apartment near Bicocca?', 'The Via Val di Non one-bedroom flat costs €[[vdn]] per month and the Turro studio €[[turro]] per month, with electricity, gas, heating, water and Wi-Fi included and no three-month deposit.'),
+  ('What is the minimum stay?', '28 nights for the Via Val di Non flat and 30 nights for the Turro studio. For shorter stays there is the comfort flat in Precotto, from 2 nights.'),
+  ('Which contract do I sign for a semester at Bicocca?', 'For stays over 30 days we sign a <a href="[[path:contract]]">transitional</a> or university student lease and register it with the Agenzia delle Entrate: it is valid for residence and permits.'),
  ],
 },
 "es": {
@@ -63,6 +75,12 @@ FAQ = {
   ("¿Puedo compartir el piso con un compañero de clase?", "Sí. El estudio de Turro y el piso de Via Val di Non alojan hasta 2 personas, y son pisos enteros que no compartes con nadie más."),
   ("¿Cuánto cuesta un alojamiento para estudiantes con RAM?", "El estudio de Turro cuesta [[turro]] € al mes y el piso de Via Val di Non [[vdn]] € al mes, suministros incluidos y sin tres meses de fianza."),
  ],
+ "bicocca": [
+  ('¿A qué distancia está la Universidad Bicocca de los pisos de RAM?', 'Desde Via Val di Non y Precotto los edificios de la universidad (U1–U7) están a unos 15 minutos a pie, en bici o con el tranvía 7. La parada M1 Precotto está a unos 5 minutos a pie.'),
+  ('¿Cuánto cuesta al mes un piso cerca de la Bicocca?', 'El piso de Via Val di Non cuesta [[vdn]] € al mes y el estudio de Turro [[turro]] € al mes, con luz, gas, calefacción, agua y Wi-Fi incluidos y sin tres meses de fianza.'),
+  ('¿Cuál es la estancia mínima?', '28 noches para el piso de Via Val di Non y 30 noches para el estudio de Turro. Para estancias más cortas está el piso comfort de Precotto, desde 2 noches.'),
+  ('¿Qué contrato se firma para un semestre en la Bicocca?', 'Para estancias de más de 30 días firmamos un <a href="[[path:contract]]">contrato temporal</a> o de estudiantes universitarios y lo registramos en la Agenzia delle Entrate: vale para la residencia y el permiso de estancia.'),
+ ],
 },
 "fr": {
  "nodeposit": [
@@ -83,6 +101,12 @@ FAQ = {
   ("Puis-je partager l'appartement avec un camarade de cours ?", "Oui. Le studio de Turro et le deux-pièces de la Via Val di Non accueillent jusqu'à 2 personnes, et ce sont des appartements entiers que vous ne partagez avec personne d'autre."),
   ("Combien coûte un logement étudiant chez RAM ?", "Le studio de Turro coûte [[turro]] € par mois et le deux-pièces de la Via Val di Non [[vdn]] € par mois, charges comprises et sans caution de trois mois."),
  ],
+ "bicocca": [
+  ("À quelle distance se trouve l'université Bicocca des appartements RAM ?", "Depuis la Via Val di Non et Precotto, les bâtiments de l'université (U1–U7) sont à environ 15 minutes à pied, à vélo ou en tram 7. La station M1 Precotto est à environ 5 minutes à pied."),
+  ('Combien coûte par mois un appartement près de la Bicocca ?', 'Le deux-pièces de la Via Val di Non coûte [[vdn]] € par mois et le studio de Turro [[turro]] € par mois, électricité, gaz, chauffage, eau et Wi-Fi compris et sans trois mois de dépôt.'),
+  ('Quelle est la durée minimale ?', "28 nuits pour le deux-pièces de la Via Val di Non et 30 nuits pour le studio de Turro. Pour des séjours plus courts, il y a l'appartement confort de Precotto, dès 2 nuits."),
+  ('Quel bail signer pour un semestre à la Bicocca ?', 'Pour les séjours de plus de 30 jours, nous signons un <a href="[[path:contract]]">bail temporaire</a> ou étudiant et l\'enregistrons auprès de l\'Agenzia delle Entrate : il est valable pour la résidence et le titre de séjour.'),
+ ],
 },
 "de": {
  "nodeposit": [
@@ -102,6 +126,12 @@ FAQ = {
   ("Sind die Nebenkosten bei Studentenwohnungen inklusive?", "Bei RAM ja: Strom, Gas, Heizung, Wasser und WLAN sind in der Miete enthalten. Anderswo können WLAN, Heizung und Nebenkosten 150–250 € im Monat ausmachen."),
   ("Kann ich die Wohnung mit einem Kommilitonen teilen?", "Ja. Das Studio in Turro und die Wohnung in der Via Val di Non bieten Platz für bis zu 2 Personen, und es sind ganze Wohnungen, die Sie mit niemandem sonst teilen."),
   ("Was kostet eine Studentenwohnung bei RAM?", "Das Studio in Turro kostet [[turro]] € im Monat und die Wohnung in der Via Val di Non [[vdn]] € im Monat, Nebenkosten inklusive und ohne drei Monatsmieten Kaution."),
+ ],
+ "bicocca": [
+  ('Wie weit ist die Universität Bicocca von den RAM-Wohnungen entfernt?', 'Von der Via Val di Non und Precotto sind die Universitätsgebäude (U1–U7) etwa 15 Minuten zu Fuß, mit dem Rad oder der Tram 7 entfernt. Die Haltestelle M1 Precotto erreichen Sie in etwa 5 Minuten zu Fuß.'),
+  ('Was kostet eine Monatswohnung nahe der Bicocca?', 'Die Wohnung in der Via Val di Non kostet [[vdn]] € im Monat und das Studio in Turro [[turro]] € im Monat, Strom, Gas, Heizung, Wasser und WLAN inklusive und ohne drei Monatsmieten Kaution.'),
+  ('Wie lange ist der Mindestaufenthalt?', '28 Nächte für die Wohnung in der Via Val di Non und 30 Nächte für das Studio in Turro. Für kürzere Aufenthalte gibt es die Komfort-Wohnung in Precotto, ab 2 Nächten.'),
+  ('Welchen Vertrag unterschreibe ich für ein Semester an der Bicocca?', 'Für Aufenthalte über 30 Tage schließen wir einen <a href="[[path:contract]]">Zeitmietvertrag</a> oder Studentenmietvertrag und registrieren ihn bei der Agenzia delle Entrate: Er gilt für Wohnsitz und Aufenthaltsgenehmigung.'),
  ],
 },
 }
