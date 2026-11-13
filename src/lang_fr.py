@@ -44,7 +44,7 @@ FORM = {"name": "Nom", "email": "E-mail", "apt": "Appartement", "any": "Peu impo
 
 P = {
 "home": {
-    "title": "Location d'appartements à Milan au mois ou à la nuit | RAM, M1 Precotto",
+    "title": "Appartements meublés à Milan au mois ou à la nuit | RAM",
     "desc": "Appartements meublés à Milan sur la ligne M1 : location au mois charges comprises avec bail enregistré, courts séjours pour salons et vacances. Réservez directement avec Vito.",
     "kicker": "Milan · ligne rouge M1 · Precotto et Turro",
     "h1": "Appartements meublés à Milan, gérés par un vrai hôte",
