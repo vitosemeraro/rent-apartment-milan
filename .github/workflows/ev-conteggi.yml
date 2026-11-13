@@ -1,0 +1,33 @@
+# Contatore eventi: ogni giorno legge i totali anonimi di ev-stats.php (dal server Netsons)
+# e li salva in ev-conteggi.json sul branch "stats". Le routine della Regia lo leggono da lì,
+# perché il server non è raggiungibile dalle sessioni cloud. Non tocca main né il branch deploy.
+name: Contatore eventi
+on:
+  schedule:
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+concurrency: ev-conteggi
+permissions:
+  contents: write
+jobs:
+  conteggi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Leggi ev-stats.php
+        run: |
+          curl -fsS -m 60 --retry 3 -A "RAM-stats-bot" "https://rent-apartment-milan.com/ev-stats.php?days=120" -o /tmp/ev-stats.json
+          mkdir -p /tmp/stats
+          python tools/ev_conteggi.py /tmp/ev-stats.json > /tmp/stats/ev-conteggi.json
+      - name: Pubblica sul branch stats
+        run: |
+          cd /tmp/stats
+          git init -q -b stats
+          git config user.name "RAM stats bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -qm "Conteggi eventi $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" stats
