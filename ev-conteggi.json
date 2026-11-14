@@ -1,0 +1,119 @@
+{
+ "fonte": "https://rent-apartment-milan.com/ev-stats.php?days=120",
+ "aggiornato_il": "2026-11-14T09:54Z",
+ "dal": "2026-07-17",
+ "periodo_28g": [
+  "2026-10-17",
+  "2026-11-13"
+ ],
+ "periodo_prev": [
+  "2026-09-19",
+  "2026-10-16"
+ ],
+ "lead_28g": 0,
+ "lead_prev": 0,
+ "view_28g": 253,
+ "view_prev": 0,
+ "giorni": {
+  "2026-10-30": {
+   "read": 1,
+   "view": 1
+  },
+  "2026-11-01": {
+   "cal": 2,
+   "cal_nav": 2,
+   "dates": 2,
+   "guests": 1,
+   "link": 3,
+   "quote": 3,
+   "view": 6
+  },
+  "2026-11-02": {
+   "read": 1,
+   "view": 1
+  },
+  "2026-11-03": {
+   "cal": 1,
+   "dates": 1,
+   "gallery": 2,
+   "link": 2,
+   "quote": 1,
+   "view": 11
+  },
+  "2026-11-04": {
+   "view": 3
+  },
+  "2026-11-05": {
+   "view": 4
+  },
+  "2026-11-06": {
+   "cal": 1,
+   "cal_nav": 1,
+   "gallery": 1,
+   "link": 6,
+   "read": 3,
+   "view": 19
+  },
+  "2026-11-07": {
+   "read": 1,
+   "view": 3
+  },
+  "2026-11-08": {
+   "read": 1,
+   "view": 3
+  },
+  "2026-11-09": {
+   "cal": 2,
+   "cal_nav": 8,
+   "dates": 4,
+   "form_submit": 1,
+   "link": 3,
+   "quote": 2,
+   "read": 3,
+   "view": 10
+  },
+  "2026-11-10": {
+   "cal": 1,
+   "cal_nav": 8,
+   "dates": 1,
+   "gallery": 2,
+   "link": 3,
+   "quote": 1,
+   "read": 2,
+   "view": 6
+  },
+  "2026-11-11": {
+   "cal": 1,
+   "cal_nav": 2,
+   "gallery": 8,
+   "link": 28,
+   "out": 1,
+   "read": 14,
+   "view": 91
+  },
+  "2026-11-12": {
+   "cal": 1,
+   "cal_nav": 10,
+   "gallery": 2,
+   "link": 16,
+   "read": 11,
+   "view": 63
+  },
+  "2026-11-13": {
+   "gallery": 1,
+   "link": 5,
+   "read": 5,
+   "view": 32
+  },
+  "2026-11-14": {
+   "cal": 1,
+   "cal_nav": 18,
+   "dates": 1,
+   "gallery": 7,
+   "link": 6,
+   "quote": 1,
+   "read": 3,
+   "view": 14
+  }
+ }
+}
