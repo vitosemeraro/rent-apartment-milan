@@ -1,0 +1,9 @@
+_worker
+wrangler.jsonc
+schema.sql
+.htaccess
+*.php
+.git
+.dev.vars
+.wrangler
+node_modules
