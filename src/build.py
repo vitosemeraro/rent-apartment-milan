@@ -426,6 +426,28 @@ def page_listing(lang, lid):
                   crumbs=[(T.ui["nav_apartments"], path_of(lang, "apartments")), (t["short"], path_of(lang, key))])
 
 
+# Box di conversione subito sotto la risposta (13/11/2026): prima il primo bottone era all'80% della pagina.
+QUICK_CTA = {
+    "it": ("Monolocale e bilocale sulla M1 da {p} € al mese, bollette incluse e senza deposito di 3 mesi.", "Verifica le tue date", "Vedi gli appartamenti"),
+    "en": ("Studio and one-bedroom on the M1 line from €{p} a month, bills included and no 3-month deposit.", "Check your dates", "See the apartments"),
+    "es": ("Estudio y apartamento de un dormitorio en la línea M1 desde {p} € al mes, gastos incluidos y sin depósito de 3 meses.", "Consulta tus fechas", "Ver los apartamentos"),
+    "fr": ("Studio et deux-pièces sur la ligne M1 dès {p} € par mois, charges comprises et sans dépôt de 3 mois.", "Vérifier vos dates", "Voir les appartements"),
+    "de": ("Studio und Zweizimmerwohnung an der M1 ab {p} € im Monat, Nebenkosten inklusive und ohne 3-Monats-Kaution.", "Ihre Daten prüfen", "Wohnungen ansehen"),
+}
+QUICK_SKIP = {"contact", "privacy", "about", "reviews", "guides", "faq", "apartments", "thanks"}
+
+
+def quick_cta(lang, key=""):
+    if key in QUICK_SKIP or lang not in QUICK_CTA:
+        return ""
+    txt, b1, b2 = QUICK_CTA[lang]
+    v = min(month_price("turro"), month_price("vdn"))
+    p = f"{v:,}".replace(",", "." if lang in ("it", "es", "de") else "\u00a0" if lang == "fr" else ",")
+    return (f'<div class="tip quick-cta" style="border-left-color:var(--acc);margin:14px 0"><p style="margin:0 0 10px">{esc(txt.format(p=p))}</p>'
+            f'<div class="cta-row" style="margin:0"><a class="btn" href="{path_of(lang, "contact")}" data-evt="cta_contact" data-label="quick">{esc(b1)}</a>'
+            f'<a class="btn ghost" href="{path_of(lang, "apartments")}" data-evt="cta_apartments" data-label="quick">{esc(b2)}</a></div></div>')
+
+
 def page_article(lang, key):
     T = C[lang]; P = T.P[key]
     extra, ld = "", None
@@ -468,7 +490,7 @@ def page_article(lang, key):
     kick = f'<span class="kicker">{esc(P["kicker"])}</span>' if P.get("kicker") else ""
     qa_html, qa_ld = AEO.answer_box(lang, key, esc, fill_data)
     body = f"""<section style="padding-top:20px"><div class="wrap">{kick}<h1>{esc(P["h1"])}</h1>{f'<p class="lead">{esc(fill_data(lang, P["lead"]))}</p>' if P.get("lead") else ""}{hero}
-<div class="prose">{qa_html}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices", "bicocca", "nodeposit") else "").replace("<!--SHORT-->", short_table(lang) if key in ("prices", "fairs") else "").replace("<!--GROUPS-->", group_table(lang) if key == "fairs" else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
+<div class="prose">{qa_html}{quick_cta(lang, key)}{fill_data(lang, P.get("html", "").replace("<!--PRICES-->", price_table(lang) if key in ("monthly", "students", "prices", "bicocca", "nodeposit") else "").replace("<!--SHORT-->", short_table(lang) if key in ("prices", "fairs") else "").replace("<!--GROUPS-->", group_table(lang) if key == "fairs" else ""))}{extra}</div></div></section>{side}{"" if key in ("contact", "privacy") else cta_band(lang)}"""
     if P.get("article"):
         art = {"@context": "https://schema.org", "@type": "Article", "headline": P["h1"], "description": fill_data(lang, P["desc"]), "inLanguage": lang,
                "author": {"@type": "Person", "name": "Vito Semeraro", "url": url_of(lang, "about")}, "publisher": {"@type": "Organization", "name": "RAM – Rent Apartment Milan"},
